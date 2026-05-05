@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Dashboard - Auditor",
+  "Type": "Screen",
+  "Id": "tFtuyIjxnkC99ZlW8IPuqQ",
+  "Reference": "_EVOEAIp2Ui16OrarTbFUw/tFtuyIjxnkC99ZlW8IPuqQ",
+  "ParentRef": "_EVOEAIp2Ui16OrarTbFUw/EeMHoOHB6kivMkiAEbvFJQ",
+  "Created": "2025-10-06T22:33:34.1257013Z",
+  "Updated": "2025-10-06T22:33:34.1257013Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

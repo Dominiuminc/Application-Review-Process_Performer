@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click ManagerName",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "4BylXEvOXkyXk-7LvFgm7w",
+  "Reference": "_EVOEAIp2Ui16OrarTbFUw/4BylXEvOXkyXk-7LvFgm7w",
+  "ParentRef": "_EVOEAIp2Ui16OrarTbFUw/fSknMsG7D0yS4_4hY3LiEg",
+  "Created": "2025-09-04T21:34:13.833296Z",
+  "Updated": "2025-09-04T21:34:13.833296Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

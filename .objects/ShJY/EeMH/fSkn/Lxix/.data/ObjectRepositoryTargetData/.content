@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="f4daJLQJqk6H8qvSnEcqEA" Reference="_EVOEAIp2Ui16OrarTbFUw/X7CrMK-NMkugAmWzoVeLYQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://dominium.certenant.com/#/certifications" DesignTimeRectangle="796, 260, 239, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' parentname='cert_assign_form' placeholder='Filter' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' parentname='cert_assign_form' placeholder='Filter' type='text' class='form-control ng-pristine ng-untouched ng-valid ng-empty' aaname='' /&gt;" Guid="f7261a9a-dac1-44ce-9646-9fa1e7ba0a4e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Certifications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a813475eac8f2af1f56e3d5726eab541.png" xmlns="">0Ao030qAZ8UGsVe1aAvxOdw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

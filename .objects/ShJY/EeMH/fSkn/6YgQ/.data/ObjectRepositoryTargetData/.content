@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EAVKKbv5-kGPFf35tsemvw" Reference="_EVOEAIp2Ui16OrarTbFUw/mqusGlTXoU-6z6QPZjo0hA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://dominium.certenant.com/#/certifications" DesignTimeRectangle="1132, 319, 64, 35" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Assign' parentid='cert-details' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Assign' parentid='cert-details' tag='BUTTON' type='' class='btn btn-default border' check:innerText='Assign' /&gt;" Guid="f098c24b-16fd-4a53-beb1-bb0e5ca2c1df" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Certifications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c363b903007218f2022cf322cff4f6e0.png" xmlns="">0x03FQ4Tiu0mbNPNTAFgX9A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

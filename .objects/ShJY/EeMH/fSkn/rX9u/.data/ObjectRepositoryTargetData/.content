@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DKFbxS9iW0KdRN9CFqZT6Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://dominium.certenant.com/#/certifications" DesignTimeRectangle="1143, 356, 54, 35" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Save' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Save' tag='BUTTON' type='button' class='btn btn-primary ng-binding' check:text='Save' /&gt;" Guid="541f9ffa-3d70-48fc-8c05-613ff0bf9e75" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Certifications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f3e03558ba98beeaa8d69f050c274e29.png" xmlns="">0-7xebqe8Ik20AW8XCUFUdw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

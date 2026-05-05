@@ -1,0 +1,257 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="FuzzyLogic" this:FuzzyLogic.in_ArrMemNames="[{&quot;Harika malyala&quot;,&quot;harka malyla&quot;}]" this:FuzzyLogic.in_MemName="Harika malyala" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ausam="clr-namespace:AshlingPartners.UiPath.StringMatching.Activities.Models;assembly=AshlingPartners.UiPath.StringMatching.Activities" xmlns:ausas="clr-namespace:AshlingPartners.UiPath.StringMatching.Activities.StringMatching;assembly=AshlingPartners.UiPath.StringMatching.Activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_ArrMemNames" Type="InArgument(s:String[])" />
+    <x:Property Name="in_MemName" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1020,1573</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>FuzzyLogic_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>AshlingPartners.UiPath.StringMatching.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>AshlingPartners.UiPath.StringMatching.Activities.StringMatching</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>AshlingPartners.UiPath.StringMatching.Activities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.Web.Activities.Http.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Web.Activities.Http</x:String>
+      <x:String>UiPath.Sdk.Activities</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection.Contracts</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>AshlingPartners.UiPath.StringMatching.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="FuzzyLogic" sap:VirtualizedContainerService.HintSize="416,1388" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(ausam:NameMatchResult)" Name="matchedresults" />
+      <Variable x:TypeArguments="ausam:NameMatchResult" Name="Bestmatch" />
+      <Variable x:TypeArguments="x:Boolean" Name="bool_ColaEffective" />
+      <Variable x:TypeArguments="ausam:CompanyMatchResult" Name="matchedJobTitleResults" />
+      <Variable x:TypeArguments="ausam:IncomeAssetTypeMatchResult" Name="matchedAssistanceType" />
+      <Variable x:TypeArguments="x:String" Name="str_BestMatch" />
+      <Variable x:TypeArguments="x:Double" Name="dbl_BestScore" />
+      <Variable x:TypeArguments="x:Boolean" Name="bool_MatchFound" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim highestScore As Double = 0.0&#xD;&#xA;Dim closestMatch As String = &quot;&quot;&#xD;&#xA;&#xD;&#xA;' Insert spaces in camel case&#xD;&#xA;searchText = System.Text.RegularExpressions.Regex.Replace(searchText, &quot;([a-z])([A-Z])&quot;, &quot;$1 $2&quot;)&#xD;&#xA;&#xD;&#xA;' Remove Part1, Part2 etc&#xD;&#xA;searchText = System.Text.RegularExpressions.Regex.Replace(searchText, &quot;^part\d+&quot;, &quot;&quot;, System.Text.RegularExpressions.RegexOptions.IgnoreCase)&#xD;&#xA;&#xD;&#xA;' Normalize&#xD;&#xA;Dim normalizedSearch As String = searchText.ToLower()&#xD;&#xA;normalizedSearch = System.Text.RegularExpressions.Regex.Replace(normalizedSearch, &quot;[^a-z0-9 ]&quot;, &quot;&quot;)&#xD;&#xA;normalizedSearch = System.Text.RegularExpressions.Regex.Replace(normalizedSearch, &quot;\s+&quot;, &quot; &quot;).Trim()&#xD;&#xA;&#xD;&#xA;Dim searchWords = normalizedSearch.Split(&quot; &quot;c)&#xD;&#xA;&#xD;&#xA;For Each item As String In items&#xD;&#xA;&#xD;&#xA;    ' Normalize item&#xD;&#xA;    Dim normalizedItem As String = item.ToLower()&#xD;&#xA;    normalizedItem = System.Text.RegularExpressions.Regex.Replace(normalizedItem, &quot;[^a-z0-9 ]&quot;, &quot;&quot;)&#xD;&#xA;    normalizedItem = System.Text.RegularExpressions.Regex.Replace(normalizedItem, &quot;\s+&quot;, &quot; &quot;).Trim()&#xD;&#xA;&#xD;&#xA;    Dim matchCount As Integer = 0&#xD;&#xA;&#xD;&#xA;    For Each word In searchWords&#xD;&#xA;&#xD;&#xA;        If normalizedItem.Contains(word) Then&#xD;&#xA;            matchCount += 1&#xD;&#xA;        End If&#xD;&#xA;&#xD;&#xA;    Next&#xD;&#xA;&#xD;&#xA;    Dim similarity As Double = 0.0&#xD;&#xA;    If searchWords.Length &gt; 0 Then&#xD;&#xA;        similarity = matchCount / searchWords.Length&#xD;&#xA;    End If&#xD;&#xA;&#xD;&#xA;    If similarity &gt; highestScore Then&#xD;&#xA;        highestScore = similarity&#xD;&#xA;        closestMatch = item&#xD;&#xA;    End If&#xD;&#xA;&#xD;&#xA;Next&#xD;&#xA;&#xD;&#xA;bestMatch = closestMatch&#xD;&#xA;bestScore = highestScore&#xD;&#xA;isMatchFound = (highestScore &gt;= minScore)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+      <ui:InvokeCode.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="searchText">
+          <Literal x:TypeArguments="x:String">Part1 Tribally Controlled Colleges Or Universities Grant Program</Literal>
+        </InArgument>
+        <InArgument x:TypeArguments="s:String[]" x:Key="items">
+          <VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;Military Assistance (state or federal, e.g. G.I. Bill)&quot;,&quot;A private foundation registered as a nonprofit under 26 U.S.C. 501(c)(3)&quot;,&quot;A state (including U.S. territories), Tribe, or local government&quot;,&quot;A business entity (such as a corporation, general partnership, limited liability company, limited partnership, joint venture, business trust, public benefit corporation, or nonprofit entity)&quot;,&quot;Employment training program under section 134 of the Workforce Innovation and Opportunity Act (WIOA)&quot;,&quot;A business entity (such as a corporation, general partnership, limited liability company, limited partnership, joint venture, business trust, public benefit corporation, or nonprofit entity)&quot;,&quot;Tribally Controlled Colleges or Universities Grant Program&quot;}" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:Double" x:Key="minScore">
+          <Literal x:TypeArguments="x:Double" Value="0.85" />
+        </InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="bestMatch">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="str_BestMatch" />
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:Double" x:Key="bestScore">
+          <VisualBasicReference x:TypeArguments="x:Double" ExpressionText="dbl_BestScore" />
+        </OutArgument>
+        <OutArgument x:TypeArguments="x:Boolean" x:Key="isMatchFound">
+          <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="bool_MatchFound" />
+        </OutArgument>
+      </ui:InvokeCode.Arguments>
+    </ui:InvokeCode>
+    <ausas:FindBestIncomeAssetTypeMatch Candidates="[{&quot;Military Assistance (state or federal, e.g. G.I. Bill)&quot;}]" DisplayName="Find Best Assistance Type Match" sap:VirtualizedContainerService.HintSize="354,275" sap2010:WorkflowViewState.IdRef="FindBestIncomeAssetTypeMatch_1" MinThreshold="0.5" Query="Military Assistance State Or Federal eg GI Bill" Result="[matchedAssistanceType]" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <If Condition="[DateTime.ParseExact(&#xA;   &quot;07/20/2025&quot;,&#xA;    {&quot;M/d/yyyy&quot;, &quot;MM/dd/yyyy&quot;},&#xA;    System.Globalization.CultureInfo.InvariantCulture,&#xA;    System.Globalization.DateTimeStyles.None&#xA;) &lt;= DateTime.Today.AddYears(-1)]" DisplayName="If-ColaEffective" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="If_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If.Then>
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign DisplayName="Assign-bool_ColaEffectiveTrue" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Boolean">[bool_ColaEffective]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign DisplayName="Assign-bool_ColaEffectiveFalse" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Boolean">[bool_ColaEffective]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+              </Sequence>
+            </If.Else>
+          </If>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,354" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ausas:FindBestCompanyMatch Candidates="[{&quot;Bartender&quot;}]" DisplayName="Find Best Company Match" sap:VirtualizedContainerService.HintSize="354,266" sap2010:WorkflowViewState.IdRef="FindBestCompanyMatch_1" MinThreshold="0.85" Query="Bartender" Result="[matchedJobTitleResults]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ausas:FindBestCompanyMatch>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ausas:FindBestMatch Candidates="[{&quot;Arizona Painting Company LLC&quot;,&quot;Wal-Mart Associates, Inc.&quot;,&quot;Family Dollar LLC&quot;,&quot;GNC Holdings, LLC. ( 10091 )&quot;,&quot;Isaiah Alejandro&quot;,&quot;Ilianet Perez&quot;,&quot;Jessica Holguin&quot;,&quot;Davilas Pool Plumbing&quot;,&quot;Hugo A Jurado&quot;}]" DisplayName="Find Best Match" sap:VirtualizedContainerService.HintSize="354,275" sap2010:WorkflowViewState.IdRef="FindBestMatch_1" MinThreshold="0.5" Query="Hugo Jurado" Result="[Bestmatch]" />
+    <ausas:FindAllMatches Candidates="[{&quot;Arizona Painting Company LLC&quot;,&quot;Elias Castrillo-Ortiz&quot;,&quot;Family Dollar LLC&quot;,&quot;GNC Holdings, LLC. ( 10091 )&quot;,&quot;Isaiah Alejandro&quot;}]" DisplayName="Find All Matches" sap:VirtualizedContainerService.HintSize="354,275" sap2010:WorkflowViewState.IdRef="FindAllMatches_1" MinThreshold="0.92" Query="Arizona Painting Company" Result="[matchedresults]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[matchedresults.Count]" />
+  </Sequence>
+</Activity>
