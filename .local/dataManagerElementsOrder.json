@@ -1916,6 +1916,38 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Member Information Document.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_FilteredMIDData&Sequence_3559",
+        "jArr_ExtResults&Sequence_3560",
+        "int_MIDCount&Sequence_3560",
+        "list_ImageFiles&Sequence_3560",
+        "jObj_ExtractionResults&Sequence_3561",
+        "jObj_Validation&Sequence_3562",
+        "jObj_JSON&Sequence_3562",
+        "date_DOB&Sequence_3952",
+        "str_DobDate&Sequence_3563",
+        "bool_IsAdult&Sequence_3563"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_ClassificationResultsData",
+        "str_PromptsFolder",
+        "arr_MIDDOBs",
+        "arr_MIDSSNs",
+        "int_ICWNoLiveInAid",
+        "arr_ICWMemberNames",
+        "int_ICWUnbornChildCount",
+        "out_DTAuditFindings",
+        "str_MIDSSN",
+        "str_MoveIndate",
+        "in_State"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

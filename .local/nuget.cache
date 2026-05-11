@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "q3x1L5TgLZ2tOXJZwwItN4udcJ4OnOJWVs6GtC/6m+IE6o/RBkixebn1mzEofk+pHpsV3O4hYX26w4ULHR3E+g==",
+  "dgSpecHash": "N+MFJ5xdbliG+zZMTj2S/ZlI36yO5FkClh9UprljormTUGnztDEF+LRBArXGkQSJ4yMhFaaK1XDOrBKKcu2R3g==",
   "success": true,
   "projectFilePath": "C:\\Users\\harika.malyala\\Documents\\Git\\Application-Review-Process_Performer\\.local\\",
   "expectedPackageFiles": [
@@ -320,9 +320,9 @@
     "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.9.1\\uipath.opentelemetry.contracts.2.9.1.nupkg.sha512",
     "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.pdf.activities\\3.10.2\\uipath.pdf.activities.3.10.2.nupkg.sha512",
     "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.platform\\25.12.1\\uipath.platform.25.12.1.nupkg.sha512",
-    "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.4\\uipath.system.activities.26.2.4.nupkg.sha512",
-    "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.4\\uipath.system.activities.runtime.26.2.4.nupkg.sha512",
-    "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4\\uipath.system.activities.runtime.windows.26.2.4.nupkg.sha512",
+    "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.6\\uipath.system.activities.26.2.6.nupkg.sha512",
+    "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.6\\uipath.system.activities.runtime.26.2.6.nupkg.sha512",
+    "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6\\uipath.system.activities.runtime.windows.26.2.6.nupkg.sha512",
     "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.telemetry.client\\2.9.1\\uipath.telemetry.client.2.9.1.nupkg.sha512",
     "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.testing.activities\\24.10.0\\uipath.testing.activities.24.10.0.nupkg.sha512",
     "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.uiautomation.activities\\24.10.0\\uipath.uiautomation.activities.24.10.0.nupkg.sha512",
