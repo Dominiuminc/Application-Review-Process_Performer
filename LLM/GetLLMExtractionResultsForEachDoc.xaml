@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1020,688</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>954,3738</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetLLMExtractionResultsForEachDoc_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -127,7 +127,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetLLMExtractionResultsForEachDoc" sap:VirtualizedContainerService.HintSize="416,482" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetLLMExtractionResultsForEachDoc" sap:VirtualizedContainerService.HintSize="888,3673" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_Imagepath" />
       <Variable x:TypeArguments="x:String" Name="str_UserPrompt" />
@@ -146,29 +146,29 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message-Started" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;GetLLMExtractionResultsForEachDoc.xaml is Started&quot;]" />
-    <TryCatch DisplayName="Try Catch-GetLLMExtractionResults" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <ui:LogMessage DisplayName="Log Message-Started" sap:VirtualizedContainerService.HintSize="826,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;GetLLMExtractionResultsForEachDoc.xaml is Started&quot;]" />
+    <TryCatch DisplayName="Try Catch-GetLLMExtractionResults" sap:VirtualizedContainerService.HintSize="826,3248" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:Boolean" Default="False" Name="bool_LLMSuccess" />
       </TryCatch.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="638,1920" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:05">
+        <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="788,2988" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3" RetryInterval="00:00:05">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
-              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="596,1631" sap2010:WorkflowViewState.IdRef="Sequence_27">
+              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="754,2750" sap2010:WorkflowViewState.IdRef="Sequence_27">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <TryCatch DisplayName="Try Catch-GetLLExtractionResults" sap:VirtualizedContainerService.HintSize="534,1543" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                <TryCatch DisplayName="Try Catch-GetLLExtractionResults" sap:VirtualizedContainerService.HintSize="692,2662" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -176,14 +176,14 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <TryCatch.Try>
-                    <Sequence DisplayName="GetLLExtractionResults" sap:VirtualizedContainerService.HintSize="496,1292" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                    <Sequence DisplayName="GetLLExtractionResults" sap:VirtualizedContainerService.HintSize="654,2411" sap2010:WorkflowViewState.IdRef="Sequence_28">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="CommentOut_26">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="592,57" sap2010:WorkflowViewState.IdRef="CommentOut_26">
                         <ui:CommentOut.Body>
                           <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,397" sap2010:WorkflowViewState.IdRef="Sequence_46">
                             <sap:WorkflowViewStateService.ViewState>
@@ -198,7 +198,7 @@
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke InitAllSettings workflow" sap:VirtualizedContainerService.HintSize="388,198" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\InitAllSettings.xaml">
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Invoke InitAllSettings workflow" sap:VirtualizedContainerService.HintSize="388,198" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\InitAllSettings.xaml">
                                 <ui:InvokeWorkflowFile.Arguments>
                                   <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFile">Data\Config.xlsx</InArgument>
                                   <InArgument x:TypeArguments="s:String[]" x:Key="in_ConfigSheets">[{"Settings", "Constants","Findings"}]</InArgument>
@@ -215,7 +215,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:CommentOut>
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="CommentOut_24">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="592,57" sap2010:WorkflowViewState.IdRef="CommentOut_24">
                         <ui:CommentOut.Body>
                           <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="541,352" sap2010:WorkflowViewState.IdRef="Sequence_41">
                             <sap:WorkflowViewStateService.ViewState>
@@ -284,7 +284,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:CommentOut>
-                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="592,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
                         <ui:MultipleAssign.AssignOperations>
                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -336,7 +336,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:MultipleAssign>
-                      <ui:ReadTextFile File="{x:Null}" Content="[str_UserPrompt]" DisplayName="Read Text File_Prompts" FileName="[in_UserPromptTextFile]" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
+                      <ui:ReadTextFile File="{x:Null}" Content="[str_UserPrompt]" DisplayName="Read Text File_Prompts" FileName="[in_UserPromptTextFile]" sap:VirtualizedContainerService.HintSize="592,57" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -344,7 +344,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:ReadTextFile>
-                      <Assign DisplayName="Assign-PDFFolder" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign DisplayName="Assign-PDFFolder" sap:VirtualizedContainerService.HintSize="592,57" sap2010:WorkflowViewState.IdRef="Assign_5">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[str_PDFFolder]</OutArgument>
                         </Assign.To>
@@ -358,7 +358,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </Assign>
-                      <afa:SendImages Temperature="{x:Null}" APIKey="[str_APIKey]" APIVersion="[str_APIVersion]" DeploymentName="[str_DeploymentName]" DisplayName="Send Images" EndPoint="[str_EndPoint]" sap:VirtualizedContainerService.HintSize="434,643" sap2010:WorkflowViewState.IdRef="SendImages_6" ImagePath="[in_ImagePath]" MaxReturnTokens="[CInt(in_Config(&quot;LLM_Extraction_MaxTokens&quot;).ToString)]" Result="[llm_Result]" RetryCount="3" SystemPrompt="[str_SystemPrompt]" Timeout="[CInt(in_Config(&quot;LLM_Extraction_Timeout&quot;).ToString)]" UserPrompt="[str_UserPrompt]">
+                      <afa:SendImages Temperature="{x:Null}" APIKey="[str_APIKey]" APIVersion="[str_APIVersion]" DeploymentName="[str_DeploymentName]" DisplayName="Send Images" EndPoint="[str_EndPoint]" sap:VirtualizedContainerService.HintSize="592,632" sap2010:WorkflowViewState.IdRef="SendImages_6" ImagePath="[in_ImagePath]" MaxReturnTokens="[CInt(in_Config(&quot;LLM_Extraction_MaxTokens&quot;).ToString)]" Result="[llm_Result]" RetryCount="3" SystemPrompt="[str_SystemPrompt]" Timeout="[CInt(in_Config(&quot;LLM_Extraction_Timeout&quot;).ToString)]" UserPrompt="[str_UserPrompt]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -366,7 +366,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </afa:SendImages>
-                      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[str_PDFFolder+&quot;\&quot;+Path.GetFileNameWithoutExtension(in_UserPromptTextFile)+&quot;_JSON.txt&quot;]" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="WriteTextFile_7" Text="[str_JsonString]">
+                      <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" DisplayName="Write Text File" FileName="[str_PDFFolder+&quot;\&quot;+Path.GetFileNameWithoutExtension(in_UserPromptTextFile)+&quot;_JSON.txt&quot;]" sap:VirtualizedContainerService.HintSize="592,57" sap2010:WorkflowViewState.IdRef="WriteTextFile_7" Text="[str_JsonString]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -374,22 +374,22 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:WriteTextFile>
-                      <If Condition="[llm_Result.Success]" DisplayName="If-LLMResultIsSuccess" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="If_8">
+                      <If Condition="[llm_Result.Success]" DisplayName="If-LLMResultIsSuccess" sap:VirtualizedContainerService.HintSize="592,1188" sap2010:WorkflowViewState.IdRef="If_8">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="558,933" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="558,993" sap2010:WorkflowViewState.IdRef="Sequence_3">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[str_PDFFolder+&quot;\&quot;+Path.GetFileNameWithoutExtension(in_UserPromptTextFile)+&quot;_JSON.txt&quot;]" sap:VirtualizedContainerService.HintSize="496,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_6" Text="[llm_Result.Content]" />
+                            <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" DisplayName="Write Text File" FileName="[str_PDFFolder+&quot;\&quot;+Path.GetFileNameWithoutExtension(in_UserPromptTextFile)+&quot;_JSON.txt&quot;]" sap:VirtualizedContainerService.HintSize="496,175" sap2010:WorkflowViewState.IdRef="WriteTextFile_6" Text="[llm_Result.Content]" />
                             <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="496,57" sap2010:WorkflowViewState.IdRef="CommentOut_13">
                               <ui:CommentOut.Body>
                                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,651" sap2010:WorkflowViewState.IdRef="Sequence_25">
@@ -435,7 +435,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:CommentOut>
-                            <Sequence DisplayName="HandlingJArrayType" sap:VirtualizedContainerService.HintSize="496,623" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                            <Sequence DisplayName="HandlingJArrayType" sap:VirtualizedContainerService.HintSize="496,673" sap2010:WorkflowViewState.IdRef="Sequence_26">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -519,7 +519,7 @@
                                   </Sequence>
                                 </If.Else>
                               </If>
-                              <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_5" JsonObject="[out_jObjExtractionResults]" JsonString="[str_JsonString]">
+                              <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" Settings="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="434,172" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_5" JsonObject="[out_jObjExtractionResults]" JsonString="[str_JsonString]">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -592,7 +592,7 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[str_PDFFolder+&quot;\&quot;+Path.GetFileNameWithoutExtension(in_UserPromptTextFile)+&quot;_JSON.txt&quot;]" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="WriteTextFile_5" Text="[str_JsonString]">
+                      <ui:WriteTextFile File="{x:Null}" Output="{x:Null}" DisplayName="Write Text File" FileName="[str_PDFFolder+&quot;\&quot;+Path.GetFileNameWithoutExtension(in_UserPromptTextFile)+&quot;_JSON.txt&quot;]" sap:VirtualizedContainerService.HintSize="592,57" sap2010:WorkflowViewState.IdRef="WriteTextFile_5" Text="[str_JsonString]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -600,7 +600,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:WriteTextFile>
-                      <Assign DisplayName="Assign-bool_LLMSuccess" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign DisplayName="Assign-bool_LLMSuccess" sap:VirtualizedContainerService.HintSize="592,104" sap2010:WorkflowViewState.IdRef="Assign_6">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Boolean">[bool_LLMSuccess]</OutArgument>
                         </Assign.To>
@@ -611,7 +611,7 @@
                     </Sequence>
                   </TryCatch.Try>
                   <TryCatch.Catches>
-                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="658,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -668,6 +668,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message-Ended" sap:VirtualizedContainerService.HintSize="354,164" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;GetLLMExtractionResultsForEachDoc.xaml is completed&quot;]" />
+    <ui:LogMessage DisplayName="Log Message-Ended" sap:VirtualizedContainerService.HintSize="826,164" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;GetLLMExtractionResultsForEachDoc.xaml is completed&quot;]" />
   </Sequence>
 </Activity>

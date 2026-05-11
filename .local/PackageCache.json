@@ -267,7 +267,7 @@
     {
       "Package": {
         "Id": "UiPath.System.Activities",
-        "Version": "26.2.4"
+        "Version": "26.2.6"
       },
       "Assemblies": [
         "C:\\Users\\harika.malyala\\.nuget\\packages\\csvhelper\\33.0.1\\lib/net8.0/CsvHelper.dll",
@@ -356,16 +356,16 @@
         "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.errorinfo\\25.10.2\\lib/net8.0-windows7.0/UiPath.ErrorInfo.dll",
         "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.9.1\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
         "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.platform\\25.12.1\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.4\\lib/net6.0-windows7.0/UiPath.System.Activities.Design.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.4\\lib/net6.0-windows7.0/UiPath.System.Activities.ViewModels.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.4\\lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4\\lib/net6.0-windows7.0/UiPath.OrchestratorClient.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4\\lib/net6.0-windows7.0/UiPath.ServiceClients.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4\\lib/net6.0-windows7.0/UiPath.System.Activities.Api.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4\\lib/net6.0-windows7.0/UiPath.System.Activities.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.6\\lib/net6.0-windows7.0/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.6\\lib/net6.0-windows7.0/UiPath.System.Activities.ViewModels.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.6\\lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6\\lib/net6.0-windows7.0/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6\\lib/net6.0-windows7.0/UiPath.ServiceClients.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6\\lib/net6.0-windows7.0/UiPath.System.Activities.Api.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6\\lib/net6.0-windows7.0/UiPath.System.Activities.dll",
         "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.telemetry.client\\2.9.1\\lib/netstandard2.0/TelemetryClient.dll"
       ],
-      "Path": "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.4"
+      "Path": "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.6"
     },
     {
       "Package": {
@@ -668,13 +668,13 @@
         "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/UiPath.OfficeLibs.Package.dll",
         "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.9.1\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
         "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.platform\\25.12.1\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.4\\lib/net6.0-windows7.0/UiPath.System.Activities.Design.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.4\\lib/net6.0-windows7.0/UiPath.System.Activities.ViewModels.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.4\\lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4\\lib/net6.0-windows7.0/UiPath.OrchestratorClient.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4\\lib/net6.0-windows7.0/UiPath.ServiceClients.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4\\lib/net6.0-windows7.0/UiPath.System.Activities.Api.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4\\lib/net6.0-windows7.0/UiPath.System.Activities.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.6\\lib/net6.0-windows7.0/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.6\\lib/net6.0-windows7.0/UiPath.System.Activities.ViewModels.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.6\\lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6\\lib/net6.0-windows7.0/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6\\lib/net6.0-windows7.0/UiPath.ServiceClients.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6\\lib/net6.0-windows7.0/UiPath.System.Activities.Api.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6\\lib/net6.0-windows7.0/UiPath.System.Activities.dll",
         "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.telemetry.client\\2.9.1\\lib/netstandard2.0/TelemetryClient.dll",
         "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.testing.activities\\24.10.0\\lib/net6.0-windows7.0/UiPath.Testing.Activities.Api.dll",
         "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.testing.activities\\24.10.0\\lib/net6.0-windows7.0/UiPath.Testing.Activities.Design.dll",
@@ -5665,11 +5665,11 @@
     },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",
-      "Version": "26.2.4",
+      "Version": "26.2.6",
       "Dependencies": [
         {
           "Item1": "UiPath.System.Activities.Runtime",
-          "Item2": "[26.2.4, )"
+          "Item2": "[26.2.6, )"
         },
         {
           "Item1": "CsvHelper",
@@ -5755,17 +5755,17 @@
     },
     "UiPath.System.Activities.Runtime": {
       "Id": "UiPath.System.Activities.Runtime",
-      "Version": "26.2.4",
+      "Version": "26.2.6",
       "Dependencies": [
         {
           "Item1": "UiPath.System.Activities.Runtime.Windows",
-          "Item2": "[26.2.4, )"
+          "Item2": "[26.2.6, )"
         }
       ]
     },
     "UiPath.System.Activities.Runtime.Windows": {
       "Id": "UiPath.System.Activities.Runtime.Windows",
-      "Version": "26.2.4",
+      "Version": "26.2.6",
       "Dependencies": [
         {
           "Item1": "CsvHelper",
@@ -9229,36 +9229,36 @@
     {
       "Package": {
         "Id": "UiPath.System.Activities",
-        "Version": "26.2.4"
+        "Version": "26.2.6"
       },
       "Assemblies": [
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.4\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Design.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.4\\lib\\net6.0-windows7.0\\UiPath.System.Activities.ViewModels.dll"
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.6\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Design.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.6\\lib\\net6.0-windows7.0\\UiPath.System.Activities.ViewModels.dll"
       ],
-      "Path": "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.4"
+      "Path": "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities\\26.2.6"
     },
     {
       "Package": {
         "Id": "UiPath.System.Activities.Runtime",
-        "Version": "26.2.4"
+        "Version": "26.2.6"
       },
       "Assemblies": [
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.4\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Package.Runtime.dll"
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.6\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Package.Runtime.dll"
       ],
-      "Path": "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.4"
+      "Path": "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.6"
     },
     {
       "Package": {
         "Id": "UiPath.System.Activities.Runtime.Windows",
-        "Version": "26.2.4"
+        "Version": "26.2.6"
       },
       "Assemblies": [
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4\\lib\\net6.0-windows7.0\\UiPath.OrchestratorClient.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4\\lib\\net6.0-windows7.0\\UiPath.ServiceClients.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Api.dll",
-        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4\\lib\\net6.0-windows7.0\\UiPath.System.Activities.dll"
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6\\lib\\net6.0-windows7.0\\UiPath.OrchestratorClient.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6\\lib\\net6.0-windows7.0\\UiPath.ServiceClients.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Api.dll",
+        "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6\\lib\\net6.0-windows7.0\\UiPath.System.Activities.dll"
       ],
-      "Path": "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.4"
+      "Path": "C:\\Users\\harika.malyala\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.6"
     },
     {
       "Package": {
