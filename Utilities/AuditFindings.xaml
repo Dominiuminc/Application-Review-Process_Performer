@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>954,3591</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>954,2977</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AuditFindings_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -159,7 +159,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="AuditFindings" sap:VirtualizedContainerService.HintSize="816,3526" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AuditFindings" sap:VirtualizedContainerService.HintSize="816,2912" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="arr_AS_MemNames" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_TaxRefund" />
@@ -309,7 +309,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
-    <Sequence DisplayName="NonIncomeVerification" sap:VirtualizedContainerService.HintSize="450,484" sap2010:WorkflowViewState.IdRef="Sequence_3924">
+    <Sequence DisplayName="NonIncomeVerification" sap:VirtualizedContainerService.HintSize="754,750" sap2010:WorkflowViewState.IdRef="Sequence_3924">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="int_ICWNoOfAdults" />
         <Variable x:TypeArguments="s:String[]" Name="arr_ICWAdultHouseholders" />
@@ -346,7 +346,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </aa:Member_Information_Document>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Income and Asset Questionnaire - Invoke Workflow File (AuditFindings\Income and Asset Questionnaire.xaml)" sap:VirtualizedContainerService.HintSize="388,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_132" UnSafe="False" WorkflowFileName="AuditFindings\Income and Asset Questionnaire.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Income and Asset Questionnaire - Invoke Workflow File (AuditFindings\Income and Asset Questionnaire.xaml)" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_132" UnSafe="False" WorkflowFileName="AuditFindings\Income and Asset Questionnaire.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
           <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ClassificationResultsData">[in_ClassificationResultsData]</InArgument>
@@ -364,6 +364,40 @@
           <InArgument x:TypeArguments="sd:DataTable" x:Key="dt_ICWIncomeData">[dt_ICWIncomeData]</InArgument>
           <OutArgument x:TypeArguments="x:Boolean" x:Key="bool_RealEstateIsChecked">[bool_RealEstateIsChecked]</OutArgument>
           <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_DTAuditFindings">[out_DTAuditFindings]</InOutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="VAWA - Invoke Workflow File (AuditFindings\VAWA.xaml)" sap:VirtualizedContainerService.HintSize="388,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_133" UnSafe="False" WorkflowFileName="AuditFindings\VAWA.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+          <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ClassificationResultsData">[in_ClassificationResultsData]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="str_PromptsFolder">[str_PromptsFolder]</InArgument>
+          <InArgument x:TypeArguments="x:Int32" x:Key="int_ICWNoOfAdults">[int_ICWNoOfAdults]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="str_MoveIndate">[str_MoveIndate]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_State">[in_State]</InArgument>
+          <InOutArgument x:TypeArguments="sd:DataTable" x:Key="out_DTAuditFindings">[out_DTAuditFindings]</InOutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Housing Disclosure - Invoke Workflow File (AuditFindings\Housing Disclosure.xaml)" sap:VirtualizedContainerService.HintSize="388,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_134" UnSafe="False" WorkflowFileName="AuditFindings\Housing Disclosure.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+          <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ClassificationResultsData">[in_ClassificationResultsData]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="str_PromptsFolder">[str_PromptsFolder]</InArgument>
+          <InArgument x:TypeArguments="x:Boolean" x:Key="bool_RealEstateIsChecked">[bool_RealEstateIsChecked]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="str_MoveIndate">[str_MoveIndate]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_State">[in_State]</InArgument>
+          <InOutArgument x:TypeArguments="sd:DataTable" x:Key="out_DTAuditFindings">[out_DTAuditFindings]</InOutArgument>
         </ui:InvokeWorkflowFile.Arguments>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
