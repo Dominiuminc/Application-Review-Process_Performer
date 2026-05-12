@@ -5,7 +5,7 @@
     <x:Property Name="io_JSONObject" Type="InOutArgument(njl:JObject)" />
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1020,1741</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>954,1741</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -144,7 +144,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <Assign DisplayName="Assign-assets_disposed" sap:VirtualizedContainerService.HintSize="546,114" sap2010:WorkflowViewState.IdRef="Assign_7">
       <Assign.To>
-        <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("assets_disposed")("has_disposed_assets")]</OutArgument>
+        <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("AssetsDisposed")("HasDisposedAssets")]</OutArgument>
       </Assign.To>
       <Assign.Value>
         <InArgument x:TypeArguments="njl:JToken">[assetTypeCheckList.Data.AssetsDisposed.Value.Replace("☒","").Trim]</InArgument>
@@ -200,7 +200,7 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="If jsonObj(&quot;asset_checklist&quot;) IsNot Nothing Then&#xA;    For Each item In jsonObj(&quot;asset_checklist&quot;) _&#xA;                        .Where(Function(x) x(&quot;asset_type&quot;) IsNot Nothing _&#xA;                            AndAlso x(&quot;asset_type&quot;).ToString() = assetTypeToMatch)&#xA;&#xA;        item(&quot;selected&quot;) = JValue.CreateString(selectedValue).ToString.Replace(&quot;☒&quot;,&quot;&quot;).Trim&#xA;    Next&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="354,188" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="If jsonObj(&quot;AssetChecklist&quot;) IsNot Nothing Then&#xD;&#xA;    For Each item In jsonObj(&quot;AssetChecklist&quot;) _&#xD;&#xA;                        .Where(Function(x) x(&quot;AssetType&quot;) IsNot Nothing _&#xD;&#xA;                            AndAlso x(&quot;AssetType&quot;).ToString() = assetTypeToMatch)&#xD;&#xA;&#xD;&#xA;        item(&quot;HasAssetType&quot;) = JValue.CreateString(selectedValue).ToString.Replace(&quot;☒&quot;,&quot;&quot;).Trim&#xD;&#xA;    Next&#xD;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="354,188" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
                     <ui:InvokeCode.Arguments>
                       <InOutArgument x:TypeArguments="njl:JObject" x:Key="jsonObj">[io_JSONObject]</InOutArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="assetTypeToMatch">[matchedAssetType.Original]</InArgument>
