@@ -515,13 +515,6 @@
         "jObj_Validation&Sequence_3589",
         "jObj_JSON&Sequence_3589",
         "int_SCSignatures&Sequence_3589",
-        "dt_FilteredDocTypeData&Sequence_3590",
-        "jArr_ExtResults&Sequence_3591",
-        "list_ImageFiles&Sequence_3591",
-        "jObj_ExtractionResults&Sequence_3592",
-        "arr_PrintedNames&Sequence_3593",
-        "jObj_Validation&Sequence_3594",
-        "jObj_JSON&Sequence_3594",
         "dt_FilteredDocTypeData&Sequence_3595",
         "arr_AnSCHouseholders&Sequence_3595",
         "jArr_ExtResults&Sequence_3596",
@@ -1623,6 +1616,7 @@
       "Path": "DU/DU_Extraction_ASFA34.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "jArr_Affidavits&Sequence_53",
         "dbl_BestScore&Sequence_56",
         "bool_MatchedAssistanceType&Sequence_56",
         "str_LLMAssistanceTypeName&Sequence_56",
@@ -1651,6 +1645,7 @@
       "Path": "DU/DU_Extraction_ASFA12.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "jArr_Affidavits&Sequence_39",
         "dbl_BestScore&Sequence_43",
         "dbl_BestScore&Sequence_42",
         "str_LLMAssistanceTypeName&Sequence_42",
@@ -1972,6 +1967,29 @@
         "str_ChildSupOnIAQ",
         "dt_ICWIncomeData",
         "bool_RealEstateIsChecked"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "AuditFindings/Affidavit of Student Financial Assistance.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_FilteredDocTypeData&Sequence_3590",
+        "jArr_ExtResults&Sequence_3591",
+        "list_ImageFiles&Sequence_3591",
+        "jObj_ExtractionResults&Sequence_3592",
+        "arr_PrintedNames&Sequence_3593",
+        "jObj_Validation&Sequence_3594",
+        "jObj_JSON&Sequence_3594",
+        "jArr_Affidavits&Sequence_3594"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_ClassificationResultsData",
+        "str_PromptsFolder",
+        "out_DTAuditFindings",
+        "str_MoveIndate"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
