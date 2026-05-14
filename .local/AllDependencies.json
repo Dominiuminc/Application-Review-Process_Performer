@@ -25539,16 +25539,16 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\": {},
+    "C:\\Users\\harika.malyala\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Application-Review-Process_Performer",
       "projectName": "Application-Review-Process_Performer",
-      "projectPath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\Documents\\Git\\Application-Review-Process_Performer\\.local",
-      "packagesPath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\Documents\\Git\\Application-Review-Process_Performer\\.local",
+      "projectPath": "C:\\Users\\harika.malyala\\Documents\\Git\\Application-Review-Process_Performer\\.local",
+      "packagesPath": "C:\\Users\\harika.malyala\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\harika.malyala\\Documents\\Git\\Application-Review-Process_Performer\\.local",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ]
