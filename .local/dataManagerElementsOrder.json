@@ -470,10 +470,10 @@
         "bool_VSDoesNotExist&Sequence_1",
         "bool_OLDoesNotExist&Sequence_1",
         "bool_WNDoesNotExist&Sequence_1",
-        "int_ICWNoOfAdults&Sequence_3924",
-        "arr_ICWAdultHouseholders&Sequence_3924",
-        "bool_RealEstateIsChecked&Sequence_3924",
-        "int_ICWNoLiveInAid&Sequence_3924",
+        "int_ICWNoOfAdults&Sequence_4001",
+        "arr_ICWAdultHouseholders&Sequence_4001",
+        "bool_RealEstateIsChecked&Sequence_4001",
+        "int_ICWNoLiveInAid&Sequence_4001",
         "dt_FilteredDocTypeData&Sequence_3572",
         "jArr_ExtResults&Sequence_3573",
         "list_ImageFiles&Sequence_3573",
@@ -876,11 +876,11 @@
         "arr_IncomeSourcesFromICW&Sequence_1814"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_State",
-        "out_FindingsHaveManualReview",
         "in_ClassificationResultsData",
         "out_DTAuditFindings",
         "in_PDFFolder",
+        "out_FindingsHaveManualReview",
+        "in_State",
         "in_Config"
       ],
       "ConstantsSectionElementsOrder": [],
@@ -1703,7 +1703,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "DU/DU_Extraction_CZI.xaml",
+      "Path": "DU/DU_Extraction_CZI_old.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "lRes_File&Sequence_2",
@@ -1730,6 +1730,7 @@
       "Path": "DU/DU_Extraction_CZI-SecA.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "jArr_Certifications&Sequence_3",
         "str_DUName&Sequence_1",
         "str_LLMName&Sequence_1",
         "matchedNameResults&Sequence_1",
@@ -1756,6 +1757,7 @@
       "Path": "DU/DU_Extraction_CZI-SecB.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "jArr_Certifications&Sequence_3",
         "str_DUName&Sequence_1",
         "str_LLMName&Sequence_1",
         "matchedNameResults&Sequence_1",
@@ -1770,8 +1772,8 @@
         "dbl_BestScore&Sequence_6"
       ],
       "ArgumentsSectionElementsOrder": [
-        "io_jArrDUResults",
         "in_ArrNames",
+        "io_jArrDUResults",
         "in_Config",
         "in_ClassifiedDocument",
         "in_ArrPrintedNames"
@@ -1990,6 +1992,118 @@
         "str_PromptsFolder",
         "out_DTAuditFindings",
         "str_MoveIndate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "AuditFindings/Certification of Zero Income.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_FilteredDocTypeData&Sequence_3999",
+        "jArr_ExtResults&Sequence_4000",
+        "list_ImageFiles&Sequence_4000",
+        "jObj_ExtractionResults&Sequence_4001",
+        "arr_PrintedNames&Sequence_4002",
+        "arr_Names&Sequence_4002",
+        "jArr_Certifications&Sequence_4025",
+        "jObj_Validation&Sequence_4003",
+        "jObj_JSON&Sequence_4003",
+        "bool_NAChecked&Sequence_4003"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_ClassificationResultsData",
+        "str_PromptsFolder",
+        "out_DTAuditFindings",
+        "str_MoveIndate"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "AuditFindings/Application Summary - Copy.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_FilteredASData&Sequence_3552",
+        "int_ApplicationSummarySignatures&Sequence_3552",
+        "jArr_ExtResults&Sequence_3553",
+        "list_ImageFiles&Sequence_3553",
+        "jObj_ExtractionResults&Sequence_3554",
+        "jObj_JSON&Sequence_3555",
+        "jObj_Validation&Sequence_3555",
+        "bool_SgnExists&Sequence_3555",
+        "list_MatchedResults&Sequence_3556",
+        "bool_NameExists&Sequence_3558",
+        "bool_MoveInDateExists&Sequence_3558",
+        "bool_UnitExists&Sequence_3558",
+        "bool_SpecialNeedsExist&Sequence_3558",
+        "bool_RelToHeadExists&Sequence_3558",
+        "bool_AnticipatedQstnChecked&Sequence_3558",
+        "bool_TempAbsMembExists&Sequence_3558",
+        "bool_FederalTaxExists&Sequence_3558",
+        "str_TaxRefund&Sequence_3557"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_ClassificationResultsData",
+        "out_DTAuditFindings",
+        "str_PromptsFolder",
+        "arr_AS_MemNames",
+        "str_MoveIndate",
+        "str_ICWCertificationDate",
+        "int_ICWNoOfAdults",
+        "bool_IsPropertyNameSafford",
+        "dt_TaxRefund",
+        "arr_ICWMemberNames",
+        "in_State"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DU/DU_Classification - Copy.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "arr_Files&Sequence_1",
+        "lRes_File&Sequence_2",
+        "classifiedDocument&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ArrImages",
+        "in_Config",
+        "out_DtDUValues"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DU/DU_Extraction_AS - Copy.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "applicationSummaryDocumentData&Sequence_38"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "classifiedDocument",
+        "in_Config",
+        "out_DtDUValues"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DU/DU_Extraction_CZI.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "classifiedDocument&Sequence_2",
+        "lRes_File&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ArrNames",
+        "in_ArrPrintedNames",
+        "io_jArrDUResults",
+        "in_Config",
+        "in_ArrImages"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

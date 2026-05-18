@@ -126,6 +126,15 @@
         "assemblyName": "ExtendedExtractionRe.qR2iV1b39XM1H6YK92xH9m12"
       }
     },
+    "ExtendedExtractionRe.j8Mm126ZmGJ1iLEoF1zdbbf4": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10CZICertificationOfZeroIncomeSectionAV8.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10CZICertificationOfZeroIncomeSectionAV8",
+        "hash": "MTQ5NzM0Mzk0OQ",
+        "assemblyName": "ExtendedExtractionRe.j8Mm126ZmGJ1iLEoF1zdbbf4"
+      }
+    },
     "ExtendedExtractionRe.eGBKjj6F8C1FvSj02yItBa": {
       "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEAssetChecklistV7.Bundle",
       "providerName": "CustomEntities",
@@ -207,13 +216,13 @@
         "assemblyName": "ExtendedExtractionRe.Lp3rX3ysHJJ1Xj7wU4uGjmX2"
       }
     },
-    "ExtendedExtractionRe.j8Mm126ZmGJ1iLEoF1zdbbf4": {
-      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10CZICertificationOfZeroIncomeSectionAV8.Bundle",
+    "ExtendedExtractionRe.6C5Eb2DzKpH1bLvzP2cQNl2": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10SCNESelfCertificationOfNonEmploymentV15.Bundle",
       "providerName": "CustomEntities",
       "key": {
-        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10CZICertificationOfZeroIncomeSectionAV8",
-        "hash": "MTQ5NzM0Mzk0OQ",
-        "assemblyName": "ExtendedExtractionRe.j8Mm126ZmGJ1iLEoF1zdbbf4"
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10SCNESelfCertificationOfNonEmploymentV15",
+        "hash": "OTEwNzAxMzUw",
+        "assemblyName": "ExtendedExtractionRe.6C5Eb2DzKpH1bLvzP2cQNl2"
       }
     }
   }
