@@ -171,6 +171,15 @@
         "assemblyName": "ExtendedExtractionRe.bIcbHuelcK1Ug3v72EmKwn2"
       }
     },
+    "ExtendedExtractionRe.WFa67YEsC1yxH8R4hvYHo1": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonDUModelsInitialHousingHistoryDisclosureV1.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonDUModelsInitialHousingHistoryDisclosureV1",
+        "hash": "LTEyMzkxMDg1OTE",
+        "assemblyName": "ExtendedExtractionRe.WFa67YEsC1yxH8R4hvYHo1"
+      }
+    },
     "ExtendedExtractionRe.w96ku2SkQqQ1Ks8st32ffXY": {
       "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEMemberInformationDocumentV7.Bundle",
       "providerName": "CustomEntities",
@@ -216,6 +225,15 @@
         "assemblyName": "ExtendedExtractionRe.Lp3rX3ysHJJ1Xj7wU4uGjmX2"
       }
     },
+    "ExtendedExtractionRe.6goFp1HGebK1yfzBK39iwIn2": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonRCandCSEICertificationOfSelfEmploymentIncomeV2.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonRCandCSEICertificationOfSelfEmploymentIncomeV2",
+        "hash": "MjA0Njc0MTk5NQ",
+        "assemblyName": "ExtendedExtractionRe.6goFp1HGebK1yfzBK39iwIn2"
+      }
+    },
     "ExtendedExtractionRe.6C5Eb2DzKpH1bLvzP2cQNl2": {
       "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10SCNESelfCertificationOfNonEmploymentV15.Bundle",
       "providerName": "CustomEntities",
@@ -223,6 +241,15 @@
         "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10SCNESelfCertificationOfNonEmploymentV15",
         "hash": "OTEwNzAxMzUw",
         "assemblyName": "ExtendedExtractionRe.6C5Eb2DzKpH1bLvzP2cQNl2"
+      }
+    },
+    "ExtendedExtractionRe.Oxx7G4zi3CF1vYIIV3fwhra4": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonDUModelsInitialApplicationSummaryV1.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonDUModelsInitialApplicationSummaryV1",
+        "hash": "MTgyNjQyMjcwNw",
+        "assemblyName": "ExtendedExtractionRe.Oxx7G4zi3CF1vYIIV3fwhra4"
       }
     }
   }

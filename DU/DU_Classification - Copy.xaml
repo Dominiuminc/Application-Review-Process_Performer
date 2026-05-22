@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="DU_Classification" this:DU_Classification.in_ArrImages="[Directory.GetFiles(&quot;C:\Users\harika.malyala\Documents\AZApplicationReview\PDFs\Unit 538\DU_SC&quot;)]" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="DU_Classification" this:DU_Classification.in_ArrImages="[Directory.GetFiles(&quot;C:\Users\harika.malyala\Documents\AZApplicationReview\PDFs\Unit 538\DU_SC&quot;)]" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_ArrImages" Type="InArgument(s:String[])" />
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>2033,2207</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1393,2449</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DU_Classification_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -50,9 +50,7 @@
       <x:String>System.Xml.Serialization</x:String>
       <x:String>UiPath.Platform</x:String>
       <x:String>UiPath.DocumentUnderstanding.ML.Activities</x:String>
-      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.IAQDU1001AssetChecklistV1.Bundle</x:String>
       <x:String>System.ComponentModel</x:String>
-      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.IAQDU1001IncomeChecklistV1.Bundle</x:String>
       <x:String>Newtonsoft.Json.Linq</x:String>
       <x:String>Newtonsoft.Json</x:String>
       <x:String>System.Dynamic</x:String>
@@ -60,17 +58,9 @@
       <x:String>AshlingPartners.UiPath.StringMatching.Activities.Models</x:String>
       <x:String>AshlingPartners.UiPath.StringMatching.Activities.StringMatching</x:String>
       <x:String>UiPath.DocumentUnderstanding.Contracts</x:String>
-      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCApplicationSummaryV4.Bundle</x:String>
-      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCAssetChecklistV4.Bundle</x:String>
-      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCIncomeChecklistV4.Bundle</x:String>
       <x:String>AshlingPartners.UiPath.StringMatching.Activities</x:String>
       <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
-      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCAssetSelfCertificationV4.Bundle</x:String>
-      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCAssetSelfCertificationWorksheetV4.Bundle</x:String>
-      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUSCStudentCertificationV5.Bundle</x:String>
       <x:String>System.Activities.Runtime.Collections</x:String>
-      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEStudentCertificationV7.Bundle</x:String>
-      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEVerificationOfEmploymentV7.Bundle</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -163,9 +153,12 @@
       <AssemblyReference>ExtendedExtractionRe.rO5Qc4l572E1Kkf222vo2mj3</AssemblyReference>
       <AssemblyReference>ExtendedExtractionRe.mVMKs36IorO1Jkmxj2MGdYo2</AssemblyReference>
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>ExtendedExtractionRe.6goFp1HGebK1yfzBK39iwIn2</AssemblyReference>
+      <AssemblyReference>ExtendedExtractionRe.WFa67YEsC1yxH8R4hvYHo1</AssemblyReference>
+      <AssemblyReference>ExtendedExtractionRe.Oxx7G4zi3CF1vYIIV3fwhra4</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DU_Classfication" sap:VirtualizedContainerService.HintSize="550,2142" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DU_Classfication" sap:VirtualizedContainerService.HintSize="646,2264" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="arr_Files" />
     </Sequence.Variables>
@@ -174,8 +167,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message-Started" sap:VirtualizedContainerService.HintSize="488,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;DU_Classfication.xaml is Started&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,1544" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message-Started" sap:VirtualizedContainerService.HintSize="584,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;DU_Classfication.xaml is Started&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="584,1839" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -183,13 +176,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentFile" sap:VirtualizedContainerService.HintSize="450,1284" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_ArrImages]">
+        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentFile" sap:VirtualizedContainerService.HintSize="546,1579" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_ArrImages]">
           <ui:ForEach.Body>
             <ActivityAction x:TypeArguments="x:String">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:String" Name="currentFile" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,1170" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,1465" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="upr:ILocalResource" Name="lRes_File" />
                   <Variable x:TypeArguments="uisad:DocumentData" Name="classifiedDocument" />
@@ -199,9 +192,9 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log file processing update" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[string.Format(&quot;Processing file: {0}&quot;, currentFile)]" />
-                <ui:PathExists Exists="{x:Null}" DisplayName="CurrentFile Exists" sap:VirtualizedContainerService.HintSize="354,172" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[currentFile]" PathType="File" Resource="[lRes_File]" />
-                <p:ClassifyDocument ApiKey="{x:Null}" ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ClassificationResults="[classifiedDocument]" ClassifierId="db7a49f3-160c-f111-a69a-7c1e5216ce8b" ClassifierName="DU_Extraction1-0_AS_IAQ_ASC_SC_HHS_MID_VOE_classifier_v7" DisplayName="Classify Document" Endpoint="https://cloud.uipath.com/a6e81ae5-13a7-4d1d-9b35-86ac86d911ce/4af39ed3-b30e-48f2-b551-f1e60b4acb75/du_/api/framework/projects/93ac0424-edf6-f011-8d4d-7c1e5269e216/classifiers/db7a49f3-160c-f111-a69a-7c1e5216ce8b/classification/start?api-version=1.1" FileInput="[lRes_File]" sap:VirtualizedContainerService.HintSize="354,339" sap2010:WorkflowViewState.IdRef="ClassifyDocument_2" MinimumConfidence="50" ProjectId="93ac0424-edf6-f011-8d4d-7c1e5269e216" ProjectName="Arizona Document Understanding" ProjectVersionName="DU_Extraction1-0_AS_IAQ_ASC_SC_HHS_MID_VOE" ProjectVersionNumber="7" RuntimeAssetPath="Compliance/Application Review Process_AZ/DU_AppCredentials" RuntimeTenantUrl="[in_Config(&quot;DU_TenantURL&quot;).ToString]" TimeoutInSeconds="3600">
+                <ui:LogMessage DisplayName="Log file processing update" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[string.Format(&quot;Processing file: {0}&quot;, currentFile)]" />
+                <ui:PathExists Exists="{x:Null}" DisplayName="CurrentFile Exists" sap:VirtualizedContainerService.HintSize="450,172" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[currentFile]" PathType="File" Resource="[lRes_File]" />
+                <p:ClassifyDocument ApiKey="{x:Null}" ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ClassificationResults="[classifiedDocument]" ClassifierId="67808d7d-3e4e-f111-8ef3-000d3a1a5339" ClassifierName="CommonDUModelsInitial_classifier_v1" DisplayName="Classify Document" Endpoint="https://cloud.uipath.com/a6e81ae5-13a7-4d1d-9b35-86ac86d911ce/4af39ed3-b30e-48f2-b551-f1e60b4acb75/du_/api/framework/projects/2fdd4fa5-6b45-f111-8ef3-6045bda78650/classifiers/67808d7d-3e4e-f111-8ef3-000d3a1a5339/classification/start?api-version=1.1" FileInput="[lRes_File]" sap:VirtualizedContainerService.HintSize="450,339" sap2010:WorkflowViewState.IdRef="ClassifyDocument_3" MinimumConfidence="50" ProjectId="2fdd4fa5-6b45-f111-8ef3-6045bda78650" ProjectName="Common Document Understanding" ProjectVersionName="CommonDUModelsInitial" ProjectVersionNumber="1" RuntimeAssetPath="Compliance/Application Review Process_AZ/DU_AppCredentials" RuntimeTenantUrl="[in_Config(&quot;DU_TenantURL&quot;).ToString]" TimeoutInSeconds="3600">
                   <p:ClassifyDocument.GptPromptWithVariables>
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                   </p:ClassifyDocument.GptPromptWithVariables>
@@ -211,45 +204,34 @@
                     </InArgument>
                   </p:ClassifyDocument.ProjectTag>
                 </p:ClassifyDocument>
-                <ui:LogMessage DisplayName="Log document type" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[string.Format(&quot;Classified {0} as {1}&quot;, currentFile, classifiedDocument.DocumentType.DisplayName)]" />
-                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-                  <ui:CommentOut.Body>
-                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="559,249" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <ui:LogMessage DisplayName="Log document type" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[string.Format(&quot;Classified {0} as {1}&quot;, currentFile, classifiedDocument.DocumentType.DisplayName)]" />
+                <If Condition="[classifiedDocument.DocumentType.DisplayName.Equals(&quot;Application Summary&quot;)]" DisplayName="If classifiedDocument is Application Summary" sap:VirtualizedContainerService.HintSize="450,520" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_11">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Switch x:TypeArguments="x:String" DisplayName="Switch-DocumentType" Expression="[classifiedDocument.DocumentType.DisplayName]" sap:VirtualizedContainerService.HintSize="497,161" sap2010:WorkflowViewState.IdRef="Switch`1_2">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" x:Key="Application Summary" DisplayName="DU_Extraction_AS - Invoke Workflow" sap:VirtualizedContainerService.HintSize="334,172" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="DU\DU_Extraction_AS.xaml">
-                          <ui:InvokeWorkflowFile.Arguments>
-                            <InArgument x:TypeArguments="uisad:DocumentData" x:Key="classifiedDocument">[classifiedDocument]</InArgument>
-                            <InOutArgument x:TypeArguments="njl:JObject" x:Key="io_JSONObject">[io_JSONObject]</InOutArgument>
-                          </ui:InvokeWorkflowFile.Arguments>
-                        </ui:InvokeWorkflowFile>
-                      </Switch>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="DU_Extraction_AS - Copy - Invoke Workflow File (DU\DU_Extraction_AS - Copy.xaml)" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="DU\DU_Extraction_AS - Copy.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="uisad:DocumentData" x:Key="classifiedDocument">[classifiedDocument]</InArgument>
+                          <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+                          <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DtDUValues">[out_DtDUValues]</OutArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                      </ui:InvokeWorkflowFile>
                     </Sequence>
-                  </ui:CommentOut.Body>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:CommentOut>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="DU_Extraction_AS - Copy - Invoke Workflow File (DU\DU_Extraction_AS - Copy.xaml)" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="DU\DU_Extraction_AS - Copy.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="uisad:DocumentData" x:Key="classifiedDocument">[classifiedDocument]</InArgument>
-                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config" />
-                    <InArgument x:TypeArguments="sd:DataTable" x:Key="out_DtDUValues" />
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
               </Sequence>
             </ActivityAction>
           </ui:ForEach.Body>
@@ -262,7 +244,7 @@
         </ui:ForEach>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="454,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="550,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -286,7 +268,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message - Extraction" sap:VirtualizedContainerService.HintSize="488,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;LLM JSON as: &quot;]" />
-    <ui:LogMessage DisplayName="Log Message-Ended" sap:VirtualizedContainerService.HintSize="488,164" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;DU_Classfication.xaml is Completed&quot;]" />
+    <ui:LogMessage DisplayName="Log Message-Ended" sap:VirtualizedContainerService.HintSize="584,164" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;DU_Classfication.xaml is Completed&quot;]" />
   </Sequence>
 </Activity>
