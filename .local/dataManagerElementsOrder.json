@@ -481,6 +481,7 @@
         "arr_RDCPayPeriodStartDate&Sequence_1",
         "arr_RDCPayPeriodEndDate&Sequence_1",
         "arr_RDCHighesteIncomeValue&Sequence_1",
+        "dt_IncomeDocDetails&Sequence_1",
         "int_ICWNoOfAdults&Sequence_4001",
         "arr_ICWAdultHouseholders&Sequence_4001",
         "bool_RealEstateIsChecked&Sequence_4001",
@@ -568,7 +569,6 @@
         "arr_EDCHighestCalculatedincomeValue&Sequence_3945",
         "arr_EDCTotalGrossPay&Sequence_3945",
         "dt_EDCPayCategories&Sequence_3945",
-        "dt_IncomeDocDetails&Sequence_3945",
         "int_EDCTotalPSListed&Sequence_3945",
         "dt_FilteredDocTypeData&Sequence_4028",
         "bool_SumOfEarningsMatchFinding&Sequence_4028",
@@ -2070,6 +2070,7 @@
         "bool_DoSameIncomeDocsExists&Sequence_3169"
       ],
       "ArgumentsSectionElementsOrder": [
+        "io_DtIncomeDetails",
         "in_ArrHighestCalculatedIncomeValue",
         "str_RDCHighestCalculatedIncomeValue",
         "in_RDCExists",
@@ -2080,7 +2081,6 @@
         "str_RDCHouseholdMember",
         "str_RDCPayScheduleOption",
         "dt_RDCPaystubs",
-        "out_DtIncomeDetails",
         "in_Config",
         "in_ClassificationResultsData",
         "str_PromptsFolder",
@@ -2343,12 +2343,12 @@
       "Path": "AuditFindings/Offer Letter.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "dt_IncomeDocDetails&Sequence_4156",
-        "str_Date&Sequence_4156",
-        "str_EmployeeName&Sequence_4156",
-        "str_Frequency&Sequence_4156",
-        "str_Employer&Sequence_4156",
-        "jArr_Letters&Sequence_4148",
+        "str_Date&Sequence_4148",
+        "str_EmployeeName&Sequence_4148",
+        "str_Frequency&Sequence_4148",
+        "str_Employer&Sequence_4148",
+        "dt_IncomeDocDetails&Sequence_4155",
+        "bool_PerYearEarningsChecked&Sequence_4146",
         "jObj_JSON&Sequence_4148",
         "dt_FilteredDocTypeData&Sequence_4097",
         "jArr_ExtResults&Sequence_4098",
@@ -2366,6 +2366,11 @@
         "bool_DoSameIncomeDocsExists&Sequence_4105"
       ],
       "ArgumentsSectionElementsOrder": [
+        "io_IncomeDocDetails",
+        "dt_RDCPayCategories",
+        "arr_RDCPayScheduleOption",
+        "arr_RDCHouseholdMember",
+        "in_RDCCount",
         "bool_RDCExists",
         "in_Config",
         "in_ClassificationResultsData",
@@ -2405,6 +2410,38 @@
         "str_MoveIndate",
         "in_State",
         "out_DTAuditFindings"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "AuditFindings/Member Information Document.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_FilteredMIDData&Sequence_3559",
+        "jArr_ExtResults&Sequence_3560",
+        "int_MIDCount&Sequence_3560",
+        "list_ImageFiles&Sequence_3560",
+        "jObj_ExtractionResults&Sequence_3561",
+        "jObj_Validation&Sequence_3562",
+        "jObj_JSON&Sequence_3562",
+        "date_DOB&Sequence_3952",
+        "str_DobDate&Sequence_3563",
+        "bool_IsAdult&Sequence_3563"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_ClassificationResultsData",
+        "str_PromptsFolder",
+        "arr_MIDDOBs",
+        "arr_MIDSSNs",
+        "int_ICWNoLiveInAid",
+        "arr_ICWMemberNames",
+        "int_ICWUnbornChildCount",
+        "out_DTAuditFindings",
+        "str_MIDSSN",
+        "str_MoveIndate",
+        "in_State"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

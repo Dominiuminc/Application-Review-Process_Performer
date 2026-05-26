@@ -10,7 +10,6 @@
     <x:Property Name="arr_ICWMemberNames" Type="InArgument(s:String[])" />
     <x:Property Name="bool_PerYearEarningsNotPopulated" Type="InArgument(x:Boolean)" />
     <x:Property Name="dt_ICWIncomeData" Type="InArgument(sd:DataTable)" />
-    <x:Property Name="out_DtIncomeDetails" Type="OutArgument(sd:DataTable)" />
     <x:Property Name="dt_RDCPaystubs" Type="InArgument(sd:DataTable)" />
     <x:Property Name="str_RDCPayScheduleOption" Type="InArgument(x:String)" />
     <x:Property Name="str_RDCHouseholdMember" Type="InArgument(x:String)" />
@@ -21,6 +20,7 @@
     <x:Property Name="in_RDCExists" Type="InArgument(x:Boolean)" />
     <x:Property Name="str_RDCHighestCalculatedIncomeValue" Type="InArgument(x:String)" />
     <x:Property Name="in_ArrHighestCalculatedIncomeValue" Type="InArgument(s:String[])" />
+    <x:Property Name="io_DtIncomeDetails" Type="InOutArgument(sd:DataTable)" />
   </x:Members>
   <sap:VirtualizedContainerService.HintSize>2033,20832</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
@@ -412,7 +412,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:MultipleAssign>
-                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;WN&quot;,str_EmployeeName,str_Employer}]" DataTable="[out_DtIncomeDetails]" DisplayName="AddDataRow-IncomeDocdetails3" sap:VirtualizedContainerService.HintSize="1092,218" sap2010:WorkflowViewState.IdRef="AddDataRow_891">
+                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;WN&quot;,str_EmployeeName,str_Employer}]" DataTable="[io_DtIncomeDetails]" DisplayName="AddDataRow-IncomeDocdetails3" sap:VirtualizedContainerService.HintSize="1092,218" sap2010:WorkflowViewState.IdRef="AddDataRow_891">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -896,7 +896,7 @@
                                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <If Condition="[dt_RDCPaystubs.AsEnumerable().Any(Function(row) _&#xD;&#xA;    CDate(row(&quot;EndDate&quot;)).ToString(&quot;yyyy-MM-dd&quot;) =&#xD;&#xA;    CDate(CurrentRow(&quot;PeriodEnding&quot;).ToString).ToString(&quot;yyyy-MM-dd&quot;))]" DisplayName="If-PeriodEndingMatch" sap:VirtualizedContainerService.HintSize="546,1107" sap2010:WorkflowViewState.IdRef="If_486">
+                                                            <If Condition="[dt_RDCPaystubs.AsEnumerable().Any(Function(row) _&#xA;    CDate(row(&quot;EndDate&quot;)).ToString(&quot;yyyy-MM-dd&quot;) =&#xA;    CDate(CurrentRow(&quot;PeriodEnding&quot;).ToString).ToString(&quot;yyyy-MM-dd&quot;))]" DisplayName="If-PeriodEndingMatch" sap:VirtualizedContainerService.HintSize="546,1107" sap2010:WorkflowViewState.IdRef="If_486">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -911,7 +911,7 @@
                                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                  <If Condition="[dt_RDCPaystubs.AsEnumerable().&#xD;&#xA;    Any(Function(row) CDate(row(&quot;EndDate&quot;)).ToString(&quot;yyyy-MM-dd&quot;) =&#xD;&#xA;    CDate(CurrentRow(&quot;PeriodEnding&quot;).ToString).ToString(&quot;yyyy-MM-dd&quot;) AndAlso&#xD;&#xA;                       Convert.ToDecimal(row(&quot;GrossPay&quot;)) = CType(CurrentRow(&quot;GrossEarnings&quot;), Decimal))]" DisplayName="If-MostRecentGrossPayMatches" sap:VirtualizedContainerService.HintSize="450,561" sap2010:WorkflowViewState.IdRef="If_485">
+                                                                  <If Condition="[dt_RDCPaystubs.AsEnumerable().&#xA;    Any(Function(row) CDate(row(&quot;EndDate&quot;)).ToString(&quot;yyyy-MM-dd&quot;) =&#xA;    CDate(CurrentRow(&quot;PeriodEnding&quot;).ToString).ToString(&quot;yyyy-MM-dd&quot;) AndAlso&#xA;                       Convert.ToDecimal(row(&quot;GrossPay&quot;)) = CType(CurrentRow(&quot;GrossEarnings&quot;), Decimal))]" DisplayName="If-MostRecentGrossPayMatches" sap:VirtualizedContainerService.HintSize="450,561" sap2010:WorkflowViewState.IdRef="If_485">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1254,7 +1254,7 @@
                                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <If Condition="[dt_RDCPaystubs.AsEnumerable().Any(Function(row) _&#xD;&#xA;    CDate(row(&quot;EndDate&quot;)).ToString(&quot;yyyy-MM-dd&quot;) =&#xD;&#xA;    CDate(CurrentRow(&quot;PeriodEnding&quot;).ToString).ToString(&quot;yyyy-MM-dd&quot;))]" DisplayName="If-PeriodEndingMatch" sap:VirtualizedContainerService.HintSize="546,1107" sap2010:WorkflowViewState.IdRef="If_785">
+                                                            <If Condition="[dt_RDCPaystubs.AsEnumerable().Any(Function(row) _&#xA;    CDate(row(&quot;EndDate&quot;)).ToString(&quot;yyyy-MM-dd&quot;) =&#xA;    CDate(CurrentRow(&quot;PeriodEnding&quot;).ToString).ToString(&quot;yyyy-MM-dd&quot;))]" DisplayName="If-PeriodEndingMatch" sap:VirtualizedContainerService.HintSize="546,1107" sap2010:WorkflowViewState.IdRef="If_785">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1269,7 +1269,7 @@
                                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                  <If Condition="[dt_RDCPaystubs.AsEnumerable().&#xD;&#xA;    Any(Function(row) CDate(row(&quot;EndDate&quot;)).ToString(&quot;yyyy-MM-dd&quot;) =&#xD;&#xA;    CDate(CurrentRow(&quot;PeriodEnding&quot;).ToString).ToString(&quot;yyyy-MM-dd&quot;) AndAlso&#xD;&#xA;                       Convert.ToDecimal(row(&quot;GrossPay&quot;)) = CType(CurrentRow(&quot;GrossEarnings&quot;), Decimal))]" DisplayName="If-MostRecentGrossPayMatches" sap:VirtualizedContainerService.HintSize="450,561" sap2010:WorkflowViewState.IdRef="If_784">
+                                                                  <If Condition="[dt_RDCPaystubs.AsEnumerable().&#xA;    Any(Function(row) CDate(row(&quot;EndDate&quot;)).ToString(&quot;yyyy-MM-dd&quot;) =&#xA;    CDate(CurrentRow(&quot;PeriodEnding&quot;).ToString).ToString(&quot;yyyy-MM-dd&quot;) AndAlso&#xA;                       Convert.ToDecimal(row(&quot;GrossPay&quot;)) = CType(CurrentRow(&quot;GrossEarnings&quot;), Decimal))]" DisplayName="If-MostRecentGrossPayMatches" sap:VirtualizedContainerService.HintSize="450,561" sap2010:WorkflowViewState.IdRef="If_784">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1496,7 +1496,7 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:FilterDataTable DataTable="[out_DtIncomeDetails]" DisplayName="Filter Data Table-PS" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="450,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_57" OutputDataTable="[dt_PSIncomeDocDetails]" SelectColumnsMode="Remove">
+                  <ui:FilterDataTable DataTable="[io_DtIncomeDetails]" DisplayName="Filter Data Table-PS" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="450,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_57" OutputDataTable="[dt_PSIncomeDocDetails]" SelectColumnsMode="Remove">
                     <ui:FilterDataTable.Filters>
                       <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                         <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
@@ -1520,7 +1520,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:FilterDataTable>
-                  <ui:FilterDataTable DataTable="[out_DtIncomeDetails]" DisplayName="Filter Data Table-VOE" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="450,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_58" OutputDataTable="[dt_VOEIncomeDocDetails]" SelectColumnsMode="Remove">
+                  <ui:FilterDataTable DataTable="[io_DtIncomeDetails]" DisplayName="Filter Data Table-VOE" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="450,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_58" OutputDataTable="[dt_VOEIncomeDocDetails]" SelectColumnsMode="Remove">
                     <ui:FilterDataTable.Filters>
                       <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                         <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
@@ -1544,7 +1544,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:FilterDataTable>
-                  <ui:FilterDataTable DataTable="[out_DtIncomeDetails]" DisplayName="Filter Data Table-OL" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="450,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_59" OutputDataTable="[dt_OLIncomeDocDetails]" SelectColumnsMode="Remove">
+                  <ui:FilterDataTable DataTable="[io_DtIncomeDetails]" DisplayName="Filter Data Table-OL" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="450,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_59" OutputDataTable="[dt_OLIncomeDocDetails]" SelectColumnsMode="Remove">
                     <ui:FilterDataTable.Filters>
                       <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                         <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
@@ -1568,7 +1568,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:FilterDataTable>
-                  <ui:FilterDataTable DataTable="[out_DtIncomeDetails]" DisplayName="Filter Data Table-WN" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="450,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_60" OutputDataTable="[dt_WNIncomeDocDetails]" SelectColumnsMode="Remove">
+                  <ui:FilterDataTable DataTable="[io_DtIncomeDetails]" DisplayName="Filter Data Table-WN" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="450,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_60" OutputDataTable="[dt_WNIncomeDocDetails]" SelectColumnsMode="Remove">
                     <ui:FilterDataTable.Filters>
                       <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                         <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
