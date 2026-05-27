@@ -10,7 +10,7 @@
     <x:Property Name="arr_1040Names" Type="OutArgument(s:String[])" />
     <x:Property Name="arr_1040Amounts" Type="OutArgument(s:String[])" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>954,1646</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>998,1819</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -142,7 +142,7 @@
       <AssemblyReference>ExtendedExtractionRe.RpJgiTa1UQ1KoVHC3krguS2</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="1040" sap:VirtualizedContainerService.HintSize="699,1581" sap2010:WorkflowViewState.IdRef="Sequence_4554">
+  <Sequence DisplayName="1040" sap:VirtualizedContainerService.HintSize="699,1754" sap2010:WorkflowViewState.IdRef="Sequence_4554">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_FilteredDocTypeData" />
       <Variable x:TypeArguments="x:String" Name="str_1040DocName" />
@@ -154,6 +154,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="637,173" sap2010:WorkflowViewState.IdRef="LogMessage_162" Message="[&quot;Started checking findings for &quot;+in_Config(&quot;1040&quot;).ToString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
     <ui:FilterDataTable DataTable="[in_ClassificationResultsData]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="637,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_92" OutputDataTable="[dt_FilteredDocTypeData]" SelectColumnsMode="Remove">
       <ui:FilterDataTable.Filters>
         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
