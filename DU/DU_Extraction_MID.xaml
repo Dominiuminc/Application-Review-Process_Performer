@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1125,10703</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1125,10709</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DU_Extraction_MID_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -137,7 +137,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="DU_Extraction_MID" sap:VirtualizedContainerService.HintSize="1135,10638" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DU_Extraction_MID" sap:VirtualizedContainerService.HintSize="1135,10644" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Default="[New String() {}]" Name="arr_MIDNames" />
       <Variable x:TypeArguments="x:String" Name="str_DUName" />
@@ -172,13 +172,13 @@
         </ActivityAction>
       </ui:ForEach.Body>
     </ui:ForEach>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentFile" sap:VirtualizedContainerService.HintSize="1073,9701" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_ArrImages]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentFile" sap:VirtualizedContainerService.HintSize="1073,9707" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_ArrImages]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="currentFile" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1039,9555" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1039,9561" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="upr:ILocalResource" Name="lRes_File" />
               <Variable x:TypeArguments="uisad:DocumentData" Name="classifiedDocument" />
@@ -207,7 +207,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:PathExists>
-            <p:ClassifyDocument ApiKey="{x:Null}" ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ClassificationResults="[classifiedDocument]" ClassifierId="db7a49f3-160c-f111-a69a-7c1e5216ce8b" ClassifierName="DU_Extraction1-0_AS_IAQ_ASC_SC_HHS_MID_VOE_classifier_v7" DisplayName="Classify Document" Endpoint="https://cloud.uipath.com/a6e81ae5-13a7-4d1d-9b35-86ac86d911ce/4af39ed3-b30e-48f2-b551-f1e60b4acb75/du_/api/framework/projects/93ac0424-edf6-f011-8d4d-7c1e5269e216/classifiers/db7a49f3-160c-f111-a69a-7c1e5216ce8b/classification/start?api-version=1.1" FileInput="[lRes_File]" sap:VirtualizedContainerService.HintSize="977,339" sap2010:WorkflowViewState.IdRef="ClassifyDocument_1" MinimumConfidence="50" ProjectId="93ac0424-edf6-f011-8d4d-7c1e5269e216" ProjectName="Arizona Document Understanding" ProjectVersionName="DU_Extraction1-0_AS_IAQ_ASC_SC_HHS_MID_VOE" ProjectVersionNumber="7" RuntimeAssetPath="Compliance/Application Review Process_AZ/DU_AppCredentials" RuntimeTenantUrl="[in_Config(&quot;DU_TenantURL&quot;).ToString]" TimeoutInSeconds="3600">
+            <p:ClassifyDocument ApiKey="{x:Null}" ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ClassificationResults="[classifiedDocument]" ClassifierId="db7a49f3-160c-f111-a69a-7c1e5216ce8b" ClassifierName="DU_Extraction1-0_AS_IAQ_ASC_SC_HHS_MID_VOE_classifier_v7" DisplayName="Classify Document" Endpoint="https://cloud.uipath.com/a6e81ae5-13a7-4d1d-9b35-86ac86d911ce/4af39ed3-b30e-48f2-b551-f1e60b4acb75/du_/api/framework/projects/93ac0424-edf6-f011-8d4d-7c1e5269e216/classifiers/db7a49f3-160c-f111-a69a-7c1e5216ce8b/classification/start?api-version=1.1" FileInput="[lRes_File]" sap:VirtualizedContainerService.HintSize="977,345" sap2010:WorkflowViewState.IdRef="ClassifyDocument_1" MinimumConfidence="50" ProjectId="93ac0424-edf6-f011-8d4d-7c1e5269e216" ProjectName="Arizona Document Understanding" ProjectVersionName="DU_Extraction1-0_AS_IAQ_ASC_SC_HHS_MID_VOE" ProjectVersionNumber="7" RuntimeAssetPath="Compliance/Application Review Process_AZ/DU_AppCredentials" RuntimeTenantUrl="[in_Config(&quot;DU_TenantURL&quot;).ToString]" TimeoutInSeconds="3600">
               <p:ClassifyDocument.GptPromptWithVariables>
                 <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
               </p:ClassifyDocument.GptPromptWithVariables>

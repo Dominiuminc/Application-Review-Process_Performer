@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <Activity mc:Ignorable="sap sap2010" x:Class="Certification_Of_Self_Employment_With_Supp_Docs" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
@@ -11,7 +10,7 @@
     <x:Property Name="in_State" Type="InArgument(x:String)" />
     <x:Property Name="io_DTAuditFindings" Type="InOutArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>954,1231</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>912,1191</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -226,7 +225,7 @@
               <OutArgument x:TypeArguments="s:String[]" x:Key="arr_ProfitLossNetIncomes">[arr_ProfitLossNetIncomes]</OutArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Certification Of Self Employment Income - Invoke Workflow File (Certification Of Self Employment Income.xaml)" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_174" UnSafe="False" WorkflowFileName="AuditFindings\Certification Of Self Employment Income.xaml">
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Certification Of Self Employment Income - Invoke Workflow File (Certification Of Self Employment Income.xaml)" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_175" UnSafe="False" WorkflowFileName="AuditFindings\Certification Of Self Employment Income.xaml">
             <ui:InvokeWorkflowFile.Arguments>
               <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
               <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ClassificationResultsData">[in_ClassificationResultsData]</InArgument>
