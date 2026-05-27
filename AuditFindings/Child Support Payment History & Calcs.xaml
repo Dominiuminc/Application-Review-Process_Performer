@@ -1,16 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <Activity mc:Ignorable="sap sap2010" x:Class="Child_Support_Payment_History___Calcs" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_ClassificationResultsData" Type="InArgument(sd:DataTable)" />
-    <x:Property Name="out_DTAuditFindings" Type="OutArgument(sd:DataTable)" />
     <x:Property Name="str_PromptsFolder" Type="InArgument(x:String)" />
     <x:Property Name="str_ChildSupOnIAQ" Type="InArgument(x:String)" />
     <x:Property Name="dt_ICWIncomeData" Type="InArgument(sd:DataTable)" />
     <x:Property Name="arr_ICWMemberNames" Type="InArgument(s:String[])" />
     <x:Property Name="str_MoveIndate" Type="InArgument(x:String)" />
+    <x:Property Name="io_DTAuditFindings" Type="InOutArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>954,688</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>912,837</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -53,6 +52,7 @@
       <x:String>UiPath.Core</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -147,13 +147,13 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Child Support Payment History &amp; Calcs" sap:VirtualizedContainerService.HintSize="612,532" sap2010:WorkflowViewState.IdRef="Sequence_4840">
+  <Sequence DisplayName="Child Support Payment History &amp; Calcs" sap:VirtualizedContainerService.HintSize="516,772" sap2010:WorkflowViewState.IdRef="Sequence_4840">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch-ChildSupportPaymentHistory" sap:VirtualizedContainerService.HintSize="550,444" sap2010:WorkflowViewState.IdRef="TryCatch_278">
+    <TryCatch DisplayName="Try Catch-ChildSupportPaymentHistory" sap:VirtualizedContainerService.HintSize="454,684" sap2010:WorkflowViewState.IdRef="TryCatch_278">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -188,12 +188,12 @@
               <InOutArgument x:TypeArguments="s:String[]" x:Key="arr_CSCConsistentTotalPerYear">[arr_CSCConsistentTotalPerYear]</InOutArgument>
               <InOutArgument x:TypeArguments="s:String[]" x:Key="arr_CSCInconsisTotalPayments">[arr_CSCInconsisTotalPayments]</InOutArgument>
               <InArgument x:TypeArguments="x:String" x:Key="str_ChildSupOnIAQ">[str_ChildSupOnIAQ]</InArgument>
-              <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DTAuditFindings">[out_DTAuditFindings]</OutArgument>
               <OutArgument x:TypeArguments="x:String" x:Key="str_CSCHouseholdMember">[str_CSCHouseholdMember]</OutArgument>
               <InOutArgument x:TypeArguments="x:String" x:Key="str_CSCTotalPerYear">[str_CSCTotalPerYear]</InOutArgument>
               <OutArgument x:TypeArguments="x:Boolean" x:Key="bool_ChildSupCalcExists">[bool_ChildSupCalcExists]</OutArgument>
               <OutArgument x:TypeArguments="x:String" x:Key="str_PaymentConsistency">[str_PaymentConsistency]</OutArgument>
               <InArgument x:TypeArguments="sd:DataTable" x:Key="dt_ICWIncomeData">[dt_ICWIncomeData]</InArgument>
+              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_DTAuditFindings">[io_DTAuditFindings]</InOutArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Child Support Payment History - Invoke Workflow File (Child Support Payment History.xaml)" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_175" UnSafe="False" WorkflowFileName="AuditFindings\Child Support Payment History.xaml">
@@ -202,7 +202,6 @@
               <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ClassificationResultsData">[in_ClassificationResultsData]</InArgument>
               <InArgument x:TypeArguments="x:Boolean" x:Key="bool_ChildSupCalcExists">[bool_ChildSupCalcExists]</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="str_PromptsFolder">[str_PromptsFolder]</InArgument>
-              <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DTAuditFindings">[out_DTAuditFindings]</OutArgument>
               <InArgument x:TypeArguments="s:String[]" x:Key="arr_ICWMemberNames">[arr_ICWMemberNames]</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="str_CSCHouseholdMember">[str_CSCHouseholdMember]</InArgument>
               <InArgument x:TypeArguments="x:String" x:Key="str_PaymentConsistency">[str_PaymentConsistency]</InArgument>
@@ -212,12 +211,13 @@
               <InArgument x:TypeArguments="x:String" x:Key="str_MoveIndate">[str_MoveIndate]</InArgument>
               <InArgument x:TypeArguments="s:String[]" x:Key="arr_CSCStartDates">[arr_CSCStartDates]</InArgument>
               <InArgument x:TypeArguments="s:String[]" x:Key="arr_CSCEndDates">[arr_CSCEndDates]</InArgument>
+              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_DTAuditFindings">[io_DTAuditFindings]</InOutArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="516,22" sap2010:WorkflowViewState.IdRef="Catch`1_269">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="420,22" sap2010:WorkflowViewState.IdRef="Catch`1_269">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -242,7 +242,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;CSPH&quot;,&quot;PageNum&quot;,in_Config(&quot;CSPH_FindingError&quot;).ToString,exception.Message}]" DataTable="[out_DTAuditFindings]" DisplayName="Add Data Row-CSPHError7" sap:VirtualizedContainerService.HintSize="354,209" sap2010:WorkflowViewState.IdRef="AddDataRow_1332">
+              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;CSPH&quot;,&quot;PageNum&quot;,in_Config(&quot;CSPH_FindingError&quot;).ToString,exception.Message}]" DataTable="[io_DTAuditFindings]" DisplayName="Add Data Row-CSPHError7" sap:VirtualizedContainerService.HintSize="354,209" sap2010:WorkflowViewState.IdRef="AddDataRow_1332">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
