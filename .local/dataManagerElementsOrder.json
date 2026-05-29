@@ -2596,6 +2596,22 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "DU/DU_Extraction_EV.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "lRes_File&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ArrJobTitles",
+        "in_ArrEmployees",
+        "io_jArrDUResults",
+        "in_Config",
+        "in_ArrImages"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
