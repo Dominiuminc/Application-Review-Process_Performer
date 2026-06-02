@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>954,909</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1849,1022</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main2_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -145,7 +145,7 @@
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <StateMachine InitialState="{x:Reference __ReferenceID3}" sap2010:Annotation.AnnotationText="[Application Review Process_Performer]&#xA;[Logs into yardi downloads the PDF files, Splits PDF file to images calls LLM to extract and classify the Images, perform sorting and the Audit findings. Fills the audit findings in Yardi and submits the application by updating the status based on findings. Reassign the certs based on Findings to its respective manager if needed and notifies if any errors occur.]&#xA;[Developer: Harika malyala, Raluca Llinca]&#xA;[Applications: Yardi, Excel, O365]" DisplayName="General Business Process" sap:VirtualizedContainerService.HintSize="703,844" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+  <StateMachine InitialState="{x:Reference __ReferenceID3}" sap2010:Annotation.AnnotationText="[Application Review Process_Performer]&#xA;[Logs into yardi downloads the PDF files, Splits PDF file to images calls LLM to extract and classify the Images, perform sorting and the Audit findings. Fills the audit findings in Yardi and submits the application by updating the status based on findings. Reassign the certs based on Findings to its respective manager if needed and notifies if any errors occur.]&#xA;[Developer: Harika malyala, Raluca Ilinca]&#xA;[Applications: Yardi, Excel, O365]" DisplayName="General Business Process" sap:VirtualizedContainerService.HintSize="703,844" sap2010:WorkflowViewState.IdRef="StateMachine_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
