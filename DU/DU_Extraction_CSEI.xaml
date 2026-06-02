@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>912,688</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1131,4554</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DU_Extraction_SEC_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -121,30 +121,31 @@
       <AssemblyReference>ExtendedExtractionRe.PdAlz1h2hOH1tAmWx3Li1WX2</AssemblyReference>
       <AssemblyReference>ExtendedExtractionRe.5R9fnt5JUD1dU57B2Gy1Kv1</AssemblyReference>
       <AssemblyReference>ExtendedExtractionRe.6goFp1HGebK1yfzBK39iwIn2</AssemblyReference>
+      <AssemblyReference>ExtendedExtractionRe.EQWc61jxWAP1h29xw0Gtk12</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DU_Extraction_SEC" sap:VirtualizedContainerService.HintSize="416,482" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DU_Extraction_SEC" sap:VirtualizedContainerService.HintSize="1141,4489" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message-Started" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;DU_Extraction_CSEI.xaml is Started&quot;]" />
-    <TryCatch DisplayName="Try Catch-DU-SEC" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message-Started" sap:VirtualizedContainerService.HintSize="1079,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;DU_Extraction_CSEI.xaml is Started&quot;]" />
+    <TryCatch DisplayName="Try Catch-DU-SEC" sap:VirtualizedContainerService.HintSize="1079,4064" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentFile" sap:VirtualizedContainerService.HintSize="738,3669" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_ArrImages]">
+        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentFile" sap:VirtualizedContainerService.HintSize="1041,3804" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_ArrImages]">
           <ui:ForEach.Body>
             <ActivityAction x:TypeArguments="x:String">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:String" Name="currentFile" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="704,3555" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1007,3690" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="upr:ILocalResource" Name="lRes_File" />
                   <Variable x:TypeArguments="uisad1:DocumentData" Name="classifiedDocument" />
@@ -167,9 +168,9 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log file processing update" sap:VirtualizedContainerService.HintSize="642,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[string.Format(&quot;Processing file: {0}&quot;, currentFile)]" />
-                <ui:PathExists Exists="{x:Null}" DisplayName="CurrentFile Exists" sap:VirtualizedContainerService.HintSize="642,172" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[currentFile]" PathType="File" Resource="[lRes_File]" />
-                <p:ClassifyDocument ApiKey="{x:Null}" ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ClassificationResults="[classifiedDocument]" ClassifierId="f1dbf252-ef52-f111-8fcb-6045bdd669b5" ClassifierName="CommonRCandCSEI_classifier_v2" DisplayName="Classify Document" Endpoint="https://cloud.uipath.com/a6e81ae5-13a7-4d1d-9b35-86ac86d911ce/4af39ed3-b30e-48f2-b551-f1e60b4acb75/du_/api/framework/projects/2fdd4fa5-6b45-f111-8ef3-6045bda78650/classifiers/f1dbf252-ef52-f111-8fcb-6045bdd669b5/classification/start?api-version=1.1" FileInput="[lRes_File]" sap:VirtualizedContainerService.HintSize="642,57" sap2010:WorkflowViewState.IdRef="ClassifyDocument_1" MinimumConfidence="50" ProjectId="2fdd4fa5-6b45-f111-8ef3-6045bda78650" ProjectName="Common Document Understanding" ProjectVersionName="CommonRCandCSEI" ProjectVersionNumber="2" RuntimeAssetPath="Compliance/Application Review Process_AZ/DU_AppCredentials" RuntimeTenantUrl="[in_Config(&quot;DU_TenantURL&quot;).ToString]" TimeoutInSeconds="3600">
+                <ui:LogMessage DisplayName="Log file processing update" sap:VirtualizedContainerService.HintSize="945,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[string.Format(&quot;Processing file: {0}&quot;, currentFile)]" />
+                <ui:PathExists Exists="{x:Null}" DisplayName="CurrentFile Exists" sap:VirtualizedContainerService.HintSize="945,172" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[currentFile]" PathType="File" Resource="[lRes_File]" />
+                <p:ClassifyDocument ApiKey="{x:Null}" ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ClassificationResults="[classifiedDocument]" ClassifierId="f1dbf252-ef52-f111-8fcb-6045bdd669b5" ClassifierName="CommonRCandCSEI_classifier_v2" DisplayName="Classify Document" Endpoint="https://cloud.uipath.com/a6e81ae5-13a7-4d1d-9b35-86ac86d911ce/4af39ed3-b30e-48f2-b551-f1e60b4acb75/du_/api/framework/projects/2fdd4fa5-6b45-f111-8ef3-6045bda78650/classifiers/f1dbf252-ef52-f111-8fcb-6045bdd669b5/classification/start?api-version=1.1" FileInput="[lRes_File]" sap:VirtualizedContainerService.HintSize="945,57" sap2010:WorkflowViewState.IdRef="ClassifyDocument_1" MinimumConfidence="50" ProjectId="2fdd4fa5-6b45-f111-8ef3-6045bda78650" ProjectName="Common Document Understanding" ProjectVersionName="CommonRCandCSEI" ProjectVersionNumber="2" RuntimeAssetPath="Compliance/Application Review Process_AZ/DU_AppCredentials" RuntimeTenantUrl="[in_Config(&quot;DU_TenantURL&quot;).ToString]" TimeoutInSeconds="3600">
                   <p:ClassifyDocument.GptPromptWithVariables>
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                   </p:ClassifyDocument.GptPromptWithVariables>
@@ -185,8 +186,8 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </p:ClassifyDocument>
-                <ui:LogMessage DisplayName="Log document type" sap:VirtualizedContainerService.HintSize="642,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[string.Format(&quot;Classified {0} as {1}&quot;, currentFile, classifiedDocument.DocumentType.DisplayName)]" />
-                <If Condition="[classifiedDocument.DocumentType.DisplayName.Equals(&quot;Certification Of Self Employment Income&quot;)]" DisplayName="If-ClassifiedAsSEC" sap:VirtualizedContainerService.HintSize="642,2728" sap2010:WorkflowViewState.IdRef="If_8">
+                <ui:LogMessage DisplayName="Log document type" sap:VirtualizedContainerService.HintSize="945,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[string.Format(&quot;Classified {0} as {1}&quot;, currentFile, classifiedDocument.DocumentType.DisplayName)]" />
+                <If Condition="[classifiedDocument.DocumentType.DisplayName.Equals(&quot;Certification Of Self Employment Income&quot;)]" DisplayName="If-ClassifiedAsSEC" sap:VirtualizedContainerService.HintSize="945,2863" sap2010:WorkflowViewState.IdRef="If_8">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -194,7 +195,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="608,2455" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="911,2590" sap2010:WorkflowViewState.IdRef="Sequence_14">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="str_DUPrintedName" />
                         <Variable x:TypeArguments="x:String" Name="str_DUBusinessName" />
@@ -205,7 +206,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <p:ExtractDocumentDataWithDocumentData x:TypeArguments="uisasecb:CommonRCandCSEICertificationOfSelfEmploymentIncomeV2" DocumentBounds="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" ExtractorDocumentType="{x:Null}" ExtractorResult="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ApplyAutoValidation="False" DisplayName="Extract Document Data" DocType="efdbf252-ef52-f111-8fcb-6045bdd669b5" ExtractionResults="[CSEIDocumentData]" ExtractorName="CommonRCandCSEI_Certification Of Self Employment Income_v2" FileInput="[classifiedDocument]" GenerateData="True" sap:VirtualizedContainerService.HintSize="546,404" sap2010:WorkflowViewState.IdRef="ExtractDocumentDataWithDocumentData`1_2" ModernDocumentTypeId="2caf8b79-8550-f111-8ef3-002248237633" ModernDocumentTypeName="Certification Of Self Employment Income" ProjectId="2fdd4fa5-6b45-f111-8ef3-6045bda78650" ProjectName="Common Document Understanding" ProjectTag="[Nothing]" ProjectVersionName="CommonRCandCSEI" ProjectVersionNumber="2" RuntimeAssetPath="Compliance/Application Review Process_AZ_Raluca/DU_AppCredentials" RuntimeTenantUrl="[in_Config(&quot;DU_TenantURL&quot;).ToString]" TimeoutInSeconds="3600">
+                      <p:ExtractDocumentDataWithDocumentData x:TypeArguments="uisasecb:CommonRCandCSEICertificationOfSelfEmploymentIncomeV2" DocumentBounds="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" ExtractorDocumentType="{x:Null}" ExtractorResult="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ApplyAutoValidation="False" DisplayName="Extract Document Data" DocType="efdbf252-ef52-f111-8fcb-6045bdd669b5" ExtractionResults="[CSEIDocumentData]" ExtractorName="CommonRCandCSEI_Certification Of Self Employment Income_v2" FileInput="[classifiedDocument]" GenerateData="True" sap:VirtualizedContainerService.HintSize="849,404" sap2010:WorkflowViewState.IdRef="ExtractDocumentDataWithDocumentData`1_2" ModernDocumentTypeId="2caf8b79-8550-f111-8ef3-002248237633" ModernDocumentTypeName="Certification Of Self Employment Income" ProjectId="2fdd4fa5-6b45-f111-8ef3-6045bda78650" ProjectName="Common Document Understanding" ProjectTag="[Nothing]" ProjectVersionName="CommonRCandCSEI" ProjectVersionNumber="2" RuntimeAssetPath="Compliance/Application Review Process_AZ_Raluca/DU_AppCredentials" RuntimeTenantUrl="[in_Config(&quot;DU_TenantURL&quot;).ToString]" TimeoutInSeconds="3600">
                         <p:ExtractDocumentDataWithDocumentData.AutoValidationConfidenceThreshold>
                           <InArgument x:TypeArguments="s:Nullable(x:Int32)">
                             <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="0" />
@@ -215,7 +216,7 @@
                           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                         </p:ExtractDocumentDataWithDocumentData.GptPromptWithVariables>
                       </p:ExtractDocumentDataWithDocumentData>
-                      <ui:LogMessage DisplayName="Write extracted data (Self Employment Certification)" sap:VirtualizedContainerService.HintSize="546,173" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;The following data has been extracted (excluding table data): {for each fields, except tables, display as key-value pairs: field name - field value}.&quot; &amp; vbCrLf &amp; CSEIDocumentData.ToString]">
+                      <ui:LogMessage DisplayName="Write extracted data (Self Employment Certification)" sap:VirtualizedContainerService.HintSize="849,173" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;The following data has been extracted (excluding table data): {for each fields, except tables, display as key-value pairs: field name - field value}.&quot; &amp; vbCrLf &amp; CSEIDocumentData.ToString]">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -223,7 +224,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:LogMessage>
-                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="546,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="849,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                         <ui:MultipleAssign.AssignOperations>
                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -259,7 +260,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:MultipleAssign>
-                      <TryCatch DisplayName="Try Catch-NamesMappingCheck" sap:VirtualizedContainerService.HintSize="546,57" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                      <TryCatch DisplayName="Try Catch-NamesMappingCheck" sap:VirtualizedContainerService.HintSize="849,57" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -453,13 +454,13 @@
                           </Catch>
                         </TryCatch.Catches>
                       </TryCatch>
-                      <ui:ForEach x:TypeArguments="njl:JObject" CurrentIndex="{x:Null}" DisplayName="For Each currentJObject" sap:VirtualizedContainerService.HintSize="546,1523" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[io_jArrDUResults]">
+                      <ui:ForEach x:TypeArguments="njl:JObject" CurrentIndex="{x:Null}" DisplayName="For Each currentJObject" sap:VirtualizedContainerService.HintSize="849,1658" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[io_jArrDUResults]">
                         <ui:ForEach.Body>
                           <ActivityAction x:TypeArguments="njl:JObject">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="njl:JObject" Name="currentJObject" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="CurrentJObjectBody" sap:VirtualizedContainerService.HintSize="512,1386" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                            <Sequence DisplayName="CurrentJObjectBody" sap:VirtualizedContainerService.HintSize="815,1521" sap2010:WorkflowViewState.IdRef="Sequence_16">
                               <Sequence.Variables>
                                 <Variable x:TypeArguments="njl:JObject" Name="jObj_JSON" />
                               </Sequence.Variables>
@@ -468,7 +469,7 @@
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Assign DisplayName="Assign - jObj_JSON for the current page" sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                              <Assign DisplayName="Assign - jObj_JSON for the current page" sap:VirtualizedContainerService.HintSize="753,114" sap2010:WorkflowViewState.IdRef="Assign_4">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="njl:JObject">[jObj_JSON]</OutArgument>
                                 </Assign.To>
@@ -482,7 +483,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </Assign>
-                              <If Condition="[(jObj_JSON(&quot;MemberName&quot;).ToString.Equals(str_LLMName) And jObj_JSON(&quot;BusinessDetails&quot;)(&quot;NameOfBusiness&quot;).ToString.Equals(str_LLMBusinessName))]" DisplayName="If Names are the same" sap:VirtualizedContainerService.HintSize="450,1184" sap2010:WorkflowViewState.IdRef="If_7">
+                              <If Condition="[(jObj_JSON(&quot;MemberName&quot;).ToString.Equals(str_LLMName) And jObj_JSON(&quot;BusinessDetails&quot;)(&quot;NameOfBusiness&quot;).ToString.Equals(str_LLMBusinessName))]" DisplayName="If Names are the same" sap:VirtualizedContainerService.HintSize="753,1319" sap2010:WorkflowViewState.IdRef="If_7">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -490,14 +491,14 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
-                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,822" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="719,957" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasFiledFederalIncomeTaxReturn" Expression="[CSEIDocumentData.Data.HasFiledFederalIncomeTaxReturn.Value.Replace(&quot;☒&quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasFiledFederalIncomeTaxReturn" Expression="[CSEIDocumentData.Data.HasFiledFederalIncomeTaxReturn.Value.Replace(&quot;☒&quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="657,57" sap2010:WorkflowViewState.IdRef="Switch`1_1">
                                       <Switch.Default>
                                         <Assign DisplayName="Assign-HasFiledFederalIncomeTaxReturn-unanswered" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_7">
                                           <Assign.To>
@@ -531,7 +532,7 @@
                                         </Assign.Value>
                                       </Assign>
                                     </Switch>
-                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-IsBusinessActiveThroughoutTheYear" Expression="[CSEIDocumentData.Data.IsBusinessActiveThroughoutTheYear.Value.Replace(&quot;☒&quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-IsBusinessActiveThroughoutTheYear" Expression="[CSEIDocumentData.Data.IsBusinessActiveThroughoutTheYear.Value.Replace(&quot;☒&quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="657,57" sap2010:WorkflowViewState.IdRef="Switch`1_2">
                                       <Switch.Default>
                                         <Assign DisplayName="Assign-IsBusinessActiveThroughoutTheYear-unanswered" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_10">
                                           <Assign.To>
@@ -565,7 +566,7 @@
                                         </Assign.Value>
                                       </Assign>
                                     </Switch>
-                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-IsOtherMemberRecievingSalary" Expression="[CSEIDocumentData.Data.IsOtherMemberRecievingSalary.Value.Replace(&quot;☒&quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="Switch`1_3">
+                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-IsOtherMemberRecievingSalary" Expression="[CSEIDocumentData.Data.IsOtherMemberRecievingSalary.Value.Replace(&quot;☒&quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="657,192" sap2010:WorkflowViewState.IdRef="Switch`1_3">
                                       <Switch.Default>
                                         <Assign DisplayName="Assign-IsOtherMemberRecievingSalary-unanswered" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_13">
                                           <Assign.To>
@@ -578,11 +579,11 @@
                                       </Switch.Default>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign x:Key="no" DisplayName="Assign-IsOtherMemberRecievingSalary-no" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_11">
+                                      <Assign x:Key="no" DisplayName="Assign-IsOtherMemberRecievingSalary-no" sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_11">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="njl:JToken">[jObj_JSON("BusinessDetails")("IsOtherMemberRecievingSalary")]</OutArgument>
                                         </Assign.To>
@@ -590,7 +591,7 @@
                                           <InArgument x:TypeArguments="njl:JToken">["no"]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <Assign x:Key="yes" DisplayName="Assign-IsOtherMemberRecievingSalary-yes" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_12">
+                                      <Assign x:Key="yes" DisplayName="Assign-IsOtherMemberRecievingSalary-yes" sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_12">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="njl:JToken">[jObj_JSON("BusinessDetails")("IsOtherMemberRecievingSalary")]</OutArgument>
                                         </Assign.To>
@@ -599,7 +600,7 @@
                                         </Assign.Value>
                                       </Assign>
                                     </Switch>
-                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasBusinessNotBeenActiveFor12Months" Expression="[CSEIDocumentData.Data.HasBusinessNotBeenActiveFor12Months.Value.Replace(&quot; &quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="Switch`1_4">
+                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasBusinessNotBeenActiveFor12Months" Expression="[CSEIDocumentData.Data.HasBusinessNotBeenActiveFor12Months.Value.Replace(&quot; &quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="657,57" sap2010:WorkflowViewState.IdRef="Switch`1_4">
                                       <Switch.Default>
                                         <Assign DisplayName="Assign-HasBusinessNotBeenActiveFor12Months-unanswered" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_16">
                                           <Assign.To>
@@ -633,7 +634,7 @@
                                         </Assign.Value>
                                       </Assign>
                                     </Switch>
-                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasBusinessExpensesIncreased" Expression="[CSEIDocumentData.Data.HasBusinessExpensesIncreased.Value.Replace(&quot; &quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="Switch`1_5">
+                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasBusinessExpensesIncreased" Expression="[CSEIDocumentData.Data.HasBusinessExpensesIncreased.Value.Replace(&quot; &quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="657,57" sap2010:WorkflowViewState.IdRef="Switch`1_5">
                                       <Switch.Default>
                                         <Assign DisplayName="Assign-HasBusinessExpensesIncreased-unanswered" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_19">
                                           <Assign.To>
@@ -667,7 +668,7 @@
                                         </Assign.Value>
                                       </Assign>
                                     </Switch>
-                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasBusinessExpensesDecreased" Expression="[CSEIDocumentData.Data.HasBusinessExpensesDecreased.Value.Replace(&quot; &quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="Switch`1_6">
+                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasBusinessExpensesDecreased" Expression="[CSEIDocumentData.Data.HasBusinessExpensesDecreased.Value.Replace(&quot; &quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="657,57" sap2010:WorkflowViewState.IdRef="Switch`1_6">
                                       <Switch.Default>
                                         <Assign DisplayName="Assign-HasBusinessExpensesDecreased-unanswered" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_22">
                                           <Assign.To>
@@ -692,7 +693,7 @@
                                           <InArgument x:TypeArguments="njl:JToken">["false"]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <Assign x:Key="☒" DisplayName="Assign-HasBusinessExpensesDecreased-yes" sap:VirtualizedContainerService.HintSize="320,25" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                      <Assign x:Key="☒" DisplayName="Assign-HasBusinessExpensesDecreased-yes" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Assign_21">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="njl:JToken">[jObj_JSON("BusinessIncome")("HasBusinessExpensesDecreased")]</OutArgument>
                                         </Assign.To>
@@ -707,7 +708,7 @@
                                         </sap:WorkflowViewStateService.ViewState>
                                       </Assign>
                                     </Switch>
-                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasBusinessVolumeIncreased" Expression="[CSEIDocumentData.Data.HasBusinessVolumeIncreased.Value.Replace(&quot; &quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="Switch`1_7">
+                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasBusinessVolumeIncreased" Expression="[CSEIDocumentData.Data.HasBusinessVolumeIncreased.Value.Replace(&quot; &quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="657,57" sap2010:WorkflowViewState.IdRef="Switch`1_7">
                                       <Switch.Default>
                                         <Assign DisplayName="Assign-HasBusinessVolumeIncreased-unanswered" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_25">
                                           <Assign.To>
@@ -724,7 +725,7 @@
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign x:Key="☐" DisplayName="Assign-HasBusinessVolumeIncreased-no" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_23">
+                                      <Assign x:Key="☐" DisplayName="Assign-HasBusinessVolumeIncreased-no" sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_23">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="njl:JToken">[jObj_JSON("BusinessIncome")("HasBusinessVolumeIncreased")]</OutArgument>
                                         </Assign.To>
@@ -732,7 +733,7 @@
                                           <InArgument x:TypeArguments="njl:JToken">["false"]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <Assign x:Key="☒" DisplayName="Assign-HasBusinessVolumeIncreased-yes" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_24">
+                                      <Assign x:Key="☒" DisplayName="Assign-HasBusinessVolumeIncreased-yes" sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_24">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="njl:JToken">[jObj_JSON("BusinessIncome")("HasBusinessVolumeIncreased")]</OutArgument>
                                         </Assign.To>
@@ -741,7 +742,7 @@
                                         </Assign.Value>
                                       </Assign>
                                     </Switch>
-                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasBusinessVolumeDecreased" Expression="[CSEIDocumentData.Data.HasBusinessVolumeDecreased.Value.Replace(&quot; &quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="Switch`1_8">
+                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasBusinessVolumeDecreased" Expression="[CSEIDocumentData.Data.HasBusinessVolumeDecreased.Value.Replace(&quot; &quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="657,57" sap2010:WorkflowViewState.IdRef="Switch`1_8">
                                       <Switch.Default>
                                         <Assign DisplayName="Assign-HasBusinessVolumeDecreased-unanswered" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_28">
                                           <Assign.To>
@@ -775,7 +776,7 @@
                                         </Assign.Value>
                                       </Assign>
                                     </Switch>
-                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasOther" Expression="[CSEIDocumentData.Data.HasOther.Value.Replace(&quot; &quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="Switch`1_9">
+                                    <Switch x:TypeArguments="x:String" DisplayName="Switch-HasOther" Expression="[CSEIDocumentData.Data.HasOther.Value.Replace(&quot; &quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="657,57" sap2010:WorkflowViewState.IdRef="Switch`1_9">
                                       <Switch.Default>
                                         <Assign DisplayName="Assign-HasOther-unanswered" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_31">
                                           <Assign.To>
@@ -809,8 +810,8 @@
                                         </Assign.Value>
                                       </Assign>
                                     </Switch>
-                                    <ui:Break sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="Break_1" />
-                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,164" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;DU for SEC replaced values: &quot; &amp;vbCrLf &amp; jObj_JSON.ToString]" />
+                                    <ui:Break sap:VirtualizedContainerService.HintSize="657,57" sap2010:WorkflowViewState.IdRef="Break_1" />
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="657,164" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;DU for SEC replaced values: &quot; &amp;vbCrLf &amp; jObj_JSON.ToString]" />
                                   </Sequence>
                                 </If.Then>
                                 <If.Else>
@@ -883,6 +884,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message-Ended" sap:VirtualizedContainerService.HintSize="354,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;DU_Extraction_CSEI.xaml is Ended&quot;]" />
+    <ui:LogMessage DisplayName="Log Message-Ended" sap:VirtualizedContainerService.HintSize="1079,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;DU_Extraction_CSEI.xaml is Ended&quot;]" />
   </Sequence>
 </Activity>
