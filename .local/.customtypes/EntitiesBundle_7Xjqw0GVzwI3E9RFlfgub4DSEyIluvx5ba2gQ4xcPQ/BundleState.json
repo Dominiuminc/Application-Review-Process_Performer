@@ -198,6 +198,15 @@
         "assemblyName": "ExtendedExtractionRe.5R9fnt5JUD1dU57B2Gy1Kv1"
       }
     },
+    "ExtendedExtractionRe.EQWc61jxWAP1h29xw0Gtk12": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage2V1.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage2V1",
+        "hash": "MTQ4NDY2MjA1NA",
+        "assemblyName": "ExtendedExtractionRe.EQWc61jxWAP1h29xw0Gtk12"
+      }
+    },
     "ExtendedExtractionRe.w96ku2SkQqQ1Ks8st32ffXY": {
       "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEMemberInformationDocumentV7.Bundle",
       "providerName": "CustomEntities",
@@ -288,13 +297,13 @@
         "assemblyName": "ExtendedExtractionRe.1yhti2NThgQ1YYAuW2YG3J2"
       }
     },
-    "ExtendedExtractionRe.EQWc61jxWAP1h29xw0Gtk12": {
-      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage2V1.Bundle",
+    "ExtendedExtractionRe.qaCjE3Z1aUO10jkmuCdyiE3": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonEVEmploymentVerificationV4.Bundle",
       "providerName": "CustomEntities",
       "key": {
-        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage2V1",
-        "hash": "MTQ4NDY2MjA1NA",
-        "assemblyName": "ExtendedExtractionRe.EQWc61jxWAP1h29xw0Gtk12"
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonEVEmploymentVerificationV4",
+        "hash": "MTk1NTU4Njk4Mw",
+        "assemblyName": "ExtendedExtractionRe.qaCjE3Z1aUO10jkmuCdyiE3"
       }
     }
   }
