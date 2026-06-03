@@ -1,11 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="DU_Extraction_ASC" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisad1="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisasegb="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage1V1.Bundle;assembly=ExtendedExtractionRe.1yhti2NThgQ1YYAuW2YG3J2" xmlns:uisasegb1="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage2V1.Bundle;assembly=ExtendedExtractionRe.EQWc61jxWAP1h29xw0Gtk12" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="DU_Extraction_ASC" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisad1="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisasegb="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage1V1.Bundle;assembly=ExtendedExtractionRe.1yhti2NThgQ1YYAuW2YG3J2" xmlns:uisasegb1="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage2V1.Bundle;assembly=ExtendedExtractionRe.EQWc61jxWAP1h29xw0Gtk12" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_ArrImages" Type="InArgument(s:String[])" />
     <x:Property Name="out_DoesNotHaveAnyAssets" Type="OutArgument(x:Boolean)" />
     <x:Property Name="out_AsstsdisposedLessMrktValue" Type="OutArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>912,2901</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>912,2243</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -37,6 +37,7 @@
       <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage1V1.Bundle</x:String>
       <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage2V1.Bundle</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -134,14 +135,14 @@
       <AssemblyReference>ExtendedExtractionRe.EQWc61jxWAP1h29xw0Gtk12</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="732,2836" sap2010:WorkflowViewState.IdRef="Sequence_14">
+  <Sequence sap:VirtualizedContainerService.HintSize="693,2178" sap2010:WorkflowViewState.IdRef="Sequence_14">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message-Started" sap:VirtualizedContainerService.HintSize="670,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;AssetSelfCertification_GA.xaml is Started&quot;]" />
-    <TryCatch DisplayName="Try Catch-DU-ASC" sap:VirtualizedContainerService.HintSize="670,2010" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message-Started" sap:VirtualizedContainerService.HintSize="631,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;AssetSelfCertification_GA.xaml is Started&quot;]" />
+    <TryCatch DisplayName="Try Catch-DU-ASC" sap:VirtualizedContainerService.HintSize="631,1753" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -149,13 +150,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentFile" sap:VirtualizedContainerService.HintSize="632,1750" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_ArrImages]">
+        <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentFile" sap:VirtualizedContainerService.HintSize="593,1493" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_ArrImages]">
           <ui:ForEach.Body>
             <ActivityAction x:TypeArguments="x:String">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:String" Name="currentFile" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="598,1636" sap2010:WorkflowViewState.IdRef="Sequence_15">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="559,1379" sap2010:WorkflowViewState.IdRef="Sequence_15">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="uisad1:DocumentData" Name="classifiedDocument" />
                   <Variable x:TypeArguments="upr:ILocalResource" Name="lRes_File" />
@@ -165,9 +166,9 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log file processing update" sap:VirtualizedContainerService.HintSize="536,173" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[string.Format(&quot;Processing file: {0}&quot;, currentFile)]" />
-                <ui:PathExists Exists="{x:Null}" DisplayName="CurrentFile Exists" sap:VirtualizedContainerService.HintSize="536,172" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[currentFile]" PathType="File" Resource="[lRes_File]" />
-                <p:ClassifyDocument ApiKey="{x:Null}" ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ClassificationResults="[classifiedDocument]" ClassifierId="bc00861b-d85a-f111-8fcb-6045bddad048" ClassifierName="GASpecificASC_classifier_v1" DisplayName="Classify Document" Endpoint="https://cloud.uipath.com/a6e81ae5-13a7-4d1d-9b35-86ac86d911ce/4af39ed3-b30e-48f2-b551-f1e60b4acb75/du_/api/framework/projects/d1adf3f8-d331-f111-8ef3-6045bda99c52/classifiers/bc00861b-d85a-f111-8fcb-6045bddad048/classification/start?api-version=1.1" FileInput="[lRes_File]" sap:VirtualizedContainerService.HintSize="536,294" sap2010:WorkflowViewState.IdRef="ClassifyDocument_1" MinimumConfidence="50" ProjectId="d1adf3f8-d331-f111-8ef3-6045bda99c52" ProjectName="GA Document Understanding" ProjectVersionName="GASpecificASC" ProjectVersionNumber="1" RuntimeAssetPath="Compliance/Application Review Process_AZ/DU_AppCredentials" RuntimeTenantUrl="[in_Config(&quot;DU_TenantURL&quot;).ToString]" TimeoutInSeconds="3600">
+                <ui:LogMessage DisplayName="Log file processing update" sap:VirtualizedContainerService.HintSize="497,173" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[string.Format(&quot;Processing file: {0}&quot;, currentFile)]" />
+                <ui:PathExists Exists="{x:Null}" DisplayName="CurrentFile Exists" sap:VirtualizedContainerService.HintSize="497,172" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[currentFile]" PathType="File" Resource="[lRes_File]" />
+                <p:ClassifyDocument ApiKey="{x:Null}" ClassifierResult="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" DocumentTypes="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ClassificationResults="[classifiedDocument]" ClassifierId="bc00861b-d85a-f111-8fcb-6045bddad048" ClassifierName="GASpecificASC_classifier_v1" DisplayName="Classify Document" Endpoint="https://cloud.uipath.com/a6e81ae5-13a7-4d1d-9b35-86ac86d911ce/4af39ed3-b30e-48f2-b551-f1e60b4acb75/du_/api/framework/projects/d1adf3f8-d331-f111-8ef3-6045bda99c52/classifiers/bc00861b-d85a-f111-8fcb-6045bddad048/classification/start?api-version=1.1" FileInput="[lRes_File]" sap:VirtualizedContainerService.HintSize="497,294" sap2010:WorkflowViewState.IdRef="ClassifyDocument_1" MinimumConfidence="50" ProjectId="d1adf3f8-d331-f111-8ef3-6045bda99c52" ProjectName="GA Document Understanding" ProjectVersionName="GASpecificASC" ProjectVersionNumber="1" RuntimeAssetPath="Compliance/Application Review Process/DU_AppCredentials" RuntimeTenantUrl="[in_Config(&quot;DU_TenantURL&quot;).ToString]" TimeoutInSeconds="3600">
                   <p:ClassifyDocument.GptPromptWithVariables>
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                   </p:ClassifyDocument.GptPromptWithVariables>
@@ -183,9 +184,9 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </p:ClassifyDocument>
-                <ui:LogMessage DisplayName="Log document type" sap:VirtualizedContainerService.HintSize="536,173" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[string.Format(&quot;Classified {0} as {1}&quot;, currentFile, classifiedDocument.DocumentType.DisplayName)]" />
-                <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[classifiedDocument.DocumentType.DisplayName]" sap:VirtualizedContainerService.HintSize="846,936" sap2010:WorkflowViewState.IdRef="Switch`1_18">
-                  <Sequence x:Key="Asset Self Certification Page 1" DisplayName="ASCPage1" sap:VirtualizedContainerService.HintSize="416,193" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                <ui:LogMessage DisplayName="Log document type" sap:VirtualizedContainerService.HintSize="497,173" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[string.Format(&quot;Classified {0} as {1}&quot;, currentFile, classifiedDocument.DocumentType.DisplayName)]" />
+                <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[classifiedDocument.DocumentType.DisplayName]" sap:VirtualizedContainerService.HintSize="497,479" sap2010:WorkflowViewState.IdRef="Switch`1_18">
+                  <Sequence x:Key="Asset Self Certification Page 1" DisplayName="ASCPage1" sap:VirtualizedContainerService.HintSize="416,366" sap2010:WorkflowViewState.IdRef="Sequence_21">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="uisad:IDocumentData(uisasegb:GASpecificASCAssetSelfCertificationPage1V1)" Name="ASCDocument1Data" />
                     </Sequence.Variables>
@@ -210,6 +211,14 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </p:ExtractDocumentDataWithDocumentData>
+                    <ui:LogMessage DisplayName="Write extracted data (Asset Self Certification)" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;The following data has been extracted (excluding table data): {for each fields, except tables, display as key-value pairs: field name - field value}.&quot; &amp; vbCrLf &amp; ASCDocument1Data.ToString]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:LogMessage>
                     <Switch x:TypeArguments="x:String" DisplayName="Switch-DoesNotHaveAnyAssets" Expression="[ASCDocument1Data.Data. DoesNotHaveAnyAssets.ToString.Trim]" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Switch`1_20">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -235,7 +244,7 @@
                       </Assign>
                     </Switch>
                   </Sequence>
-                  <Sequence x:Key="Asset Self Certification Page 2" DisplayName="Asset Self Certification Page 2" sap:VirtualizedContainerService.HintSize="806,728" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                  <Sequence x:Key="Asset Self Certification Page 2" DisplayName="Asset Self Certification Page 2" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="Sequence_22">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="uisad:IDocumentData(uisasegb1:GASpecificASCAssetSelfCertificationPage2V1)" Name="ASCDocumentData" />
                     </Sequence.Variables>
@@ -244,7 +253,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <p:ExtractDocumentDataWithDocumentData x:TypeArguments="uisasegb1:GASpecificASCAssetSelfCertificationPage2V1" DocumentBounds="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" ExtractorDocumentType="{x:Null}" ExtractorResult="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ApplyAutoValidation="False" DisplayName="Extract Document Data" DocType="be00861b-d85a-f111-8fcb-6045bddad048" ExtractionResults="[ASCDocumentData]" ExtractorName="GASpecificASC_Asset Self Certification Page 2_v1" FileInput="[classifiedDocument]" GenerateData="True" sap:VirtualizedContainerService.HintSize="744,329" sap2010:WorkflowViewState.IdRef="ExtractDocumentDataWithDocumentData`1_4" ModernDocumentTypeId="04cdaaaf-dc47-f111-8ef3-002248237633" ModernDocumentTypeName="Asset Self Certification Page 2" ProjectId="d1adf3f8-d331-f111-8ef3-6045bda99c52" ProjectName="GA Document Understanding" ProjectTag="[Nothing]" ProjectVersionName="GASpecificASC" ProjectVersionNumber="1" RuntimeAssetPath="Compliance/Application Review Process_AZ/DU_AppCredentials" RuntimeTenantUrl="[in_Config(&quot;DU_TenantURL&quot;).ToString]" TimeoutInSeconds="3600">
+                    <p:ExtractDocumentDataWithDocumentData x:TypeArguments="uisasegb1:GASpecificASCAssetSelfCertificationPage2V1" DocumentBounds="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" ExtractorDocumentType="{x:Null}" ExtractorResult="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ApplyAutoValidation="False" DisplayName="Extract Document Data" DocType="be00861b-d85a-f111-8fcb-6045bddad048" ExtractionResults="[ASCDocumentData]" ExtractorName="GASpecificASC_Asset Self Certification Page 2_v1" FileInput="[classifiedDocument]" GenerateData="True" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="ExtractDocumentDataWithDocumentData`1_4" ModernDocumentTypeId="04cdaaaf-dc47-f111-8ef3-002248237633" ModernDocumentTypeName="Asset Self Certification Page 2" ProjectId="d1adf3f8-d331-f111-8ef3-6045bda99c52" ProjectName="GA Document Understanding" ProjectTag="[Nothing]" ProjectVersionName="GASpecificASC" ProjectVersionNumber="1" RuntimeAssetPath="Compliance/Application Review Process_AZ/DU_AppCredentials" RuntimeTenantUrl="[in_Config(&quot;DU_TenantURL&quot;).ToString]" TimeoutInSeconds="3600">
                       <p:ExtractDocumentDataWithDocumentData.AutoValidationConfidenceThreshold>
                         <InArgument x:TypeArguments="s:Nullable(x:Int32)">
                           <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="0" />
@@ -253,8 +262,22 @@
                       <p:ExtractDocumentDataWithDocumentData.GptPromptWithVariables>
                         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                       </p:ExtractDocumentDataWithDocumentData.GptPromptWithVariables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </p:ExtractDocumentDataWithDocumentData>
-                    <Switch x:TypeArguments="x:String" DisplayName="Switch-DoesNotHaveAnyAssets" Expression="[ASCDocumentData.Data.AssetsDisposedOfLessThanMarketValue.Value.ToString.Replace(&quot;☒&quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="744,311" sap2010:WorkflowViewState.IdRef="Switch`1_21">
+                    <ui:LogMessage DisplayName="Write extracted data (Asset Self Certification)" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;The following data has been extracted (excluding table data): {for each fields, except tables, display as key-value pairs: field name - field value}.&quot; &amp; vbCrLf &amp; ASCDocumentData.ToString]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:LogMessage>
+                    <Switch x:TypeArguments="x:String" DisplayName="Switch-DoesNotHaveAnyAssets" Expression="[ASCDocumentData.Data.AssetsDisposedOfLessThanMarketValue.Value.ToString.Replace(&quot;☒&quot;,&quot;&quot;).ToLower.Trim]" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Switch`1_21">
                       <Switch.Default>
                         <Assign DisplayName="Assign-out_AsstsdisposedLessMrktValue0" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_66">
                           <Assign.To>
@@ -267,7 +290,7 @@
                       </Switch.Default>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -279,7 +302,7 @@
                           <InArgument x:TypeArguments="x:String">True</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign x:Key="no" DisplayName="Assign-out_AsstsdisposedLessMrktValue1" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_65">
+                      <Assign x:Key="no" DisplayName="Assign-out_AsstsdisposedLessMrktValue1" sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_65">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[out_AsstsdisposedLessMrktValue]</OutArgument>
                         </Assign.To>
@@ -302,7 +325,7 @@
         </ui:ForEach>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="636,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="597,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -327,150 +350,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Write extracted data (Asset Self Certification)" sap:VirtualizedContainerService.HintSize="670,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;The following data has been extracted (excluding table data): {for each fields, except tables, display as key-value pairs: field name - field value}.&quot; &amp; vbCrLf &amp; ASCDocumentData.ToString]">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:LogMessage>
-    <Switch x:TypeArguments="x:String" DisplayName="SwitchHaveNonNecessaryPersonalProperty" Expression="[ASCDocumentData.Data.HaveNonNecessaryPersonalProperty.Value.Replace(&quot;☒&quot;,&quot;&quot;).Replace(&quot; &quot;,&quot;&quot;).ToLower]" sap:VirtualizedContainerService.HintSize="670,57" sap2010:WorkflowViewState.IdRef="Switch`1_12">
-      <Switch.Default>
-        <Assign DisplayName="Assign-HasNNPP" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_40">
-          <Assign.To>
-            <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("AssetSelfCertification")(0)("PartIIINonNecessaryPersonalProperty")("HasNNPP")]</OutArgument>
-          </Assign.To>
-          <Assign.Value>
-            <InArgument x:TypeArguments="njl:JToken">["unanswered"]</InArgument>
-          </Assign.Value>
-        </Assign>
-      </Switch.Default>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Assign x:Key="yes" DisplayName="Assign-HasNNPP1" sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_53">
-        <Assign.To>
-          <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("AssetSelfCertification")(0)("PartIIINonNecessaryPersonalProperty")("HasNNPP")]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="njl:JToken">["true"]</InArgument>
-        </Assign.Value>
-      </Assign>
-      <Assign x:Key="no" DisplayName="Assign-HasNNPP2" sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_39">
-        <Assign.To>
-          <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("AssetSelfCertification")(0)("PartIIINonNecessaryPersonalProperty")("HasNNPP")]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="njl:JToken">["false"]</InArgument>
-        </Assign.Value>
-      </Assign>
-    </Switch>
-    <Switch x:TypeArguments="x:String" DisplayName="SwitchHaveRealProperty" Expression="[ASCDocumentData.Data.HaveRealProperty.Value.Replace(&quot;☒&quot;,&quot;&quot;).Replace(&quot; &quot;,&quot;&quot;).ToLower]" sap:VirtualizedContainerService.HintSize="670,57" sap2010:WorkflowViewState.IdRef="Switch`1_14">
-      <Switch.Default>
-        <Assign DisplayName="Assign-HaveRealProperty" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_46">
-          <Assign.To>
-            <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("AssetSelfCertification")(0)("PartIVRealProperty")("HasRealProperty")]</OutArgument>
-          </Assign.To>
-          <Assign.Value>
-            <InArgument x:TypeArguments="njl:JToken">["unanswered"]</InArgument>
-          </Assign.Value>
-        </Assign>
-      </Switch.Default>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Assign x:Key="yes" DisplayName="Assign-HaveRealProperty-true" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_54">
-        <Assign.To>
-          <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("AssetSelfCertification")(0)("PartIVRealProperty")("HasRealProperty")]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="njl:JToken">["true"]</InArgument>
-        </Assign.Value>
-      </Assign>
-      <Assign x:Key="no" DisplayName="Assign-HaveRealProperty-false" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_55">
-        <Assign.To>
-          <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("AssetSelfCertification")(0)("PartIVRealProperty")("HasRealProperty")]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="njl:JToken">["false"]</InArgument>
-        </Assign.Value>
-      </Assign>
-    </Switch>
-    <Switch x:TypeArguments="x:String" DisplayName="SwitchReceivedFederalTaxRefund" Expression="[ASCDocumentData.Data.ReceivedFederalTaxRefund.Value.Replace(&quot;☒&quot;,&quot;&quot;).Replace(&quot; &quot;,&quot;&quot;).ToLower]" sap:VirtualizedContainerService.HintSize="670,57" sap2010:WorkflowViewState.IdRef="Switch`1_15">
-      <Switch.Default>
-        <Assign DisplayName="Assign-Unanswered" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_51">
-          <Assign.To>
-            <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("AssetSelfCertification")(0)("part_ii_federal_tax")("FederalTaxRefund")]</OutArgument>
-          </Assign.To>
-          <Assign.Value>
-            <InArgument x:TypeArguments="njl:JToken">["unanswered"]</InArgument>
-          </Assign.Value>
-        </Assign>
-      </Switch.Default>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Assign x:Key="yes" DisplayName="Assign-ReceivedFederalTaxRefund-true" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_56">
-        <Assign.To>
-          <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("AssetSelfCertification")(0)("part_ii_federal_tax")("FederalTaxRefund")]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="njl:JToken">["true"]</InArgument>
-        </Assign.Value>
-      </Assign>
-      <Assign x:Key="no" DisplayName="Assign-ReceivedFederalTaxRefund-false" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_57">
-        <Assign.To>
-          <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("AssetSelfCertification")(0)("part_ii_federal_tax")("FederalTaxRefund")]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="njl:JToken">["false"]</InArgument>
-        </Assign.Value>
-      </Assign>
-    </Switch>
-    <Switch x:TypeArguments="x:String" DisplayName="SwitchSoldAssetsOver1000" Expression="[ASCDocumentData.Data.SoldAssetsOver1000.Value.Replace(&quot;☒&quot;,&quot;&quot;).Replace(&quot; &quot;,&quot;&quot;).ToLower]" sap:VirtualizedContainerService.HintSize="670,57" sap2010:WorkflowViewState.IdRef="Switch`1_16">
-      <Switch.Default>
-        <Assign DisplayName="Assign-SoldAssetsOver1000" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_52">
-          <Assign.To>
-            <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("AssetSelfCertification")(0)("PartIAssetsDisposedForLessThanFMV")("SoldAssetsOver1000")]</OutArgument>
-          </Assign.To>
-          <Assign.Value>
-            <InArgument x:TypeArguments="njl:JToken">["unanswered"]</InArgument>
-          </Assign.Value>
-        </Assign>
-      </Switch.Default>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Assign x:Key="yes" DisplayName="Assign-SoldAssetsOver1000-true" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_58">
-        <Assign.To>
-          <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("AssetSelfCertification")(0)("PartIAssetsDisposedForLessThanFMV")("SoldAssetsOver1000")]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="njl:JToken">["true"]</InArgument>
-        </Assign.Value>
-      </Assign>
-      <Assign x:Key="no" DisplayName="Assign-SoldAssetsOver1000-false" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_59">
-        <Assign.To>
-          <OutArgument x:TypeArguments="njl:JToken">[io_JSONObject("AssetSelfCertification")(0)("PartIAssetsDisposedForLessThanFMV")("SoldAssetsOver1000")]</OutArgument>
-        </Assign.To>
-        <Assign.Value>
-          <InArgument x:TypeArguments="njl:JToken">["false"]</InArgument>
-        </Assign.Value>
-      </Assign>
-    </Switch>
-    <ui:LogMessage DisplayName="Log Message-Ended" sap:VirtualizedContainerService.HintSize="670,164" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;DU_Extraction_ASC.xaml is Completed&quot;]" />
+    <ui:LogMessage DisplayName="Log Message-Ended" sap:VirtualizedContainerService.HintSize="631,164" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;AssetSelfCertification_GA.xaml is Completed&quot;]" />
   </Sequence>
 </Activity>
