@@ -401,17 +401,6 @@
       "Path": "Utilities/AuditFindings.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "int_ProfitlossNoOfMonths&Sequence_4179",
-        "bool_PerYearEarningsChecked&Sequence_4179",
-        "dec_EDCTotalGorssPay&Sequence_4179",
-        "int_EDCCount&Sequence_4179",
-        "arr_EDCHouseholdMember&Sequence_4179",
-        "arr_EDCPayScheduleOption&Sequence_4179",
-        "arr_RDCHighestCalculatedincomeValue&Sequence_4179",
-        "arr_EDCTotalGrossPay&Sequence_4179",
-        "dt_EDCPayCategories&Sequence_4179",
-        "dt_IncomeDocDetails&Sequence_4179",
-        "jArr_HABAssets&Sequence_4001",
         "arr_AS_MemNames&Sequence_1",
         "dt_TaxRefund&Sequence_1",
         "arr_ICWMemberNames&Sequence_1",
@@ -482,6 +471,7 @@
         "arr_ICWAdultHouseholders&Sequence_4001",
         "bool_RealEstateIsChecked&Sequence_4001",
         "int_ICWNoLiveInAid&Sequence_4001",
+        "jArr_HABAssets&Sequence_4001",
         "dt_FilteredDocTypeData&Sequence_3586",
         "jArr_ExtResults&Sequence_3587",
         "list_ImageFiles&Sequence_3587",
@@ -496,6 +486,16 @@
         "jObj_ExtractionResults&Sequence_3597",
         "jObj_JSON&Sequence_3598",
         "list_MatchedResults&Sequence_3599",
+        "int_ProfitlossNoOfMonths&Sequence_4179",
+        "bool_PerYearEarningsChecked&Sequence_4179",
+        "dec_EDCTotalGorssPay&Sequence_4179",
+        "int_EDCCount&Sequence_4179",
+        "arr_EDCHouseholdMember&Sequence_4179",
+        "arr_EDCPayScheduleOption&Sequence_4179",
+        "arr_RDCHighestCalculatedincomeValue&Sequence_4179",
+        "arr_EDCTotalGrossPay&Sequence_4179",
+        "dt_EDCPayCategories&Sequence_4179",
+        "dt_IncomeDocDetails&Sequence_4179",
         "dt_FilteredDocTypeData&Sequence_523",
         "jArr_ExtResults&Sequence_537",
         "list_ImageFiles&Sequence_537",
@@ -2811,6 +2811,19 @@
       ],
       "ArgumentsSectionElementsOrder": [
         "io_DTAuditFindings",
+        "in_Config",
+        "in_ClassificationResultsData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "AuditFindings/Certification of Student Status.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_FilteredCSSData&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
         "in_Config",
         "in_ClassificationResultsData"
       ],
