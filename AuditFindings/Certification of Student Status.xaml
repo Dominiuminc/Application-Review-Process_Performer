@@ -141,7 +141,7 @@
             </ui:FilterDataTable>
             <If Condition="[dt_FilteredCSSData.RowCount &gt; 0]" DisplayName="If - Certification of Student Status exists" sap:VirtualizedContainerService.HintSize="450,367" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Then: If - Certification of Student Status exists" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>

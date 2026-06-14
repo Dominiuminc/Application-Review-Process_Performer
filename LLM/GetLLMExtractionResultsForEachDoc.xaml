@@ -284,7 +284,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:CommentOut>
-                      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="592,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
+                      <ui:MultipleAssign DisplayName="Set: str_EndPoint, str_APIKey, str_DeploymentName, str_APIVersion..." sap:VirtualizedContainerService.HintSize="592,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_9">
                         <ui:MultipleAssign.AssignOperations>
                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -382,7 +382,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="558,993" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <Sequence DisplayName="Then: If-LLMResultIsSuccess" sap:VirtualizedContainerService.HintSize="558,993" sap2010:WorkflowViewState.IdRef="Sequence_3">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -406,7 +406,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <If.Then>
-                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,201" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                      <Sequence DisplayName="Then: If-JSONContainsSpecialChars" sap:VirtualizedContainerService.HintSize="416,201" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -458,7 +458,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
-                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                  <Sequence DisplayName="Then: If-Jobject" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -492,7 +492,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
-                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                  <Sequence DisplayName="Then: If-JArray" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_21">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -535,7 +535,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <If.Then>
-                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                  <Sequence DisplayName="Then: If-JSONIsEmpty" sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="Sequence_29">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>

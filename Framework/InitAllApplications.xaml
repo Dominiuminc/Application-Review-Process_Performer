@@ -149,7 +149,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,191" sap2010:WorkflowViewState.IdRef="Sequence_11">
+        <Sequence DisplayName="Then: If-TempFolderDoesNotExist" sap:VirtualizedContainerService.HintSize="416,191" sap2010:WorkflowViewState.IdRef="Sequence_11">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -174,7 +174,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,283" sap2010:WorkflowViewState.IdRef="Sequence_18">
+              <Sequence DisplayName="Then: If-DisableDeletingTempFolder" sap:VirtualizedContainerService.HintSize="416,283" sap2010:WorkflowViewState.IdRef="Sequence_18">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -209,7 +209,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,252" sap2010:WorkflowViewState.IdRef="Sequence_16">
+        <Sequence DisplayName="Then: If-CheckIfTempFolderCreated" sap:VirtualizedContainerService.HintSize="416,252" sap2010:WorkflowViewState.IdRef="Sequence_16">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -284,7 +284,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,191" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <Sequence DisplayName="Then: If-PDFsFolderDoesNotExist" sap:VirtualizedContainerService.HintSize="416,191" sap2010:WorkflowViewState.IdRef="Sequence_14">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -146,7 +146,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1340" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body: Use Browser Edge: 5848431" sap:VirtualizedContainerService.HintSize="496,1340" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="str_ParentId" />
               <Variable x:TypeArguments="x:String" Name="str_BucketName" />

@@ -156,7 +156,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1208,4538" sap2010:WorkflowViewState.IdRef="Sequence_16">
+        <Sequence DisplayName="Then: If-FindingsExist" sap:VirtualizedContainerService.HintSize="1208,4538" sap2010:WorkflowViewState.IdRef="Sequence_16">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -203,7 +203,7 @@
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1112,3585" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <Sequence DisplayName="Body: Use Browser Edge: Document View - Unit 601" sap:VirtualizedContainerService.HintSize="1112,3585" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>

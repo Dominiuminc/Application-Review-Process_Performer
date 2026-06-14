@@ -260,7 +260,7 @@
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="ParentScope" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,1451" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                      <Sequence DisplayName="Body: Microsoft Office 365 Scope" sap:VirtualizedContainerService.HintSize="608,1451" sap2010:WorkflowViewState.IdRef="Sequence_25">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="mg:DriveItem" Name="folder" />
                           <Variable x:TypeArguments="mg:DriveItem[]" Name="results" />
@@ -338,7 +338,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,360" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                    <Sequence DisplayName="Then: Body" sap:VirtualizedContainerService.HintSize="416,360" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -406,7 +406,7 @@
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ParentScope" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="804,3488" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                <Sequence DisplayName="Body: Microsoft Office 365 Scope" sap:VirtualizedContainerService.HintSize="804,3488" sap2010:WorkflowViewState.IdRef="Sequence_20">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="mg:DriveItem" Name="folder" />
                     <Variable x:TypeArguments="mg:DriveItem[]" Name="results" />
@@ -505,7 +505,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                    <Sequence DisplayName="Then: If-FolderCreated" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_35">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -555,7 +555,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <If.Then>
-                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="608,994" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                            <Sequence DisplayName="Then: If-FolderIsnotCreatedInSP" sap:VirtualizedContainerService.HintSize="608,994" sap2010:WorkflowViewState.IdRef="Sequence_37">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -589,7 +589,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <If.Then>
-                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,360" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                          <Sequence DisplayName="Then: Body" sap:VirtualizedContainerService.HintSize="416,360" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>

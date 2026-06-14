@@ -339,7 +339,7 @@
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                          <Sequence DisplayName="Body: Use Browser Edge: Document View - Unit 601" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="Sequence_28">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -365,7 +365,7 @@
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                          <Sequence DisplayName="Body: Use Browser Edge: Certifications" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="Sequence_31">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -899,7 +899,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,208" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                    <Sequence DisplayName="Then: System Exception" sap:VirtualizedContainerService.HintSize="416,208" sap2010:WorkflowViewState.IdRef="Sequence_34">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -929,10 +929,10 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="ReassignCerts - Invoke Workflow File (ReassignCerts.xaml)" sap:VirtualizedContainerService.HintSize="354,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="Yardi\ReassignCerts.xaml">
                                     <ui:InvokeWorkflowFile.Arguments>
-                                      <InArgument x:TypeArguments="x:String" x:Key="str_Reviewer">[in_TransactionItem.SpecificContent("Reviewer").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="str_PropertyName">[in_TransactionItem.SpecificContent("PropertyName").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="str_Unit">[in_TransactionItem.SpecificContent("Unit").ToString]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="str_ManagerName">[in_TransactionItem.SpecificContent("ManagerName").ToString]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="in_str_Reviewer">[in_TransactionItem.SpecificContent("Reviewer").ToString]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="in_str_PropertyName">[in_TransactionItem.SpecificContent("PropertyName").ToString]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="in_str_Unit">[in_TransactionItem.SpecificContent("Unit").ToString]</InArgument>
+                                      <InArgument x:TypeArguments="x:String" x:Key="in_str_ManagerName">[in_TransactionItem.SpecificContent("ManagerName").ToString]</InArgument>
                                       <InArgument x:TypeArguments="x:String" x:Key="in_CertsURL">[in_Config("YardiCertsURL").ToString]</InArgument>
                                       <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
                                       <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
@@ -1062,7 +1062,7 @@
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                      <Sequence DisplayName="Body: Use Browser Edge: Document View - Unit 601" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="Sequence_30">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1088,7 +1088,7 @@
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                      <Sequence DisplayName="Body: Use Browser Edge: Certifications" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="Sequence_33">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>

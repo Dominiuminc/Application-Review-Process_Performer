@@ -1,11 +1,11 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Check_If_COLA_Effective" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="str_LetterVersion" Type="InArgument(x:String)" />
-    <x:Property Name="str_BeginningMonth" Type="InArgument(x:String)" />
-    <x:Property Name="str_BeginningYear" Type="InArgument(x:String)" />
-    <x:Property Name="bool_COLALetterExists" Type="InArgument(x:Boolean)" />
-    <x:Property Name="jarr_ColaLetters" Type="InArgument(njl:JArray)" />
-    <x:Property Name="bool_ColaEffective" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="in_str_LetterVersion" Type="InArgument(x:String)" />
+    <x:Property Name="in_str_BeginningMonth" Type="InArgument(x:String)" />
+    <x:Property Name="in_str_BeginningYear" Type="InArgument(x:String)" />
+    <x:Property Name="in_bool_COLALetterExists" Type="InArgument(x:Boolean)" />
+    <x:Property Name="in_jarr_ColaLetters" Type="InArgument(njl:JArray)" />
+    <x:Property Name="out_bool_ColaEffective" Type="OutArgument(x:Boolean)" />
     <x:Property Name="io_DTAuditFindings" Type="InOutArgument(sd:DataTable)" />
   </x:Members>
   <sap:VirtualizedContainerService.HintSize>912,688</sap:VirtualizedContainerService.HintSize>
@@ -198,14 +198,14 @@
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Switch x:TypeArguments="x:String" DisplayName="Switch-str_LetterVersion" Expression="[str_LetterVersion.Trim.ToString.ToLower]" sap:VirtualizedContainerService.HintSize="497,190" sap2010:WorkflowViewState.IdRef="Switch`1_24">
+          <Switch x:TypeArguments="x:String" DisplayName="Switch-str_LetterVersion" Expression="[in_str_LetterVersion.Trim.ToString.ToLower]" sap:VirtualizedContainerService.HintSize="497,190" sap2010:WorkflowViewState.IdRef="Switch`1_24">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If x:Key="monthly" Condition="[str_BeginningMonth.Trim.ToLower.Contains(&quot;december&quot;)]" DisplayName="If-BeginningMonthIsDecember" sap:VirtualizedContainerService.HintSize="334,182" sap2010:WorkflowViewState.IdRef="If_1254">
+            <If x:Key="monthly" Condition="[in_str_BeginningMonth.Trim.ToLower.Contains(&quot;december&quot;)]" DisplayName="If-BeginningMonthIsDecember" sap:VirtualizedContainerService.HintSize="334,182" sap2010:WorkflowViewState.IdRef="If_1254">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -213,7 +213,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_4212">
+                <Sequence DisplayName="Then: If-BeginningMonthIsDecember" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_4212">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -246,7 +246,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If x:Key="yearly" Condition="[str_BeginningYear.Trim.ToLower.Contains(DateTime.Now.AddYears(1).Year.ToString)]" DisplayName="If-BeginningYearIsNextYear" sap:VirtualizedContainerService.HintSize="334,182" sap2010:WorkflowViewState.IdRef="If_1255">
+            <If x:Key="yearly" Condition="[in_str_BeginningYear.Trim.ToLower.Contains(DateTime.Now.AddYears(1).Year.ToString)]" DisplayName="If-BeginningYearIsNextYear" sap:VirtualizedContainerService.HintSize="334,182" sap2010:WorkflowViewState.IdRef="If_1255">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -254,7 +254,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_4214">
+                <Sequence DisplayName="Then: If-BeginningYearIsNextYear" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_4214">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -288,7 +288,7 @@
               </If.Else>
             </If>
           </Switch>
-          <If Condition="[bool_COLALetterExists]" DisplayName="If-ColaLetterExists" sap:VirtualizedContainerService.HintSize="497,214" sap2010:WorkflowViewState.IdRef="If_1257">
+          <If Condition="[in_bool_COLALetterExists]" DisplayName="If-ColaLetterExists" sap:VirtualizedContainerService.HintSize="497,214" sap2010:WorkflowViewState.IdRef="If_1257">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -296,14 +296,14 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_4218">
+              <Sequence DisplayName="Then: If-ColaLetterExists" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_4218">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <If Condition="[jarr_ColaLetters.Any(Function(l) DateTime.ParseExact(l(&quot;Date&quot;).ToString, &quot;yyyy-MM-dd&quot;, System.Globalization.CultureInfo.InvariantCulture) &lt;= DateTime.Today)]" DisplayName="If-ColaDate&lt;=Today's Date" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="If_1256">
+                <If Condition="[in_jarr_ColaLetters.Any(Function(l) DateTime.ParseExact(l(&quot;Date&quot;).ToString, &quot;yyyy-MM-dd&quot;, System.Globalization.CultureInfo.InvariantCulture) &lt;= DateTime.Today)]" DisplayName="If-ColaDate&lt;=Today's Date" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="If_1256">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -311,7 +311,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_4216">
+                    <Sequence DisplayName="Then: If-ColaDate&lt;=Today's Date" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_4216">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -378,7 +378,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_4220">
+              <Sequence DisplayName="Then: If-ColaEffective" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_4220">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -387,7 +387,7 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <Assign DisplayName="Assign-bool_ColaEffectiveTrue" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_894">
                   <Assign.To>
-                    <OutArgument x:TypeArguments="x:Boolean">[bool_ColaEffective]</OutArgument>
+                    <OutArgument x:TypeArguments="x:Boolean">[out_bool_ColaEffective]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
                     <InArgument x:TypeArguments="x:Boolean">True</InArgument>
@@ -410,7 +410,7 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <Assign DisplayName="Assign-bool_ColaEffectiveFalse" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_895">
                   <Assign.To>
-                    <OutArgument x:TypeArguments="x:Boolean">[bool_ColaEffective]</OutArgument>
+                    <OutArgument x:TypeArguments="x:Boolean">[out_bool_ColaEffective]</OutArgument>
                   </Assign.To>
                   <Assign.Value>
                     <InArgument x:TypeArguments="x:Boolean">False</InArgument>
