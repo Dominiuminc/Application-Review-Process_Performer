@@ -2,13 +2,13 @@
   <x:Members>
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_ClassificationResultsData" Type="InArgument(sd:DataTable)" />
-    <x:Property Name="str_PromptsFolder" Type="InArgument(x:String)" />
-    <x:Property Name="bool_1040Signed" Type="OutArgument(x:Boolean)" />
-    <x:Property Name="bool_1040DateExists" Type="OutArgument(x:Boolean)" />
-    <x:Property Name="bool_1040Exists" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="in_str_PromptsFolder" Type="InArgument(x:String)" />
+    <x:Property Name="out_bool_1040Signed" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="out_bool_1040DateExists" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="out_bool_1040Exists" Type="OutArgument(x:Boolean)" />
     <x:Property Name="io_DTAuditFindings" Type="InOutArgument(sd:DataTable)" />
-    <x:Property Name="arr_1040Names" Type="OutArgument(s:String[])" />
-    <x:Property Name="arr_1040Amounts" Type="OutArgument(s:String[])" />
+    <x:Property Name="out_arr_1040Names" Type="OutArgument(s:String[])" />
+    <x:Property Name="out_arr_1040Amounts" Type="OutArgument(s:String[])" />
   </x:Members>
   <sap:VirtualizedContainerService.HintSize>998,1819</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
@@ -195,7 +195,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="603,863" sap2010:WorkflowViewState.IdRef="Sequence_4093">
+        <Sequence DisplayName="Then: If-1040Exists" sap:VirtualizedContainerService.HintSize="603,863" sap2010:WorkflowViewState.IdRef="Sequence_4093">
           <Sequence.Variables>
             <Variable x:TypeArguments="njl:JArray" Name="jArr_ExtResults" />
           </Sequence.Variables>
@@ -227,7 +227,7 @@
             </Assign>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="GetLLMExtractionResultsForEachDoc - Invoke Workflow File (GetLLMExtractionResultsForEachDoc.xaml)" sap:VirtualizedContainerService.HintSize="479,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_166" UnSafe="False" WorkflowFileName="LLM\GetLLMExtractionResultsForEachDoc.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_UserPromptTextFile">[str_PromptsFolder+"1040_Prompt.txt"]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_UserPromptTextFile">[in_str_PromptsFolder+"1040_Prompt.txt"]</InArgument>
                 <InArgument x:TypeArguments="scg:List(x:String)" x:Key="in_ImagePath">[list_ImageFiles]</InArgument>
                 <OutArgument x:TypeArguments="njl:JObject" x:Key="out_jObjExtractionResults">[jObj_ExtractionResults]</OutArgument>
                 <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
@@ -253,7 +253,7 @@
                   </ui:AssignOperation>
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_431">
                     <ui:AssignOperation.To>
-                      <OutArgument x:TypeArguments="s:String[]">[arr_1040Names]</OutArgument>
+                      <OutArgument x:TypeArguments="s:String[]">[out_arr_1040Names]</OutArgument>
                     </ui:AssignOperation.To>
                     <ui:AssignOperation.Value>
                       <InArgument x:TypeArguments="s:String[]">[New String(){}]</InArgument>
@@ -261,7 +261,7 @@
                   </ui:AssignOperation>
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_433">
                     <ui:AssignOperation.To>
-                      <OutArgument x:TypeArguments="s:String[]">[arr_1040Amounts]</OutArgument>
+                      <OutArgument x:TypeArguments="s:String[]">[out_arr_1040Amounts]</OutArgument>
                     </ui:AssignOperation.To>
                     <ui:AssignOperation.Value>
                       <InArgument x:TypeArguments="s:String[]">[New String(){}]</InArgument>
@@ -308,7 +308,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_73">
+                    <ui:MultipleAssign DisplayName="Set: str_1040Name, str_1040Line10, out_bool_1040Signed, out_bool_1040DateExists..." sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_73">
                       <ui:MultipleAssign.AssignOperations>
                         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_425">
@@ -329,7 +329,7 @@
                           </ui:AssignOperation>
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_427">
                             <ui:AssignOperation.To>
-                              <OutArgument x:TypeArguments="x:Boolean">[bool_1040Signed]</OutArgument>
+                              <OutArgument x:TypeArguments="x:Boolean">[out_bool_1040Signed]</OutArgument>
                             </ui:AssignOperation.To>
                             <ui:AssignOperation.Value>
                               <InArgument x:TypeArguments="x:Boolean">[if(jObj_JSON("HasSignature").ToString.ToLower.Equals("true"),true,false)]</InArgument>
@@ -337,7 +337,7 @@
                           </ui:AssignOperation>
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_428">
                             <ui:AssignOperation.To>
-                              <OutArgument x:TypeArguments="x:Boolean">[bool_1040DateExists]</OutArgument>
+                              <OutArgument x:TypeArguments="x:Boolean">[out_bool_1040DateExists]</OutArgument>
                             </ui:AssignOperation.To>
                             <ui:AssignOperation.Value>
                               <InArgument x:TypeArguments="x:Boolean">[if(jObj_JSON("HasDate").ToString.ToLower.Equals("true"),true,false)]</InArgument>
@@ -345,7 +345,7 @@
                           </ui:AssignOperation>
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_429">
                             <ui:AssignOperation.To>
-                              <OutArgument x:TypeArguments="x:Boolean">[bool_1040Exists]</OutArgument>
+                              <OutArgument x:TypeArguments="x:Boolean">[out_bool_1040Exists]</OutArgument>
                             </ui:AssignOperation.To>
                             <ui:AssignOperation.Value>
                               <InArgument x:TypeArguments="x:Boolean">True</InArgument>
@@ -361,18 +361,18 @@
                           </ui:AssignOperation>
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_434">
                             <ui:AssignOperation.To>
-                              <OutArgument x:TypeArguments="s:String[]">[arr_1040Names]</OutArgument>
+                              <OutArgument x:TypeArguments="s:String[]">[out_arr_1040Names]</OutArgument>
                             </ui:AssignOperation.To>
                             <ui:AssignOperation.Value>
-                              <InArgument x:TypeArguments="s:String[]">[arr_1040Names.Concat({str_1040Name}).ToArray()]</InArgument>
+                              <InArgument x:TypeArguments="s:String[]">[out_arr_1040Names.Concat({str_1040Name}).ToArray()]</InArgument>
                             </ui:AssignOperation.Value>
                           </ui:AssignOperation>
                           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_435">
                             <ui:AssignOperation.To>
-                              <OutArgument x:TypeArguments="s:String[]">[arr_1040Amounts]</OutArgument>
+                              <OutArgument x:TypeArguments="s:String[]">[out_arr_1040Amounts]</OutArgument>
                             </ui:AssignOperation.To>
                             <ui:AssignOperation.Value>
-                              <InArgument x:TypeArguments="s:String[]">[arr_1040Amounts.Concat({str_1040Line10}).ToArray()]</InArgument>
+                              <InArgument x:TypeArguments="s:String[]">[out_arr_1040Amounts.Concat({str_1040Line10}).ToArray()]</InArgument>
                             </ui:AssignOperation.Value>
                           </ui:AssignOperation>
                         </scg:List>
@@ -384,7 +384,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:MultipleAssign>
-                    <If Condition="[(Not bool_1040Signed) and Not str_1040DocName.ToLower.replace(&quot; &quot;,&quot;&quot;).Contains(&quot;1040taxreturntranscript&quot;)]" DisplayName="If-1040notsigned" sap:VirtualizedContainerService.HintSize="450,298" sap2010:WorkflowViewState.IdRef="If_1385">
+                    <If Condition="[(Not out_bool_1040Signed) and Not str_1040DocName.ToLower.replace(&quot; &quot;,&quot;&quot;).Contains(&quot;1040taxreturntranscript&quot;)]" DisplayName="If-1040notsigned" sap:VirtualizedContainerService.HintSize="450,298" sap2010:WorkflowViewState.IdRef="If_1385">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -392,7 +392,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_4555">
+                        <Sequence DisplayName="Then: If-1040notsigned" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_4555">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -420,7 +420,7 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <If Condition="[(Not bool_1040DateExists) And Not str_1040DocName.ToLower.replace(&quot; &quot;,&quot;&quot;).Contains(&quot;1040taxreturntranscript&quot;)]" DisplayName="If-1040DateNoTDocumented" sap:VirtualizedContainerService.HintSize="450,561" sap2010:WorkflowViewState.IdRef="If_1386">
+                    <If Condition="[(Not out_bool_1040DateExists) And Not str_1040DocName.ToLower.replace(&quot; &quot;,&quot;&quot;).Contains(&quot;1040taxreturntranscript&quot;)]" DisplayName="If-1040DateNoTDocumented" sap:VirtualizedContainerService.HintSize="450,561" sap2010:WorkflowViewState.IdRef="If_1386">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -428,7 +428,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,297" sap2010:WorkflowViewState.IdRef="Sequence_4557">
+                        <Sequence DisplayName="Then: If-1040DateNoTDocumented" sap:VirtualizedContainerService.HintSize="416,297" sap2010:WorkflowViewState.IdRef="Sequence_4557">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>

@@ -122,7 +122,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,953" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body: Edge Dashboard - Auditor" sap:VirtualizedContainerService.HintSize="416,953" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="int_DataCount" />
               <Variable x:TypeArguments="x:Int32" Name="int_Index" />

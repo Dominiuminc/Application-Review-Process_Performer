@@ -133,7 +133,7 @@
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Email Body: &quot;+in_EmailBody]" />
     <If Condition="[in_AttachmentExists]" sap:VirtualizedContainerService.HintSize="450,1543" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,760" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Then: EmailNotification" sap:VirtualizedContainerService.HintSize="416,760" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
             <Variable x:TypeArguments="upr:ILocalResource" Name="AttachmentResource" />
           </Sequence.Variables>

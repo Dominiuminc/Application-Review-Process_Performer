@@ -146,7 +146,7 @@
     </Assign>
     <If Condition="[dtdata.AsEnumerable().Any(Function(row) Convert.ToDouble(row(&quot;Column1&quot;).ToString.Trim) = Convert.ToDouble(strDate))]" sap:VirtualizedContainerService.HintSize="450,674" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,252" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Then: JSONTesting" sap:VirtualizedContainerService.HintSize="416,252" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
