@@ -401,6 +401,7 @@
       "Path": "Utilities/AuditFindings.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "int_ICWNoOfAdults&Sequence_1",
         "bool_EVDoesNotExist&Sequence_1",
         "arr_ICWAge&Sequence_4001",
         "arr_ICWDOB&Sequence_4001",
@@ -475,7 +476,6 @@
         "arr_RDCPayPeriodEndDate&Sequence_1",
         "arr_RDCHighesteIncomeValue&Sequence_1",
         "dt_IAQAssetInfo&Sequence_1",
-        "int_ICWNoOfAdults&Sequence_4001",
         "arr_ICWAdultHouseholders&Sequence_4001",
         "bool_RealEstateIsChecked&Sequence_4001",
         "int_ICWNoLiveInAid&Sequence_4001",
