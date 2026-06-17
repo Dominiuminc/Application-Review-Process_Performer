@@ -13,7 +13,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>912,688</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>912,827</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TestClickingUploads_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -145,13 +145,13 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="DownloadUploadDocuments" sap:VirtualizedContainerService.HintSize="416,609" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DownloadUploadDocuments" sap:VirtualizedContainerService.HintSize="416,762" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <y:DownloadUploadDocuments sap:VirtualizedContainerService.HintSize="354,521" sap2010:WorkflowViewState.IdRef="DownloadUploadDocuments_1" in_CertDownloadURL="[in_CertDownloadURL]" in_Config="[in_Config]" in_DocumentReviewURL="[in_DocumentReviewURL]" in_FolderToDownload="[in_FolderToDownload]" in_Unit="[in_Unit]" out_DownloadPDFsDone="[out_DownloadPDFsDone]" out_DownloadedPDFFiles="[out_DownloadedPDFFiles]" out_PDFDownloadFolder="[out_PDFDownloadFolder]" out_SortingAlreadyStarted="[out_SortingAlreadyStarted]">
+    <y:DownloadUploadDocuments sap:VirtualizedContainerService.HintSize="354,674" sap2010:WorkflowViewState.IdRef="DownloadUploadDocuments_1" in_CertDownloadURL="[in_CertDownloadURL]" in_Config="[in_Config]" in_DocumentReviewURL="[in_DocumentReviewURL]" in_FolderToDownload="[in_FolderToDownload]" in_MediumTimeDelay="[CInt(in_Config(&quot;MediumTimeDelay&quot;).ToString)]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_Unit="[in_Unit]" in_longTimeDelay="[CInt(in_Config(&quot;LongTimeDelay&quot;).ToString)]" out_DownloadPDFsDone="[out_DownloadPDFsDone]" out_DownloadedPDFFiles="[out_DownloadedPDFFiles]" out_PDFDownloadFolder="[out_PDFDownloadFolder]" out_SortingAlreadyStarted="[out_SortingAlreadyStarted]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>

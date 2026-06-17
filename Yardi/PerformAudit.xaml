@@ -35,6 +35,8 @@
       <x:String>System.Net.Mail</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -116,13 +118,13 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="416,507" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="416,558" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <y:PerformAudit sap:VirtualizedContainerService.HintSize="354,419" sap2010:WorkflowViewState.IdRef="PerformAudit_1" in_Config="[in_Config]" in_DTFindings="[in_DtAuditFindings]" in_DtClassificationResults="[in_DtSortingData]" in_Finding="[in_Config(&quot;YardiFinding&quot;).ToString]" in_FindingType="[in_Config(&quot;YardiFindingType&quot;).ToString]" in_TransactionItem="[in_TransactionItem]" in_YardiDocReviewURL="[in_CaseLink]">
+    <y:PerformAudit sap:VirtualizedContainerService.HintSize="354,470" sap2010:WorkflowViewState.IdRef="PerformAudit_1" in_Config="[in_Config]" in_DTFindings="[in_DtAuditFindings]" in_DtClassificationResults="[in_DtSortingData]" in_Finding="[in_Config(&quot;YardiFinding&quot;).ToString]" in_FindingType="[in_Config(&quot;YardiFindingType&quot;).ToString]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" in_YardiDocReviewURL="[in_CaseLink]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
