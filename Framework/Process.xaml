@@ -202,7 +202,7 @@
                 <av:Size x:Key="ShapeSize">110,70</av:Size>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <y:ReassignCerts sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="ReassignCerts_1" in_CertsURL="[in_Config(&quot;YardiCertsURL&quot;).ToString]" in_Config="[in_Config]" in_TransactionItem="[in_TransactionItem]" str_ManagerName="[str_ManagerName]" str_PropertyName="[str_PropertyName]" str_Reviewer="[str_Reviewer]" str_Unit="[str_Unit]">
+            <y:ReassignCerts sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="ReassignCerts_1" in_CertsURL="[in_Config(&quot;YardiCertsURL&quot;).ToString]" in_Config="[in_Config]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" str_ManagerName="[str_ManagerName]" str_PropertyName="[str_PropertyName]" str_Reviewer="[str_Reviewer]" str_Unit="[str_Unit]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -257,7 +257,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <FlowDecision.True>
-                  <FlowStep x:Name="__ReferenceID20">
+                  <FlowStep x:Name="__ReferenceID19">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <av:Point x:Key="ShapeLocation">365,505</av:Point>
@@ -360,7 +360,7 @@
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <FlowDecision.True>
-                                  <FlowStep x:Name="__ReferenceID19" sap2010:WorkflowViewState.IdRef="FlowStep_5">
+                                  <FlowStep x:Name="__ReferenceID18" sap2010:WorkflowViewState.IdRef="FlowStep_5">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <av:Point x:Key="ShapeLocation">515,855</av:Point>
@@ -385,7 +385,7 @@
                                             <av:Point x:Key="ShapeLocation">890,860</av:Point>
                                             <av:Size x:Key="ShapeSize">59,59</av:Size>
                                             <av:PointCollection x:Key="TrueConnector">949,889.5 978.9999999999999,889.5 978.9999999999999,890 1185,890</av:PointCollection>
-                                            <av:PointCollection x:Key="FalseConnector">919.5,919 919.5,1000 755,1000</av:PointCollection>
+                                            <av:PointCollection x:Key="FalseConnector">919.5,919 919.5,1020 815,1020</av:PointCollection>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <FlowDecision.True>
@@ -396,7 +396,7 @@
                                                 <av:Size x:Key="ShapeSize">110,70</av:Size>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <y:ReassignCerts sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="ReassignCerts_2" in_CertsURL="[in_Config(&quot;YardiCertsURL&quot;).ToString]" in_Config="[in_Config]" in_TransactionItem="[in_TransactionItem]" str_ManagerName="[str_ManagerName]" str_PropertyName="[str_PropertyName]" str_Reviewer="[str_Reviewer]" str_Unit="[str_Unit]">
+                                            <y:ReassignCerts sap:VirtualizedContainerService.HintSize="334,447" sap2010:WorkflowViewState.IdRef="ReassignCerts_2" in_CertsURL="[in_Config(&quot;YardiCertsURL&quot;).ToString]" in_Config="[in_Config]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" str_ManagerName="[str_ManagerName]" str_PropertyName="[str_PropertyName]" str_Reviewer="[str_Reviewer]" str_Unit="[str_Unit]">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -406,21 +406,20 @@
                                           </FlowStep>
                                         </FlowDecision.True>
                                         <FlowDecision.False>
-                                          <FlowStep x:Name="__ReferenceID18" sap2010:WorkflowViewState.IdRef="FlowStep_7">
+                                          <FlowStep x:Name="__ReferenceID21">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <av:Point x:Key="ShapeLocation">645,965</av:Point>
+                                                <av:Point x:Key="ShapeLocation">705,985</av:Point>
                                                 <av:Size x:Key="ShapeSize">110,70</av:Size>
-                                                <av:PointCollection x:Key="ConnectorLocation">487.58743169398923,1016 597.5874316939892,1016</av:PointCollection>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="UpdateStatus" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="True" WorkflowFileName="Yardi\UpdateStatus.xaml">
-                                              <ui:InvokeWorkflowFile.Arguments>
-                                                <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
-                                                <InArgument x:TypeArguments="x:String" x:Key="in_CaseLink">[str_CaseLink]</InArgument>
-                                                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DtAuditFindings">[dt_AuditFindings]</InArgument>
-                                              </ui:InvokeWorkflowFile.Arguments>
-                                            </ui:InvokeWorkflowFile>
+                                            <y:UpdateApplicationStatus sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="UpdateApplicationStatus_2" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_Status="Incomplete" in_TransactionItem="[in_TransactionItem]" in_YardiURL="[str_CaseLink]" in_dt_AuditFindings="[dt_AuditFindings]">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </y:UpdateApplicationStatus>
                                           </FlowStep>
                                         </FlowDecision.False>
                                       </FlowDecision>
@@ -428,10 +427,7 @@
                                   </FlowStep>
                                 </FlowDecision.True>
                                 <FlowDecision.False>
-                                  <FlowDecision x:Name="__ReferenceID21" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="59,59" sap2010:WorkflowViewState.IdRef="FlowDecision_8">
-                                    <FlowDecision.Condition>
-                                      <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="in_IsTesting" />
-                                    </FlowDecision.Condition>
+                                  <FlowDecision x:Name="__ReferenceID20" Condition="[in_IsTesting]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="59,59" sap2010:WorkflowViewState.IdRef="FlowDecision_8">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -491,7 +487,7 @@
                                             <av:PointCollection x:Key="ConnectorLocation">425,1130 505,1130</av:PointCollection>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <y:UpdateApplicationStatus sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="UpdateApplicationStatus_1" in_Status="Approved - Needs Finalization" in_TransactionItem="[in_TransactionItem]" in_YardiURL="[str_CaseLink]" in_dt_AuditFindings="[dt_AuditFindings]">
+                                        <y:UpdateApplicationStatus sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="UpdateApplicationStatus_1" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_Status="Approved - Needs Finalization" in_TransactionItem="[in_TransactionItem]" in_YardiURL="[str_CaseLink]" in_dt_AuditFindings="[dt_AuditFindings]">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -808,9 +804,9 @@
       <x:Reference>__ReferenceID0</x:Reference>
       <x:Reference>__ReferenceID17</x:Reference>
       <x:Reference>__ReferenceID18</x:Reference>
-      <x:Reference>__ReferenceID19</x:Reference>
       <x:Reference>__ReferenceID2</x:Reference>
       <x:Reference>__ReferenceID3</x:Reference>
+      <x:Reference>__ReferenceID19</x:Reference>
       <x:Reference>__ReferenceID20</x:Reference>
       <x:Reference>__ReferenceID21</x:Reference>
     </Flowchart>
