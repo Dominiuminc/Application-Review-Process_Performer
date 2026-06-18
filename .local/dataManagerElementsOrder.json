@@ -401,6 +401,8 @@
       "Path": "Utilities/AuditFindings.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "str_ASPropertyName&Sequence_4001",
+        "dict_ICWStudentStatus&Sequence_4001",
         "int_ICWNoOfAdults&Sequence_1",
         "bool_EVDoesNotExist&Sequence_1",
         "arr_ICWAge&Sequence_4001",
