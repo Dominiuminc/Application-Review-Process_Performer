@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1143,4378</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1143,4800</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AuditFindings_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -197,7 +197,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="AuditFindings" sap:VirtualizedContainerService.HintSize="512,4313" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AuditFindings" sap:VirtualizedContainerService.HintSize="512,4735" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="arr_AS_MemNames" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_TaxRefund" />
@@ -363,7 +363,7 @@
       </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
     <ui:BuildDataTable DataTable="[dt_IAQAssetInfo]" DisplayName="Build Data Table-IAQAssetInfo" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="BuildDataTable_12" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;MemberName&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;AssetType&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;CashValue&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <Sequence DisplayName="NonIncomeVerification" sap:VirtualizedContainerService.HintSize="450,2869" sap2010:WorkflowViewState.IdRef="Sequence_4001">
+    <Sequence DisplayName="NonIncomeVerification" sap:VirtualizedContainerService.HintSize="450,3291" sap2010:WorkflowViewState.IdRef="Sequence_4001">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:String[]" Name="arr_ICWAdultHouseholders" />
         <Variable x:TypeArguments="x:Boolean" Default="False" Name="bool_RealEstateIsChecked" />
@@ -409,11 +409,11 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </aa:Income_and_Asset_Questionnaire>
-      <aa:Household_Asset_Breakdown DisplayName="Household Asset Breakdown" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="Household_Asset_Breakdown_1" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_DtIAQAssetInfo="[dt_IAQAssetInfo]" in_str_MoveIndate="[str_MoveIndate]" in_str_PromptsFolder="[str_PromptsFolder]" io_DTAuditFindings="[out_DTAuditFindings]" out_jArrHABAssets="[jArr_HABAssets]">
+      <aa:Household_Asset_Breakdown DisplayName="Household Asset Breakdown" sap:VirtualizedContainerService.HintSize="388,479" sap2010:WorkflowViewState.IdRef="Household_Asset_Breakdown_1" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_DtIAQAssetInfo="[dt_IAQAssetInfo]" in_ICWNoOfAdults="[int_ICWNoOfAdults]" in_str_MoveIndate="[str_MoveIndate]" in_str_PromptsFolder="[str_PromptsFolder]" io_DTAuditFindings="[out_DTAuditFindings]" out_jArrHABAssets="[jArr_HABAssets]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </aa:Household_Asset_Breakdown>
