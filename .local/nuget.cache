@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "54DlXfFgKQ25RkEP7z8LYdrWJ5+ppOvfktwlOwWgeJITive69UgNv6NBif9m4B19TU0mGqiFtyucZmVKJ4FvhQ==",
+  "dgSpecHash": "eevsbLVmEv0q23YYeCbcCoJ6T1eS/mZKnk/bPp9pG30Z807H1xT8oRACQGVe8leAl4BMPr2zAhChKgJTPpR+GQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\harika.malyala\\Documents\\Git\\Application-Review-Process_Performer\\.local\\",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "C:\\Users\\harika.malyala\\.nuget\\packages\\ashlingpartners.pdf\\1.8.6\\ashlingpartners.pdf.1.8.6.nupkg.sha512",
     "C:\\Users\\harika.malyala\\.nuget\\packages\\ashlingpartners.uipath.pdf.activities\\2.0.0\\ashlingpartners.uipath.pdf.activities.2.0.0.nupkg.sha512",
     "C:\\Users\\harika.malyala\\.nuget\\packages\\ashlingpartners.uipath.stringmatching.activities\\1.9.0\\ashlingpartners.uipath.stringmatching.activities.1.9.0.nupkg.sha512",
-    "C:\\Users\\harika.malyala\\.nuget\\packages\\auditfindings_validation\\1.0.46\\auditfindings_validation.1.0.46.nupkg.sha512",
+    "C:\\Users\\harika.malyala\\.nuget\\packages\\auditfindings_validation\\1.0.47\\auditfindings_validation.1.0.47.nupkg.sha512",
     "C:\\Users\\harika.malyala\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\harika.malyala\\.nuget\\packages\\avalonedit\\6.1.3.50\\avalonedit.6.1.3.50.nupkg.sha512",
     "C:\\Users\\harika.malyala\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",
