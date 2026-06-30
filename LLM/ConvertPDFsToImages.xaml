@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ConvertPDFsToImages" this:ConvertPDFsToImages.in_PDFFiles="[new List(of String)({&quot;C:\Users\harika.malyala\Documents\AZApplicationReview\PDFs\Unit 111\Unit 111_Upload 1.pdf&quot;})]" this:ConvertPDFsToImages.in_PDFFolder="C:\Users\raluca.ilinca.AzureAI-Jump2\Documents\AZApplicationReview\PDFs\Unit 45" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:afa="clr-namespace:AshlingPartners.Foundry.Activities;assembly=AshlingPartners.Foundry.Activities" xmlns:am="clr-namespace:APIClient.Models;assembly=APIClient" xmlns:aupap="clr-namespace:AshlingPartners.UiPath.PDF.Activities.PDF;assembly=AshlingPartners.UiPath.PDF.Activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ConvertPDFsToImages" this:ConvertPDFsToImages.in_PDFFiles="[new List(of String)({&quot;C:\Users\harika.malyala\Documents\AZApplicationReview\PDFs\Unit 111\Unit 111_Upload 1.pdf&quot;})]" this:ConvertPDFsToImages.in_PDFFolder="C:\Users\raluca.ilinca.AzureAI-Jump2\Documents\AZApplicationReview\PDFs\Unit 4201" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:afa="clr-namespace:AshlingPartners.Foundry.Activities;assembly=AshlingPartners.Foundry.Activities" xmlns:am="clr-namespace:APIClient.Models;assembly=APIClient" xmlns:aupap="clr-namespace:AshlingPartners.UiPath.PDF.Activities.PDF;assembly=AshlingPartners.UiPath.PDF.Activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_PDFFiles" Type="InArgument(scg:List(x:String))" />
     <x:Property Name="in_EndPoint" Type="InArgument(x:String)" />
@@ -14,7 +14,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1056,5676</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1413,5486</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ConvertPDFsToImages_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -136,7 +136,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ConvertPDFsToImages" sap:VirtualizedContainerService.HintSize="1038,5611" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ConvertPDFsToImages" sap:VirtualizedContainerService.HintSize="1038,5421" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="int_Index" />
       <Variable x:TypeArguments="x:String" Name="str_RequiredDocPrompt" />
@@ -152,7 +152,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="976,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;ConvertPDFsToImages.xaml is Started&quot;]" />
-    <ui:MultipleAssign DisplayName="Multiple Assign-Prompts" sap:VirtualizedContainerService.HintSize="976,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_88">
+    <ui:MultipleAssign DisplayName="Multiple Assign-Prompts" sap:VirtualizedContainerService.HintSize="976,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_89">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
@@ -188,18 +188,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="976,247" sap2010:WorkflowViewState.IdRef="CommentOut_172">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="976,57" sap2010:WorkflowViewState.IdRef="CommentOut_174">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,136" sap2010:WorkflowViewState.IdRef="Sequence_292">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="603,966" sap2010:WorkflowViewState.IdRef="Sequence_295">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="TestingPurpose" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_291">
+          <Sequence DisplayName="TestingPurpose" sap:VirtualizedContainerService.HintSize="541,878" sap2010:WorkflowViewState.IdRef="Sequence_293">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
@@ -215,7 +215,7 @@
                 <OutArgument x:TypeArguments="scg:List(x:String)">[in_PDFFiles]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="scg:List(x:String)">[System.IO.Directory.GetFiles("C:\Users\raluca.ilinca.AzureAI-Jump2\Documents\AZApplicationReview\PDFs\Unit 45").ToList]</InArgument>
+                <InArgument x:TypeArguments="scg:List(x:String)">[System.IO.Directory.GetFiles("C:\Users\raluca.ilinca.AzureAI-Jump2\Documents\AZApplicationReview\PDFs\Unit 4201").ToList]</InArgument>
               </Assign.Value>
             </Assign>
             <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[in_DTClassificationMatrix]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="479,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\raluca.ilinca.AzureAI-Jump2\Documents\AZApplicationReview\Prompts\Classification Matrix.xlsx">
@@ -290,7 +290,7 @@
                       <OutArgument x:TypeArguments="x:String">[in_State]</OutArgument>
                     </ui:AssignOperation.To>
                     <ui:AssignOperation.Value>
-                      <InArgument x:TypeArguments="x:String">GA</InArgument>
+                      <InArgument x:TypeArguments="x:String">TX</InArgument>
                     </ui:AssignOperation.Value>
                   </ui:AssignOperation>
                 </scg:List>
@@ -305,6 +305,12 @@
           </Sequence>
         </Sequence>
       </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
     <ui:FilterDataTable DataTable="[in_DTClassificationMatrix]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="976,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[in_DTClassificationMatrix]" SelectColumnsMode="Remove">
       <ui:FilterDataTable.Filters>
