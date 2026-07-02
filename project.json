@@ -8,7 +8,7 @@
     "AshlingPartners.Foundry.Activities": "[1.22.0]",
     "AshlingPartners.UiPath.PDF.Activities": "[2.0.0]",
     "AshlingPartners.UiPath.StringMatching.Activities": "[1.9.0]",
-    "AuditFindings_Validation": "[1.0.58]",
+    "AuditFindings_Validation": "[1.0.62]",
     "UiPath.DocumentUnderstanding.Activities": "[2.17.2]",
     "UiPath.Excel.Activities": "[3.2.1]",
     "UiPath.MicrosoftOffice365.Activities": "[3.5.10]",
@@ -24,7 +24,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.1.0",
-  "projectVersion": "1.0.1-alpha.29",
+  "projectVersion": "1.0.1-alpha.30",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
