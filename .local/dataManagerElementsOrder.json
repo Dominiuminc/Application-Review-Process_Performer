@@ -182,15 +182,7 @@
     {
       "Path": "Yardi/DownloadUploadDocuments.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "str_UploadsText&Sequence_2",
-        "arr_Uploads&Sequence_2",
-        "int_UploadsCount&Sequence_2",
-        "int_Index&Sequence_2",
-        "int_TotalPageCount&Sequence_6",
-        "str_UploadPDFFilePath&Sequence_6",
-        "int_PageCount&Sequence_6"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
         "in_DocumentReviewURL",
         "in_CertDownloadURL",
