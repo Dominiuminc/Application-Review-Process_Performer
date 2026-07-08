@@ -45,6 +45,7 @@
       "Path": "Framework/Process.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "str_PersonName&Flowchart_1",
         "dt_ClassificationMatrixClean&Sequence_18",
         "str_PropertyName&Sequence_1",
         "str_State&Sequence_1",
@@ -1904,6 +1905,21 @@
       "ArgumentsSectionElementsOrder": [
         "in_Config",
         "in_ClassificationResultsData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Yardi/SortPagesToBuckets.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_IsTesting",
+        "in_TransactionItem",
+        "in_Config",
+        "in_CaseLink",
+        "in_SortingData",
+        "in_Unit"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
