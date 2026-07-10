@@ -212,6 +212,9 @@
         "str_BucketName&Sequence_10"
       ],
       "ArgumentsSectionElementsOrder": [
+        "in_ShortTimeDelay",
+        "in_MediumTimeDelay",
+        "in_LongTimeDelay",
         "in_Config",
         "in_DocumentReviewURL",
         "in_DTSortingDetails",

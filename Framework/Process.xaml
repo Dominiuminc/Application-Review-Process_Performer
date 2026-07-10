@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1056,1046</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>879,1046</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -164,7 +164,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="600,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <Flowchart sap:VirtualizedContainerService.HintSize="1116,654" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart sap:VirtualizedContainerService.HintSize="600,648" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <Flowchart.Variables>
         <Variable x:TypeArguments="scg:List(x:String)" Name="list_PDFFiles" />
         <Variable x:TypeArguments="sd:DataTable" Name="dt_SortingData" />
@@ -207,7 +207,7 @@
                 <av:Size x:Key="ShapeSize">110,70</av:Size>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <y:ReassignCerts sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="ReassignCerts_1" in_CertsURL="[in_Config(&quot;YardiCertsURL&quot;).ToString]" in_Config="[in_Config]" in_PersonName="[str_PersonName]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" str_ManagerName="[str_ManagerName]" str_PropertyName="[str_PropertyName]" str_Reviewer="[str_Reviewer]" str_Unit="[str_Unit]">
+            <y:ReassignCerts sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="ReassignCerts_1" in_CertsURL="[in_Config(&quot;YardiCertsURL&quot;).ToString]" in_Config="[in_Config]" in_MediumTimeDelay="[CInt(in_Config(&quot;MediumTimeDelay&quot;).ToString)]" in_PersonName="[str_PersonName]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" str_ManagerName="[str_ManagerName]" str_PropertyName="[str_PropertyName]" str_Reviewer="[str_Reviewer]" str_Unit="[str_Unit]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -401,7 +401,7 @@
                                                 <av:Size x:Key="ShapeSize">110,70</av:Size>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <y:ReassignCerts sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="ReassignCerts_2" in_CertsURL="[in_Config(&quot;YardiCertsURL&quot;).ToString]" in_Config="[in_Config]" in_PersonName="[str_PersonName]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" str_ManagerName="[str_ManagerName]" str_PropertyName="[str_PropertyName]" str_Reviewer="[str_Reviewer]" str_Unit="[str_Unit]">
+                                            <y:ReassignCerts sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="ReassignCerts_2" in_CertsURL="[in_Config(&quot;YardiCertsURL&quot;).ToString]" in_Config="[in_Config]" in_MediumTimeDelay="[CInt(in_Config(&quot;MediumTimeDelay&quot;).ToString)]" in_PersonName="[str_PersonName]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" str_ManagerName="[str_ManagerName]" str_PropertyName="[str_PropertyName]" str_Reviewer="[str_Reviewer]" str_Unit="[str_Unit]">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -649,7 +649,7 @@
             <av:PointCollection x:Key="ConnectorLocation">300,205 300,235 299.5,235 299.5,270</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="541,749" sap2010:WorkflowViewState.IdRef="Sequence_13">
+        <Sequence DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_13">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="str_PromptsFolder" />
           </Sequence.Variables>
