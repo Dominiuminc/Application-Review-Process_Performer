@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="AuditFindings" this:AuditFindings.in_PDFFolder="C:\Users\raluca.ilinca.AzureAI-Jump2\Documents\AZApplicationReview\PDFs\Unit WAIT11" this:AuditFindings.in_State="TX" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:aa="clr-namespace:AuditFindings_Validation.AuditFindings;assembly=AuditFindings_Validation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="AuditFindings" this:AuditFindings.in_PDFFolder="C:\Users\raluca.ilinca.AzureAI-Jump2\Documents\AZApplicationReview\PDFs\TX\Unit 3206" this:AuditFindings.in_State="TX" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:aa="clr-namespace:AuditFindings_Validation.AuditFindings;assembly=AuditFindings_Validation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_ClassificationResultsData" Type="InArgument(sd:DataTable)" />
@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1413,5983</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1878,5402</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AuditFindings_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -199,7 +199,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="AuditFindings" sap:VirtualizedContainerService.HintSize="760,5878" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AuditFindings" sap:VirtualizedContainerService.HintSize="760,5337" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="arr_AS_MemNames" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_TaxRefund" />
@@ -285,15 +285,15 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message-Started" sap:VirtualizedContainerService.HintSize="698,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;AuditFindings.xaml is Started&quot;]" />
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="698,598" sap2010:WorkflowViewState.IdRef="CommentOut_382">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="698,57" sap2010:WorkflowViewState.IdRef="CommentOut_382">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,487" sap2010:WorkflowViewState.IdRef="Sequence_4195">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,487" sap2010:WorkflowViewState.IdRef="Sequence_4197">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="TestingPurpose" sap:VirtualizedContainerService.HintSize="450,399" sap2010:WorkflowViewState.IdRef="Sequence_4194">
+          <Sequence DisplayName="TestingPurpose" sap:VirtualizedContainerService.HintSize="450,399" sap2010:WorkflowViewState.IdRef="Sequence_4196">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -312,7 +312,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InvokeWorkflowFile>
-            <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[in_ClassificationResultsData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="388,111" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\raluca.ilinca.AzureAI-Jump2\Documents\AZApplicationReview\PDFs\Unit WAIT11\Classificationresults.xlsx">
+            <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[in_ClassificationResultsData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="388,111" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\raluca.ilinca.AzureAI-Jump2\Documents\AZApplicationReview\PDFs\TX\Unit 3206\Classificationresults.xlsx">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -323,6 +323,12 @@
           </Sequence>
         </Sequence>
       </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
     <Assign DisplayName="Assign-strPromptsFolder" sap:VirtualizedContainerService.HintSize="698,114" sap2010:WorkflowViewState.IdRef="Assign_80">
       <Assign.To>
