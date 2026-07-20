@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="AuditFindings" this:AuditFindings.in_PDFFolder="C:\Users\raluca.ilinca.AzureAI-Jump2\Documents\AZApplicationReview\PDFs\TX\Unit WAIT2" this:AuditFindings.in_State="TX" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:aa="clr-namespace:AuditFindings_Validation.AuditFindings;assembly=AuditFindings_Validation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="AuditFindings" this:AuditFindings.in_PDFFolder="C:\Users\raluca.ilinca.AzureAI-Jump2\Documents\AZApplicationReview\PDFs\TX\Unit WAIT1" this:AuditFindings.in_State="TX" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:aa="clr-namespace:AuditFindings_Validation.AuditFindings;assembly=AuditFindings_Validation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property sap2010:Annotation.AnnotationText="Dictionary structure to store configuration data of the process (settings, constants and assets)." Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="in_ClassificationResultsData" Type="InArgument(sd:DataTable)" />
@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>2385,7392</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2385,7388</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AuditFindings_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -199,7 +199,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="AuditFindings" sap:VirtualizedContainerService.HintSize="1174,7247" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AuditFindings" sap:VirtualizedContainerService.HintSize="1174,7323" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="arr_AS_MemNames" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_TaxRefund" />
@@ -285,34 +285,51 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message-Started" sap:VirtualizedContainerService.HintSize="1112,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;AuditFindings.xaml is Started&quot;]" />
-    <Sequence DisplayName="TestingPurpose" sap:VirtualizedContainerService.HintSize="1112,408" sap2010:WorkflowViewState.IdRef="Sequence_4200">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1112,57" sap2010:WorkflowViewState.IdRef="CommentOut_382">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,487" sap2010:WorkflowViewState.IdRef="Sequence_4202">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="TestingPurpose" sap:VirtualizedContainerService.HintSize="450,399" sap2010:WorkflowViewState.IdRef="Sequence_4200">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Invoke InitAllSettings workflow" sap:VirtualizedContainerService.HintSize="388,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_36" UnSafe="False" WorkflowFileName="Framework\InitAllSettings.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFile">Data\Config.xlsx</InArgument>
+                <InArgument x:TypeArguments="s:String[]" x:Key="in_ConfigSheets">[{"Settings", "Constants","Findings"}]</InArgument>
+                <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">[in_Config]</OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InvokeWorkflowFile>
+            <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[in_ClassificationResultsData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="388,111" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\raluca.ilinca.AzureAI-Jump2\Documents\AZApplicationReview\PDFs\TX\Unit WAIT1\Classificationresults.xlsx">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ReadRange>
+          </Sequence>
+        </Sequence>
+      </ui:CommentOut.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="Invoke InitAllSettings workflow" sap:VirtualizedContainerService.HintSize="388,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_36" UnSafe="False" WorkflowFileName="Framework\InitAllSettings.xaml">
-        <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFile">Data\Config.xlsx</InArgument>
-          <InArgument x:TypeArguments="s:String[]" x:Key="in_ConfigSheets">[{"Settings", "Constants","Findings"}]</InArgument>
-          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">[in_Config]</OutArgument>
-        </ui:InvokeWorkflowFile.Arguments>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:InvokeWorkflowFile>
-      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[in_ClassificationResultsData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="388,111" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\raluca.ilinca.AzureAI-Jump2\Documents\AZApplicationReview\PDFs\TX\Unit WAIT2\Classificationresults.xlsx">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:ReadRange>
-    </Sequence>
+    </ui:CommentOut>
     <Assign DisplayName="Assign-strPromptsFolder" sap:VirtualizedContainerService.HintSize="1112,114" sap2010:WorkflowViewState.IdRef="Assign_80">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[str_PromptsFolder]</OutArgument>
@@ -513,6 +530,12 @@
             </sap:WorkflowViewStateService.ViewState>
           </aa:Tenant_Rights_and_Resource_Guide>
           <Switch x:TypeArguments="x:Boolean" DisplayName="Switch: Property Name to be one of 3 needed to validate TSAHC" Expression="[in_Config(&quot;TX_TSAHCCheck&quot;).ToString.Split(&quot;,&quot;c).Select(Function(x) x.Trim).Contains(str_ASPropertyName.Trim, StringComparer.OrdinalIgnoreCase)]" sap:VirtualizedContainerService.HintSize="948,373" sap2010:WorkflowViewState.IdRef="Switch`1_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
             <aa:TSAHC x:Key="True" DisplayName="TSACH" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="TSAHC_2" in_ASPropertyName="[str_ASPropertyName]" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_ICWNoOfAdults="[int_ICWNoOfAdults]" in_MoveInDate="[str_MoveIndate]" in_PromptsFolder="[str_PromptsFolder]" in_State="[in_State]" io_dt_AuditFindings="[out_DTAuditFindings]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -557,7 +580,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </aa:Certification_of_Zero_Income>
     </Sequence>
-    <Sequence DisplayName="IncomeVerification" sap:VirtualizedContainerService.HintSize="1112,2501" sap2010:WorkflowViewState.IdRef="Sequence_4179">
+    <Sequence DisplayName="IncomeVerification" sap:VirtualizedContainerService.HintSize="1112,2928" sap2010:WorkflowViewState.IdRef="Sequence_4179">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="int_ProfitlossNoOfMonths" />
         <Variable x:TypeArguments="x:Boolean" Name="bool_PerYearEarningsChecked" />
@@ -615,7 +638,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </aa:PayStubs>
-      <Switch x:TypeArguments="x:String" DisplayName="Switch-States" Expression="[in_State.ToUpper]" sap:VirtualizedContainerService.HintSize="1034,1842" sap2010:WorkflowViewState.IdRef="Switch`1_5">
+      <Switch x:TypeArguments="x:String" DisplayName="Switch-States" Expression="[in_State.ToUpper]" sap:VirtualizedContainerService.HintSize="1034,2269" sap2010:WorkflowViewState.IdRef="Switch`1_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -653,7 +676,11 @@
             </sap:WorkflowViewStateService.ViewState>
           </aa:Certification_Of_Self_Employment_With_Supp_Docs>
         </Sequence>
-        <Sequence x:Key="TX" DisplayName="TX" sap:VirtualizedContainerService.HintSize="994,1202" sap2010:WorkflowViewState.IdRef="Sequence_4188">
+        <Sequence x:Key="TX" DisplayName="TX" sap:VirtualizedContainerService.HintSize="994,1629" sap2010:WorkflowViewState.IdRef="Sequence_4188">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:Boolean" Name="bool_VSAExists" />
+            <Variable x:TypeArguments="x:Boolean" Name="bool_BSExists" />
+          </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -667,14 +694,22 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </aa:Verification_Services>
-          <Switch x:TypeArguments="x:Boolean" DisplayName="Switch: VSA Checks" Expression="[in_Config(&quot;TX_VSACheck&quot;).ToString.Split(&quot;,&quot;c).Select(Function(x) x.Trim).Contains(str_ASPropertyName.Trim, StringComparer.OrdinalIgnoreCase)]" sap:VirtualizedContainerService.HintSize="932,667" sap2010:WorkflowViewState.IdRef="Switch`1_8">
+          <aa:Bank_Statements___TX DisplayName="Bank Statements - TX" sap:VirtualizedContainerService.HintSize="932,57" sap2010:WorkflowViewState.IdRef="Bank_Statements___TX_1" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_State="[in_State]" in_str_PromptsFolder="[str_PromptsFolder]" io_dt_AuditFindings="[out_DTAuditFindings]" out_bool_BSExists="[bool_BSExists]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </aa:Bank_Statements___TX>
+          <Switch x:TypeArguments="x:Boolean" DisplayName="Switch: VSA Checks" Expression="[in_Config(&quot;TX_VSACheck&quot;).ToString.Split(&quot;,&quot;c).Select(Function(x) x.Trim).Contains(str_ASPropertyName.Trim, StringComparer.OrdinalIgnoreCase)]" sap:VirtualizedContainerService.HintSize="932,769" sap2010:WorkflowViewState.IdRef="Switch`1_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <aa:Verification_Services__Assets_ x:Key="True" DisplayName="Verification Services (Assets)" sap:VirtualizedContainerService.HintSize="334,345" sap2010:WorkflowViewState.IdRef="Verification_Services__Assets__1" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_State="[in_State]" in_dt_ICWAssetsInfo="[dt_ICWAssetsInfo]" io_dt_AuditFindings="[out_DTAuditFindings]" str_PromptsFolder="[str_PromptsFolder]">
+            <aa:Verification_Services__Assets_ x:Key="True" DisplayName="Verification Services (Assets)" sap:VirtualizedContainerService.HintSize="334,447" sap2010:WorkflowViewState.IdRef="Verification_Services__Assets__1" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_State="[in_State]" in_bool_BSExists="[bool_BSExists]" in_dt_ICWAssetsInfo="[dt_ICWAssetsInfo]" io_dt_AuditFindings="[out_DTAuditFindings]" out_bool_VSAExists="[bool_VSAExists]" str_PromptsFolder="[str_PromptsFolder]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -682,6 +717,22 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </aa:Verification_Services__Assets_>
+          </Switch>
+          <Switch x:TypeArguments="x:Boolean" DisplayName="Switch: bool_VSAExists = false - check ACNFA" Expression="[bool_VSAExists]" sap:VirtualizedContainerService.HintSize="932,382" sap2010:WorkflowViewState.IdRef="Switch`1_9">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <aa:Asset_Certification_of_Net_Family_Assets x:Key="False" DisplayName="Asset Certification of Net Family Assets" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="Asset_Certification_of_Net_Family_Assets_2" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_State="[in_State]" in_dt_ICWAssetsInfo="[dt_ICWAssetsInfo]" in_int_ICWNoOfAdults="[int_ICWNoOfAdults]" in_str_ICWHeadOfHousehold="[str_ICWHeadOfHousehold]" in_str_MoveInDate="[str_MoveIndate]" in_str_PromptsFolder="[str_PromptsFolder]" io_dt_AuditFindings="[out_DTAuditFindings]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </aa:Asset_Certification_of_Net_Family_Assets>
           </Switch>
           <aa:Employment_Verification___TX sap:VirtualizedContainerService.HintSize="932,57" sap2010:WorkflowViewState.IdRef="Employment_Verification___TX_1" in_ArrICWMemberNames="[arr_ICWMemberNames]" in_ArrRDCHouseholdMembers="[arr_RDCHouseholdMember]" in_ArrRDCTotalGrossPay="[arr_RDCTotalGrossPay]" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_RDCCount="[int_RDCCount]" in_RDCExists="[bool_RDCExists]" in_RDCHouseholdMember="[str_RDCHouseholdMember]" in_State="[in_State]" in_bool_PerYearEarningsNotPopulated="[bool_PerYearEarningsNotPopulated]" in_dt_ICWIncomeData="[dt_ICWIncomeData]" in_dt_RDCPayCategories="[dt_RDCPayCategories]" in_strMoveInDate="[str_MoveIndate]" in_strPromptsFolder="[str_PromptsFolder]" io_DtIncomeDetails="[dt_IncomeDocDetails]" io_dtAuditFindings="[out_DTAuditFindings]" out_EVDoesNotExist="[bool_EVTXExists]">
             <sap:WorkflowViewStateService.ViewState>
@@ -699,22 +750,6 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </aa:Certification_Of_Self_Employment_With_Supp_Docs>
-          <aa:Bank_Statements___TX DisplayName="Bank Statements - TX" sap:VirtualizedContainerService.HintSize="932,57" sap2010:WorkflowViewState.IdRef="Bank_Statements___TX_1" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_State="[in_State]" in_str_PromptsFolder="[str_PromptsFolder]" io_dt_AuditFindings="[out_DTAuditFindings]">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </aa:Bank_Statements___TX>
-          <aa:Asset_Certification_of_Net_Family_Assets DisplayName="Asset Certification of Net Family Assets" sap:VirtualizedContainerService.HintSize="932,57" sap2010:WorkflowViewState.IdRef="Asset_Certification_of_Net_Family_Assets_2" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_State="[in_State]" in_dt_ICWAssetsInfo="[dt_ICWAssetsInfo]" in_int_ICWNoOfAdults="[int_ICWNoOfAdults]" in_str_ICWHeadOfHousehold="[str_ICWHeadOfHousehold]" in_str_MoveInDate="[str_MoveIndate]" in_str_PromptsFolder="[str_PromptsFolder]" io_dt_AuditFindings="[out_DTAuditFindings]">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </aa:Asset_Certification_of_Net_Family_Assets>
           <aa:Leave_and_Earnings_Statement___TX DisplayName="Leave and Earnings Statement - TX" sap:VirtualizedContainerService.HintSize="932,57" sap2010:WorkflowViewState.IdRef="Leave_and_Earnings_Statement___TX_1" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_State="[in_State]" in_str_PromptsFolder="[str_PromptsFolder]" io_dt_AuditFindings="[out_DTAuditFindings]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
