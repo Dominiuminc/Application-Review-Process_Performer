@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "787SSQSl3RpmnRJTRurMbTtMEu7+eIh7Lkss8ywJF7cV1kM/B/lU88SQ3h7VskiekaxGbgiQ0hUdMb72HcDV0A==",
+  "dgSpecHash": "QVqPkx04G6tqq4XYicT71lxhCvow2kTrLp6jo3ST4S8Yo1r48Wldcb8z1adhk9QfO3WCH3nXJFtzPj9U7Td39w==",
   "success": true,
   "projectFilePath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\Documents\\Git\\Application-Review-Process_Performer\\.local\\",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\ashlingpartners.pdf\\1.8.6\\ashlingpartners.pdf.1.8.6.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\ashlingpartners.uipath.pdf.activities\\2.0.0\\ashlingpartners.uipath.pdf.activities.2.0.0.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\ashlingpartners.uipath.stringmatching.activities\\1.9.0\\ashlingpartners.uipath.stringmatching.activities.1.9.0.nupkg.sha512",
-    "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\auditfindings_validation\\1.0.89\\auditfindings_validation.1.0.89.nupkg.sha512",
+    "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\auditfindings_validation\\1.0.90\\auditfindings_validation.1.0.90.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\avalonedit\\6.1.3.50\\avalonedit.6.1.3.50.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",
