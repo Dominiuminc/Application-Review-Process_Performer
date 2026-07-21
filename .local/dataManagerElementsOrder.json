@@ -1996,6 +1996,45 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/ConvertPDFsToImages - Test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "int_TotalPageCount&Sequence_51",
+        "int_PageCount&Sequence_51",
+        "ExtractedImageFiles&Sequence_51",
+        "str_ImagePath&Sequence_52",
+        "llm_Result&Sequence_52",
+        "str_RequiredDocumentType&Sequence_52",
+        "int_Index&Sequence_1",
+        "str_RequiredDocPrompt&Sequence_1",
+        "str_RequiredDocPromptFile&Sequence_1",
+        "str_SortingUserPromptFile&Sequence_1",
+        "str_SortingUserPrompt&Sequence_1",
+        "str_SystemPrompt&Sequence_1",
+        "str_ClassificationResultsRe&Sequence_1",
+        "llm_Result&Sequence_1",
+        "int_TotalPageCount&Sequence_2",
+        "int_PageCount&Sequence_2",
+        "str_ImagePath&Sequence_3",
+        "llm_Result&Sequence_3",
+        "str_RequiredDocumentType&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_State",
+        "in_PDFFiles",
+        "in_EndPoint",
+        "in_APIKey",
+        "in_DeploymentName",
+        "in_APIVersion",
+        "out_DtSortingDetails",
+        "in_Config",
+        "in_DTClassificationMatrix",
+        "in_PDFFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

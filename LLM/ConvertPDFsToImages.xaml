@@ -14,7 +14,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1745,7081</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1745,7121</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ConvertPDFsToImages_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -590,7 +590,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEach>
     </Sequence>
-    <ui:InvokeCode ContinueOnError="{x:Null}" Code="io_DtSortingDetails.AsEnumerable().ToList().ForEach(Sub(row)&#xA;    If row(&quot;RequiredClassificationResult&quot;).ToString = &quot;Asset Self Certification Worksheet&quot; Then&#xA;        row(&quot;RequiredClassificationResult&quot;) = &quot;Asset Self Certification&quot;&#xA;    End If&#xA;End Sub)&#xA;" DisplayName="Invoke Code - Replace ASCW with ASC if needed" sap:VirtualizedContainerService.HintSize="976,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="io_DtSortingDetails.AsEnumerable().ToList().ForEach(Sub(row)&#xD;&#xA;    If row(&quot;RequiredClassificationResult&quot;).ToString = &quot;Asset Self Certification Worksheet&quot; Then&#xD;&#xA;        row(&quot;RequiredClassificationResult&quot;) = &quot;Asset Self Certification&quot;&#xD;&#xA;    End If&#xD;&#xA;End Sub)&#xD;&#xA;&#xD;&#xA;If io_DtSortingDetails.AsEnumerable().Any(Function(r) r(&quot;RequiredClassificationResult&quot;).ToString.Trim.ToLower = &quot;verification services assets&quot;) Then&#xD;&#xA;    io_DtSortingDetails.AsEnumerable().ToList().ForEach(Sub(row)&#xD;&#xA;        If row(&quot;RequiredClassificationResult&quot;).ToString.Trim.ToLower = &quot;asset certification of net family assets&quot; Then&#xD;&#xA;            row(&quot;BucketName&quot;) = &quot;Exclude&quot;&#xD;&#xA;        End If&#xD;&#xA;    End Sub)&#xD;&#xA;End If" DisplayName="Invoke Code - Replace ASCW with ASC if needed" sap:VirtualizedContainerService.HintSize="976,197" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
       <ui:InvokeCode.Arguments>
         <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_DtSortingDetails">[out_DtSortingDetails]</InOutArgument>
       </ui:InvokeCode.Arguments>
