@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>879,1046</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1745,1046</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -270,7 +270,7 @@
                         <av:PointCollection x:Key="ConnectorLocation">420,575 420,625</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="ConvertPDFsToImages" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <Sequence DisplayName="ConvertPDFsToImages" sap:VirtualizedContainerService.HintSize="450,650" sap2010:WorkflowViewState.IdRef="Sequence_18">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="sd:DataTable" Name="dt_ClassificationMatrixClean" />
                       </Sequence.Variables>
@@ -284,7 +284,7 @@
                           <OutArgument x:TypeArguments="sd:DataTable" x:Key="dt_Clean">[dt_ClassificationMatrixClean]</OutArgument>
                         </ui:InvokeCode.Arguments>
                       </ui:InvokeCode>
-                      <ui:InvokeCode ContinueOnError="{x:Null}" Code="For Each row As DataRow In in_DTClassificationMatrix.Rows&#xA;&#xA;    dt_Clean.Rows.Add(&#xA;        row(&quot;RequiredDocumentclassification&quot;).ToString,&#xA;        row(&quot;Bucket&quot;).ToString,&#xA;        row(&quot;States&quot;).ToString&#xA;    )&#xA;&#xA;Next" DisplayName="Invoke Code-MovinfData" sap:VirtualizedContainerService.HintSize="388,197" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+                      <ui:InvokeCode ContinueOnError="{x:Null}" Code="For Each row As DataRow In in_DTClassificationMatrix.Rows&#xD;&#xA;&#xD;&#xA;    dt_Clean.Rows.Add(&#xD;&#xA;        row(&quot;RequiredDocumentclassification&quot;).ToString,&#xD;&#xA;        row(&quot;Bucket&quot;).ToString,&#xD;&#xA;        row(&quot;States&quot;).ToString&#xD;&#xA;    )&#xD;&#xA;&#xD;&#xA;Next" DisplayName="Invoke Code-MovinfData" sap:VirtualizedContainerService.HintSize="388,197" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
                         <ui:InvokeCode.Arguments>
                           <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dt_Clean">[dt_ClassificationMatrixClean]</InOutArgument>
                           <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DTClassificationMatrix">[in_DTClassificationMatrix]</InArgument>
