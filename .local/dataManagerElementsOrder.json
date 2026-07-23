@@ -99,21 +99,13 @@
     {
       "Path": "Yardi/PerformAudit.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "dt_FilteredClassificationResults&Sequence_7",
-        "htmlText&Sequence_1",
-        "dt_UniqueDocType&Sequence_1",
-        "dt_FindingsWithDocType&Sequence_7"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
+        "in_CaseLink",
+        "in_DtAuditFindings",
+        "in_DtSortingData",
         "in_Config",
-        "in_TransactionItem",
-        "in_DtClassificationResults",
-        "in_YardiDocReviewURL",
-        "in_Finding",
-        "in_FindingType",
-        "in_FindingNotes",
-        "in_DTFindings"
+        "in_TransactionItem"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
