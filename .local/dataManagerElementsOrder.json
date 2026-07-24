@@ -391,6 +391,8 @@
       "Path": "Utilities/AuditFindings.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "bool_RCFExists&Sequence_4187",
+        "bool_RCFExists&Sequence_4205",
         "bool_BSExists&Sequence_4188",
         "bool_VSAExists&Sequence_4188",
         "arr_ICWAmountPerPeriod&Sequence_1",
