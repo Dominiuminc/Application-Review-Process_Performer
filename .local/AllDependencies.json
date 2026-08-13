@@ -6991,7 +6991,7 @@
           "lib/net6.0-windows7.0/UiPathTeam.SharePoint.dll": {}
         }
       },
-      "YardiActivities/1.0.35": {
+      "YardiActivities/1.0.42": {
         "type": "package",
         "dependencies": {
           "UiPath.Excel.Activities": "[3.2.1]",
@@ -7004,15 +7004,15 @@
         },
         "runtime": {
           "lib/net8.0-windows7.0/YardiActivities.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_14173886.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_20558656.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_2344564.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_34837044.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_37189761.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_377140.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_40485473.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_5889304.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_8447014.dll": {}
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_13720761.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_21855962.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_26176854.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_37873636.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_45253190.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_48768298.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_53610692.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_59621546.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_64095722.dll": {}
         },
         "contentFiles": {
           "contentFiles/any/any/_._": {
@@ -13851,7 +13851,7 @@
           "lib/net6.0-windows7.0/UiPathTeam.SharePoint.dll": {}
         }
       },
-      "YardiActivities/1.0.35": {
+      "YardiActivities/1.0.42": {
         "type": "package",
         "dependencies": {
           "UiPath.Excel.Activities": "[3.2.1]",
@@ -13864,15 +13864,15 @@
         },
         "runtime": {
           "lib/net8.0-windows7.0/YardiActivities.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_14173886.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_20558656.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_2344564.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_34837044.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_37189761.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_377140.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_40485473.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_5889304.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_8447014.dll": {}
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_13720761.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_21855962.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_26176854.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_37873636.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_45253190.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_48768298.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_53610692.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_59621546.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_64095722.dll": {}
         },
         "contentFiles": {
           "contentFiles/any/any/_._": {
@@ -25952,10 +25952,10 @@
         "uipathteam.sharepoint.activities.nuspec"
       ]
     },
-    "YardiActivities/1.0.35": {
-      "sha512": "vpfhAqVyL7uEBclHlRJM2GblfPQZHAit7cZ+6xos944qzuLWyitqtXucCei/BOVEJ8eBSdbhmvVlP8ymqPOU3A==",
+    "YardiActivities/1.0.42": {
+      "sha512": "6xOAo0YNyoZC+fpzXe4vFxMGden9C4tYaoBFAI70t8/qFj+nbpdb+Fb8RWizeADj7edrst8u1ZkO63i7tAPLyg==",
       "type": "package",
-      "path": "yardiactivities/1.0.35",
+      "path": "yardiactivities/1.0.42",
       "files": [
         ".nupkg.metadata",
         "content/.project/PackageBindingsMetadata.json",
@@ -25985,6 +25985,7 @@
         "content/SortPagesIntoBuckets.xaml.json",
         "content/UpdateApplicationStatus.xaml",
         "content/UpdateApplicationStatus.xaml.json",
+        "content/UploadsInfo.txt",
         "content/Yardi_Login.xaml",
         "content/Yardi_Login.xaml.json",
         "content/Yardi_Logout.xaml",
@@ -26061,16 +26062,16 @@
         "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/thBE/.metadata",
         "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/thBE/.type",
         "lib/net8.0-windows7.0/YardiActivities.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_14173886.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_20558656.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_2344564.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_34837044.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_37189761.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_377140.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_40485473.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_5889304.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_8447014.dll",
-        "yardiactivities.1.0.35.nupkg.sha512",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_13720761.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_21855962.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_26176854.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_37873636.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_45253190.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_48768298.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_53610692.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_59621546.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_64095722.dll",
+        "yardiactivities.1.0.42.nupkg.sha512",
         "yardiactivities.nuspec"
       ]
     }
@@ -26092,20 +26093,20 @@
       "UiPath.UIAutomation.Activities >= 24.10.0 <= 24.10.0",
       "UiPath.WebAPI.Activities >= 2.3.2 <= 2.3.2",
       "UiPathTeam.SharePoint.Activities >= 2.0.3 <= 2.0.3",
-      "YardiActivities >= 1.0.35 <= 1.0.35"
+      "YardiActivities >= 1.0.42 <= 1.0.42"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\": {},
+    "C:\\Users\\harmandeep.singh\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Application-Review-Process_Performer",
       "projectName": "Application-Review-Process_Performer",
-      "projectPath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\Documents\\Git\\Application-Review-Process_Performer\\.local",
-      "packagesPath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\Documents\\Git\\Application-Review-Process_Performer\\.local",
+      "projectPath": "C:\\Users\\harmandeep.singh\\Documents\\Git\\Application-Review-Process_Performer\\.local",
+      "packagesPath": "C:\\Users\\harmandeep.singh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\harmandeep.singh\\Documents\\Git\\Application-Review-Process_Performer\\.local",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ]
@@ -26186,7 +26187,7 @@
           "YardiActivities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[1.0.35, 1.0.35]"
+            "version": "[1.0.42, 1.0.42]"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
