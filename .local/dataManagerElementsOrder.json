@@ -391,6 +391,8 @@
       "Path": "Utilities/AuditFindings.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "arr_MemberNameOfIS&Sequence_4187",
+        "dt_IncomeSourceDetails&Sequence_4187",
         "bool_RCFExists&Sequence_4187",
         "bool_RCFExists&Sequence_4205",
         "bool_BSExists&Sequence_4188",
