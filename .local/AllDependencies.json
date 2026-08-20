@@ -6992,7 +6992,7 @@
           "lib/net6.0-windows7.0/UiPathTeam.SharePoint.dll": {}
         }
       },
-      "YardiActivities/1.0.46": {
+      "YardiActivities/1.0.48": {
         "type": "package",
         "dependencies": {
           "UiPath.Excel.Activities": "[3.2.1]",
@@ -7005,15 +7005,15 @@
         },
         "runtime": {
           "lib/net8.0-windows7.0/YardiActivities.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_10983466.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_1629556.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_25969891.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_27797482.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_41856527.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_42543385.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_48388231.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_49159881.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_60148537.dll": {}
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_10818254.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_23069720.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_35256386.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_42012560.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_52064984.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_62201881.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_64584611.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_7678533.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_8149318.dll": {}
         },
         "contentFiles": {
           "contentFiles/any/any/_._": {
@@ -13853,7 +13853,7 @@
           "lib/net6.0-windows7.0/UiPathTeam.SharePoint.dll": {}
         }
       },
-      "YardiActivities/1.0.46": {
+      "YardiActivities/1.0.48": {
         "type": "package",
         "dependencies": {
           "UiPath.Excel.Activities": "[3.2.1]",
@@ -13866,15 +13866,15 @@
         },
         "runtime": {
           "lib/net8.0-windows7.0/YardiActivities.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_10983466.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_1629556.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_25969891.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_27797482.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_41856527.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_42543385.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_48388231.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_49159881.dll": {},
-          "lib/net8.0-windows7.0/YardiActivities_Expressions_60148537.dll": {}
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_10818254.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_23069720.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_35256386.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_42012560.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_52064984.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_62201881.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_64584611.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_7678533.dll": {},
+          "lib/net8.0-windows7.0/YardiActivities_Expressions_8149318.dll": {}
         },
         "contentFiles": {
           "contentFiles/any/any/_._": {
@@ -25957,10 +25957,10 @@
         "uipathteam.sharepoint.activities.nuspec"
       ]
     },
-    "YardiActivities/1.0.46": {
-      "sha512": "QnpApDiBgRj3NIImsWknL2SXII0Ev6gKefufQjegzQXtmdPnX7lvmVLGfSEl4zedIR67P/VkNzyLA7quNgIybA==",
+    "YardiActivities/1.0.48": {
+      "sha512": "QB1EhWz8n2U90H0HzMp96uqTyohtimTue6Xn3pLC+j9EcdUrr/YGbdigpJxz7lN/8eQbAJxhbFlYZeFDWo+DdQ==",
       "type": "package",
-      "path": "yardiactivities/1.0.46",
+      "path": "yardiactivities/1.0.48",
       "files": [
         ".nupkg.metadata",
         "content/.project/PackageBindingsMetadata.json",
@@ -25990,7 +25990,6 @@
         "content/SortPagesIntoBuckets.xaml.json",
         "content/UpdateApplicationStatus.xaml",
         "content/UpdateApplicationStatus.xaml.json",
-        "content/UploadsInfo.txt",
         "content/Yardi_Login.xaml",
         "content/Yardi_Login.xaml.json",
         "content/Yardi_Logout.xaml",
@@ -26000,17 +25999,89 @@
         "content/project.json",
         "contentFiles/any/any/.objects/.metadata",
         "contentFiles/any/any/.objects/.type",
+        "contentFiles/any/any/.objects/hjYp/.data/ObjectSelectionName/.content",
+        "contentFiles/any/any/.objects/hjYp/.data/ObjectSelectionName/.hash",
+        "contentFiles/any/any/.objects/hjYp/.metadata",
+        "contentFiles/any/any/.objects/hjYp/.type",
+        "contentFiles/any/any/.objects/hjYp/boHv/.metadata",
+        "contentFiles/any/any/.objects/hjYp/boHv/.type",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/.data/ObjectRepositoryScreenData/.attributes/SearchHash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/.data/ObjectRepositoryScreenData/.content",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/.data/ObjectRepositoryScreenData/.hash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/.data/ObjectRepositoryScreenData/.images/.design/0Gn_5FaGxDke8K-GNngufAQ",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/.metadata",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/.type",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/9h2r/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/9h2r/.data/ObjectRepositoryTargetData/.content",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/9h2r/.data/ObjectRepositoryTargetData/.hash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/9h2r/.data/ObjectRepositoryTargetData/.images/.design/0R87_9QYXo02ClM-6b0Vncg",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/9h2r/.metadata",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/9h2r/.type",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/LvKq/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/LvKq/.data/ObjectRepositoryTargetData/.content",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/LvKq/.data/ObjectRepositoryTargetData/.hash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/LvKq/.data/ObjectRepositoryTargetData/.images/.design/0pypizUpkZ0qtG0zEHQNQXw",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/LvKq/.metadata",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/LvKq/.type",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/R1lk/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/R1lk/.data/ObjectRepositoryTargetData/.content",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/R1lk/.data/ObjectRepositoryTargetData/.hash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/R1lk/.data/ObjectRepositoryTargetData/.images/.design/09m1lTFzLjEi7nIFo_hA21g",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/R1lk/.metadata",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/R1lk/.type",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/Rgwe/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/Rgwe/.data/ObjectRepositoryTargetData/.content",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/Rgwe/.data/ObjectRepositoryTargetData/.hash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/Rgwe/.data/ObjectRepositoryTargetData/.images/.design/0-wHwTpJ4q0-dZFRSR0zlvw",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/Rgwe/.metadata",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/Rgwe/.type",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/T5OF/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/T5OF/.data/ObjectRepositoryTargetData/.content",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/T5OF/.data/ObjectRepositoryTargetData/.hash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/T5OF/.data/ObjectRepositoryTargetData/.images/.design/0kYV0RXJvnUWc-8gxmsTEVA",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/T5OF/.metadata",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/T5OF/.type",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/U7Lx/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/U7Lx/.data/ObjectRepositoryTargetData/.content",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/U7Lx/.data/ObjectRepositoryTargetData/.hash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/U7Lx/.data/ObjectRepositoryTargetData/.images/.design/0qZ1B-8GK1U2sj7tDY5D3Dw",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/U7Lx/.metadata",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/U7Lx/.type",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/WulN/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/WulN/.data/ObjectRepositoryTargetData/.content",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/WulN/.data/ObjectRepositoryTargetData/.hash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/WulN/.data/ObjectRepositoryTargetData/.images/.design/0Kchd4mUuT0-p5dx9_uQdTA",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/WulN/.metadata",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/WulN/.type",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/pn7x/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/pn7x/.data/ObjectRepositoryTargetData/.content",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/pn7x/.data/ObjectRepositoryTargetData/.hash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/pn7x/.data/ObjectRepositoryTargetData/.images/.design/0Ye0asCVBw06af1v_Gjd0KA",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/pn7x/.metadata",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/pn7x/.type",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/thBE/.data/ObjectRepositoryTargetData/.attributes/SearchHash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/thBE/.data/ObjectRepositoryTargetData/.content",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/thBE/.data/ObjectRepositoryTargetData/.hash",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/thBE/.data/ObjectRepositoryTargetData/.images/.design/0xQ_J2hr6qUKasx4xYOcnow",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/thBE/.metadata",
+        "contentFiles/any/any/.objects/hjYp/boHv/1Fu5/thBE/.type",
+        "contentFiles/any/any/.objects/hjYp/boHv/9Ldm/.data/ObjectRepositoryScreenData/.attributes/SearchHash",
+        "contentFiles/any/any/.objects/hjYp/boHv/9Ldm/.data/ObjectRepositoryScreenData/.content",
+        "contentFiles/any/any/.objects/hjYp/boHv/9Ldm/.data/ObjectRepositoryScreenData/.hash",
+        "contentFiles/any/any/.objects/hjYp/boHv/9Ldm/.data/ObjectRepositoryScreenData/.images/.design/0_Xw3EV6KjkOI7LCUoW5fTA",
+        "contentFiles/any/any/.objects/hjYp/boHv/9Ldm/.metadata",
+        "contentFiles/any/any/.objects/hjYp/boHv/9Ldm/.type",
         "lib/net8.0-windows7.0/YardiActivities.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_10983466.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_1629556.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_25969891.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_27797482.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_41856527.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_42543385.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_48388231.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_49159881.dll",
-        "lib/net8.0-windows7.0/YardiActivities_Expressions_60148537.dll",
-        "yardiactivities.1.0.46.nupkg.sha512",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_10818254.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_23069720.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_35256386.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_42012560.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_52064984.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_62201881.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_64584611.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_7678533.dll",
+        "lib/net8.0-windows7.0/YardiActivities_Expressions_8149318.dll",
+        "yardiactivities.1.0.48.nupkg.sha512",
         "yardiactivities.nuspec"
       ]
     }
@@ -26032,20 +26103,20 @@
       "UiPath.UIAutomation.Activities >= 24.10.0 <= 24.10.0",
       "UiPath.WebAPI.Activities >= 2.3.2 <= 2.3.2",
       "UiPathTeam.SharePoint.Activities >= 2.0.3 <= 2.0.3",
-      "YardiActivities >= 1.0.46 <= 1.0.46"
+      "YardiActivities >= 1.0.48 <= 1.0.48"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\harmandeep.singh\\.nuget\\packages\\": {},
+    "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Application-Review-Process_Performer",
       "projectName": "Application-Review-Process_Performer",
-      "projectPath": "C:\\Users\\harmandeep.singh\\Documents\\Git\\Application-Review-Process_Performer\\.local",
-      "packagesPath": "C:\\Users\\harmandeep.singh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\harmandeep.singh\\Documents\\Git\\Application-Review-Process_Performer\\.local",
+      "projectPath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\Documents\\Git\\Application-Review-Process_Performer\\.local",
+      "packagesPath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\Documents\\Git\\Application-Review-Process_Performer\\.local",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ]
@@ -26126,7 +26197,7 @@
           "YardiActivities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[1.0.46, 1.0.46]"
+            "version": "[1.0.48, 1.0.48]"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPath\\Studio\\PortableRuntimeIdentifierGraph.json"
