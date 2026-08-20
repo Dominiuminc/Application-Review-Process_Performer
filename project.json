@@ -18,13 +18,13 @@
     "UiPath.UIAutomation.Activities": "[24.10.0]",
     "UiPath.WebAPI.Activities": "[2.3.2]",
     "UiPathTeam.SharePoint.Activities": "[2.0.3]",
-    "YardiActivities": "[1.0.46]"
+    "YardiActivities": "[1.0.48]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.1.0",
-  "projectVersion": "1.0.47",
+  "projectVersion": "1.0.49",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
