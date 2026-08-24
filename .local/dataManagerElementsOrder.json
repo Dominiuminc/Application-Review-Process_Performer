@@ -46,10 +46,10 @@
       "Path": "Framework/Process.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "str_State&Sequence_1",
         "str_PersonName&Flowchart_1",
         "dt_ClassificationMatrixClean&Sequence_18",
         "str_PropertyName&Sequence_1",
-        "str_State&Sequence_1",
         "str_Status&Sequence_1",
         "str_ManagerName&Sequence_1",
         "str_Type&Sequence_1",
