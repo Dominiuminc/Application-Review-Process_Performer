@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1079,1024</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2385,1380</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SavefilesInSharedDrive_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -101,14 +101,15 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SavefilesInSharedDrive" sap:VirtualizedContainerService.HintSize="608,959" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SavefilesInSharedDrive" sap:VirtualizedContainerService.HintSize="608,1315" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="546,112" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[in_SharedDriveFolder+in_UnitFolderName]" />
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="546,759" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_ArrFiles]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="546,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started uploading the LLM files to ShareDrive.&quot;]" />
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="546,122" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[in_SharedDriveFolder+in_UnitFolderName]" />
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="546,768" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_ArrFiles]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
@@ -151,5 +152,6 @@
         </ActivityAction>
       </ui:ForEach.Body>
     </ui:ForEach>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="546,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Completed uploading the LLM files to ShareDrive.&quot;]" />
   </Sequence>
 </Activity>

@@ -12,6 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "str_State&StateMachine_1",
         "str_SDPDFFolderWithState&Sequence_38",
         "TransactionItem&StateMachine_1",
         "SystemException&StateMachine_1",
