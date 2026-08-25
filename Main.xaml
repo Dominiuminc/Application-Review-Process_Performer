@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1544,1022</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2385,909</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main2_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -280,6 +280,7 @@
                           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
                           <InArgument x:TypeArguments="x:Boolean" x:Key="in_IsTesting">[in_IsTesting]</InArgument>
                           <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DTClassificationMatrix">[DT_ClassificationMatrix]</InArgument>
+                          <OutArgument x:TypeArguments="x:String" x:Key="out_State">[str_State]</OutArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
                       <TryCatch DisplayName="Try Catch Set Transaction Status (Success)" sap:VirtualizedContainerService.HintSize="438,396" sap2010:WorkflowViewState.IdRef="TryCatch_10">
@@ -713,9 +714,9 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <Transition.To>
-                            <State x:Name="__ReferenceID1" sap2010:Annotation.AnnotationText="End process and close all applications used." DisplayName="End Process" sap:VirtualizedContainerService.HintSize="888,4758" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
+                            <State x:Name="__ReferenceID1" sap2010:Annotation.AnnotationText="End process and close all applications used." DisplayName="End Process" sap:VirtualizedContainerService.HintSize="888,5450" sap2010:WorkflowViewState.IdRef="State_1" IsFinal="True">
                               <State.Entry>
-                                <TryCatch DisplayName="Try to close all aplications" sap:VirtualizedContainerService.HintSize="842,4613" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                                <TryCatch DisplayName="Try to close all aplications" sap:VirtualizedContainerService.HintSize="842,5305" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -723,7 +724,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <TryCatch.Try>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="804,4385" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="804,5077" sap2010:WorkflowViewState.IdRef="Sequence_34">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="x:String" Name="str_ScreenshotPath" />
                                       </Sequence.Variables>
@@ -792,7 +793,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:InvokeWorkflowFile>
-                                      <TryCatch DisplayName="Try Catch-SaveAllLLMExtractions" sap:VirtualizedContainerService.HintSize="742,3414" sap2010:WorkflowViewState.IdRef="TryCatch_14">
+                                      <TryCatch DisplayName="Try Catch-SaveAllLLMExtractions" sap:VirtualizedContainerService.HintSize="742,4106" sap2010:WorkflowViewState.IdRef="TryCatch_14">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -800,7 +801,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <TryCatch.Try>
-                                          <Sequence DisplayName="SaveAllLLMExtractions" sap:VirtualizedContainerService.HintSize="704,3163" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                          <Sequence DisplayName="SaveAllLLMExtractions" sap:VirtualizedContainerService.HintSize="704,3855" sap2010:WorkflowViewState.IdRef="Sequence_37">
                                             <Sequence.Variables>
                                               <Variable x:TypeArguments="x:String" Name="str_PDFFolder" />
                                             </Sequence.Variables>
@@ -816,7 +817,7 @@
                                                 <OutArgument x:TypeArguments="x:String">[str_PDFFolder]</OutArgument>
                                               </Assign.To>
                                               <Assign.Value>
-                                                <InArgument x:TypeArguments="x:String">[Config("LocalPDFsFolder").ToString+in_OrchestratorQueueName.ToString+"\"]</InArgument>
+                                                <InArgument x:TypeArguments="x:String">[Config("LocalPDFsFolder").ToString + str_State + "\"]</InArgument>
                                               </Assign.Value>
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -825,7 +826,8 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </Assign>
-                                            <If Condition="[Path.Exists(str_PDFFolder)]" DisplayName="If-PDFFolderExists" sap:VirtualizedContainerService.HintSize="642,2624" sap2010:WorkflowViewState.IdRef="If_16">
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="642,173" sap2010:WorkflowViewState.IdRef="LogMessage_41" Level="Info" Message="[str_PDFFolder]" />
+                                            <If Condition="[Path.Exists(str_PDFFolder)]" DisplayName="If-PDFFolderExists" sap:VirtualizedContainerService.HintSize="642,3143" sap2010:WorkflowViewState.IdRef="If_16">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -833,7 +835,7 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                               <If.Then>
-                                                <Sequence DisplayName="Then-MoveFilesToSD" sap:VirtualizedContainerService.HintSize="608,2351" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                                <Sequence DisplayName="Then-MoveFilesToSD" sap:VirtualizedContainerService.HintSize="608,2870" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                                   <Sequence.Variables>
                                                     <Variable x:TypeArguments="s:String[]" Name="arr_Subfolders" />
                                                     <Variable x:TypeArguments="x:String" Name="str_SDPDFFolderWithDate" />
@@ -845,6 +847,7 @@
                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
+                                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="546,173" sap2010:WorkflowViewState.IdRef="LogMessage_42" Level="Info" Message="[&quot;PDF folders path exists.&quot;]" />
                                                   <Assign DisplayName="Assign-SubFolders" sap:VirtualizedContainerService.HintSize="546,114" sap2010:WorkflowViewState.IdRef="Assign_30">
                                                     <Assign.To>
                                                       <OutArgument x:TypeArguments="s:String[]">[arr_Subfolders]</OutArgument>
@@ -853,7 +856,7 @@
                                                       <InArgument x:TypeArguments="s:String[]">[Directory.GetDirectories(str_PDFFolder)]</InArgument>
                                                     </Assign.Value>
                                                   </Assign>
-                                                  <If Condition="[arr_Subfolders.Count&gt;0]" DisplayName="If-UnitfolderExists" sap:VirtualizedContainerService.HintSize="546,1528" sap2010:WorkflowViewState.IdRef="If_17">
+                                                  <If Condition="[arr_Subfolders.Count&gt;0]" DisplayName="If-UnitfolderExists" sap:VirtualizedContainerService.HintSize="546,1874" sap2010:WorkflowViewState.IdRef="If_17">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -861,7 +864,7 @@
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
                                                     <If.Then>
-                                                      <Sequence DisplayName="Then: If-UnitfolderExists" sap:VirtualizedContainerService.HintSize="512,1255" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                                      <Sequence DisplayName="Then: If-UnitfolderExists" sap:VirtualizedContainerService.HintSize="512,1601" sap2010:WorkflowViewState.IdRef="Sequence_43">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -876,6 +879,7 @@
                                                             <InArgument x:TypeArguments="x:String">[Config("SD_LLMExtractionJSONsFolder").ToString+DateTime.Now.ToString("MMddyyyy")+"\"]</InArgument>
                                                           </Assign.Value>
                                                         </Assign>
+                                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_43" Level="Info" Message="[str_SDPDFFolderWithDate]" />
                                                         <If Condition="[Directory.Exists(str_SDPDFFolderWithDate)]" DisplayName="If-FolderWithdateCreated" sap:VirtualizedContainerService.HintSize="450,474" sap2010:WorkflowViewState.IdRef="If_18">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -908,9 +912,10 @@
                                                             <OutArgument x:TypeArguments="x:String">[str_SDPDFFolderWithState]</OutArgument>
                                                           </Assign.To>
                                                           <Assign.Value>
-                                                            <InArgument x:TypeArguments="x:String">[str_SDPDFFolderWithDate+in_OrchestratorQueueName.ToString+"\"]</InArgument>
+                                                            <InArgument x:TypeArguments="x:String">[str_SDPDFFolderWithDate+str_State+"\"]</InArgument>
                                                           </Assign.Value>
                                                         </Assign>
+                                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_44" Level="Info" Message="[str_SDPDFFolderWithState]" />
                                                         <If Condition="[Directory.Exists(str_SDPDFFolderWithState)]" DisplayName="If-FolderWithStateCreated" sap:VirtualizedContainerService.HintSize="450,465" sap2010:WorkflowViewState.IdRef="If_19">
                                                           <sap:WorkflowViewStateService.ViewState>
                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1187,6 +1192,7 @@
       <Variable x:TypeArguments="sd:DataTable" sap2010:Annotation.AnnotationText="Used in case transactions are stored in a DataTable, for example, after being retrieved from a spreadsheet." Name="dt_TransactionData" />
       <Variable x:TypeArguments="x:Int32" sap2010:Annotation.AnnotationText="Used to control the number of consecutive system exceptions." Default="0" Name="ConsecutiveSystemExceptions" />
       <Variable x:TypeArguments="sd:DataTable" Name="DT_ClassificationMatrix" />
+      <Variable x:TypeArguments="x:String" Name="str_State" />
     </StateMachine.Variables>
   </StateMachine>
 </Activity>
