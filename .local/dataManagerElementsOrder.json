@@ -73,6 +73,7 @@
         "str_PromptsFolder&Sequence_13"
       ],
       "ArgumentsSectionElementsOrder": [
+        "out_State",
         "in_DTClassificationMatrix",
         "in_TransactionItem",
         "in_Config",
@@ -394,8 +395,6 @@
       "VariablesSectionElementsOrder": [
         "arr_MemberNameOfIS&Sequence_1",
         "dt_IncomeSourceDetails&Sequence_1",
-        "arr_MemberNameOfIS&Sequence_4187",
-        "dt_IncomeSourceDetails&Sequence_4187",
         "bool_RCFExists&Sequence_4187",
         "bool_RCFExists&Sequence_4205",
         "bool_BSExists&Sequence_4188",
