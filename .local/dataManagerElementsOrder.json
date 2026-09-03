@@ -224,11 +224,11 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
+        "in_str_Reviewer",
+        "in_str_PropertyName",
+        "in_str_Unit",
+        "in_str_ManagerName",
         "in_TransactionItem",
-        "str_Reviewer",
-        "str_PropertyName",
-        "str_Unit",
-        "str_ManagerName",
         "in_CertsURL",
         "in_Config"
       ],
