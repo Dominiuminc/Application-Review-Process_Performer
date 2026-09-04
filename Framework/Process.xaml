@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1381,1046</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2385,1046</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -60,6 +60,7 @@
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Platform.ResourceHandling</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -148,7 +149,7 @@
       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="662,987" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="804,5096" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_PropertyName" />
       <Variable x:TypeArguments="x:String" Name="str_State" />
@@ -169,8 +170,8 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="600,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <Flowchart sap:VirtualizedContainerService.HintSize="1451,628" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="742,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <Flowchart sap:VirtualizedContainerService.HintSize="742,657" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <Flowchart.Variables>
         <Variable x:TypeArguments="scg:List(x:String)" Name="list_PDFFiles" />
         <Variable x:TypeArguments="sd:DataTable" Name="dt_SortingData" />
@@ -389,10 +390,7 @@
                                       </ui:InvokeWorkflowFile.Arguments>
                                     </ui:InvokeWorkflowFile>
                                     <FlowStep.Next>
-                                      <FlowDecision x:Name="__ReferenceID15" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="59,59" sap2010:WorkflowViewState.IdRef="FlowDecision_7">
-                                        <FlowDecision.Condition>
-                                          <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="in_Config(&quot;NotBackToSiteStates&quot;).ToString.Split(&quot;,&quot;c).Contains(str_State, StringComparer.OrdinalIgnoreCase) Or DoFindingsHaveManualReview" />
-                                        </FlowDecision.Condition>
+                                      <FlowDecision x:Name="__ReferenceID15" Condition="[in_Config(&quot;NotBackToSiteStates&quot;).ToString.Split(&quot;,&quot;c).Contains(str_State, StringComparer.OrdinalIgnoreCase) Or DoFindingsHaveManualReview]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="59,59" sap2010:WorkflowViewState.IdRef="FlowDecision_7">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -441,10 +439,7 @@
                                   </FlowStep>
                                 </FlowDecision.True>
                                 <FlowDecision.False>
-                                  <FlowDecision x:Name="__ReferenceID20" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="59,59" sap2010:WorkflowViewState.IdRef="FlowDecision_8">
-                                    <FlowDecision.Condition>
-                                      <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="in_Config(&quot;NotBackToSiteStates&quot;).ToString.Split(&quot;,&quot;c).Contains(str_State, StringComparer.OrdinalIgnoreCase)" />
-                                    </FlowDecision.Condition>
+                                  <FlowDecision x:Name="__ReferenceID20" Condition="[in_Config(&quot;NotBackToSiteStates&quot;).ToString.Split(&quot;,&quot;c).Contains(str_State, StringComparer.OrdinalIgnoreCase)]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="59,59" sap2010:WorkflowViewState.IdRef="FlowDecision_8">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -893,5 +888,256 @@
       <x:Reference>__ReferenceID20</x:Reference>
       <x:Reference>__ReferenceID21</x:Reference>
     </Flowchart>
+    <TryCatch DisplayName="Try Catch-SaveAllLLMExtractions" sap:VirtualizedContainerService.HintSize="742,4106" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <Sequence DisplayName="SaveAllLLMExtractions" sap:VirtualizedContainerService.HintSize="704,3855" sap2010:WorkflowViewState.IdRef="Sequence_22">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="str_PDFFolder" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="642,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;LLM JSON Files uploading to SharedDrive started&quot;]" />
+          <Assign DisplayName="Assign-str_PDFFolder" sap:VirtualizedContainerService.HintSize="642,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[str_PDFFolder]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[in_Config("LocalPDFsFolder").ToString + str_State + "\"]</InArgument>
+            </Assign.Value>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Assign>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="642,173" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[str_PDFFolder]" />
+          <If Condition="[Path.Exists(str_PDFFolder)]" DisplayName="If-PDFFolderExists" sap:VirtualizedContainerService.HintSize="642,3143" sap2010:WorkflowViewState.IdRef="If_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If.Then>
+              <Sequence DisplayName="Then-MoveFilesToSD" sap:VirtualizedContainerService.HintSize="608,2870" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="s:String[]" Name="arr_Subfolders" />
+                  <Variable x:TypeArguments="x:String" Name="str_SDPDFFolderWithDate" />
+                  <Variable x:TypeArguments="x:String" Name="str_SDPDFFolderWithState" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="546,173" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;PDF folders path exists.&quot;]" />
+                <Assign DisplayName="Assign-SubFolders" sap:VirtualizedContainerService.HintSize="546,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:String[]">[arr_Subfolders]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:String[]">[Directory.GetDirectories(str_PDFFolder)]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <If Condition="[arr_Subfolders.Count&gt;0]" DisplayName="If-UnitfolderExists" sap:VirtualizedContainerService.HintSize="546,1874" sap2010:WorkflowViewState.IdRef="If_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence DisplayName="Then: If-UnitfolderExists" sap:VirtualizedContainerService.HintSize="512,1601" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Assign-str_SDPDFFolderWithDate" sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[str_SDPDFFolderWithDate]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[in_Config("SD_LLMExtractionJSONsFolder").ToString+DateTime.Now.ToString("MMddyyyy")+"\"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[str_SDPDFFolderWithDate]" />
+                      <If Condition="[Directory.Exists(str_SDPDFFolderWithDate)]" DisplayName="If-FolderWithdateCreated" sap:VirtualizedContainerService.HintSize="450,474" sap2010:WorkflowViewState.IdRef="If_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then: If-FolderWithdateCreated" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,201" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create str_SDPDFFolderWithDate Folder" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[str_SDPDFFolderWithDate]" />
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <Assign DisplayName="Assign-str_SDPDFFolderWithState" sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="Assign_7">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[str_SDPDFFolderWithState]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[str_SDPDFFolderWithDate+str_State+"\"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[str_SDPDFFolderWithState]" />
+                      <If Condition="[Directory.Exists(str_SDPDFFolderWithState)]" DisplayName="If-FolderWithStateCreated" sap:VirtualizedContainerService.HintSize="450,465" sap2010:WorkflowViewState.IdRef="If_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then: If-FolderWithdateCreated" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,201" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create str_SDPDFFolderWithDate Folder" sap:VirtualizedContainerService.HintSize="354,113" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[str_SDPDFFolderWithState]" />
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentFolder" sap:VirtualizedContainerService.HintSize="546,621" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[arr_Subfolders]">
+                  <ui:ForEach.Body>
+                    <ActivityAction x:TypeArguments="x:String">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:String" Name="currentFolder" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,484" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="s:String[]" Name="arr_Files" />
+                          <Variable x:TypeArguments="x:String" Name="str_UnitFolderName" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign DisplayName="Assign-ArrOfFiles" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_8">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="s:String[]">[arr_Files]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(currentFolder)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign DisplayName="Assign-UnitFolder" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_9">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[str_UnitFolderName]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[path.GetFileName(currentFolder)+"_"+Datetime.Now.ToString("MMddyyhhmmss")]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="SavefilesInSharedDrive - Invoke Workflow File (Utilities\SavefilesInSharedDrive.xaml)" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="Utilities\SavefilesInSharedDrive.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="s:String[]" x:Key="in_ArrFiles">[arr_Files]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_UnitFolderName">[str_UnitFolderName]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_SharedDriveFolder">[str_SDPDFFolderWithState]</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEach.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:ForEach>
+              </Sequence>
+            </If.Then>
+            <If.Else>
+              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
+            </If.Else>
+          </If>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="642,164" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[&quot;LLM JSON Files uploading to SharedDrive ended&quot;]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:LogMessage>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="708,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;Failed to upload LLM extraction files to ShareDrive: &quot; + exception.Message]" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
   </Sequence>
 </Activity>
