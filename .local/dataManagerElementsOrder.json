@@ -47,6 +47,12 @@
       "Path": "Framework/Process.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "str_PDFFolder&Sequence_22",
+        "arr_Subfolders&Sequence_23",
+        "str_SDPDFFolderWithDate&Sequence_23",
+        "str_SDPDFFolderWithState&Sequence_23",
+        "arr_Files&Sequence_24",
+        "str_UnitFolderName&Sequence_24",
         "str_State&Sequence_1",
         "str_PersonName&Flowchart_1",
         "dt_ClassificationMatrixClean&Sequence_18",
