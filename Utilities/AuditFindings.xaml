@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1745,7554</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2385,8024</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AuditFindings_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -199,7 +199,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="AuditFindings" sap:VirtualizedContainerService.HintSize="717,7489" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AuditFindings" sap:VirtualizedContainerService.HintSize="717,7959" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="arr_AS_MemNames" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_TaxRefund" />
@@ -371,7 +371,7 @@
       </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
     <ui:BuildDataTable DataTable="[dt_IAQAssetInfo]" DisplayName="Build Data Table-IAQAssetInfo" sap:VirtualizedContainerService.HintSize="655,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_12" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;MemberName&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;AssetType&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;CashValue&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <If Condition="[in_ClassificationResultsData.AsEnumerable().Any(Function(r) r(&quot;RequiredClassificationResult&quot;).ToString.Trim.Equals(in_Config(&quot;AS&quot;).ToString, StringComparison.OrdinalIgnoreCase)) AndAlso&#xA;in_ClassificationResultsData.AsEnumerable().Any(Function(r) r(&quot;RequiredClassificationResult&quot;).ToString.Trim.Equals(in_Config(&quot;IAQ&quot;).ToString, StringComparison.OrdinalIgnoreCase))]" DisplayName="If-RequiredDocsExist" sap:VirtualizedContainerService.HintSize="655,5272" sap2010:WorkflowViewState.IdRef="If_1196">
+    <If Condition="[in_ClassificationResultsData.AsEnumerable().Any(Function(r) r(&quot;RequiredClassificationResult&quot;).ToString.Trim.Equals(in_Config(&quot;AS&quot;).ToString, StringComparison.OrdinalIgnoreCase)) AndAlso&#xA;in_ClassificationResultsData.AsEnumerable().Any(Function(r) r(&quot;RequiredClassificationResult&quot;).ToString.Trim.Equals(in_Config(&quot;IAQ&quot;).ToString, StringComparison.OrdinalIgnoreCase))]" DisplayName="If-RequiredDocsExist" sap:VirtualizedContainerService.HintSize="655,5742" sap2010:WorkflowViewState.IdRef="If_1196">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -379,7 +379,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="621,4629" sap2010:WorkflowViewState.IdRef="Sequence_4205">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="621,5102" sap2010:WorkflowViewState.IdRef="Sequence_4205">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="bool_RCFExists" />
           </Sequence.Variables>
@@ -675,7 +675,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </aa:Certification_of_Zero_Income>
           </Sequence>
-          <Sequence DisplayName="IncomeVerification" sap:VirtualizedContainerService.HintSize="559,2312" sap2010:WorkflowViewState.IdRef="Sequence_4179">
+          <Sequence DisplayName="IncomeVerification" sap:VirtualizedContainerService.HintSize="559,2785" sap2010:WorkflowViewState.IdRef="Sequence_4179">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="int_ProfitlossNoOfMonths" />
               <Variable x:TypeArguments="x:Boolean" Name="bool_PerYearEarningsChecked" />
@@ -733,7 +733,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </aa:PayStubs>
-            <Switch x:TypeArguments="x:String" DisplayName="Switch-States" Expression="[in_State.ToUpper]" sap:VirtualizedContainerService.HintSize="497,1662" sap2010:WorkflowViewState.IdRef="Switch`1_5">
+            <Switch x:TypeArguments="x:String" DisplayName="Switch-States" Expression="[in_State.ToUpper]" sap:VirtualizedContainerService.HintSize="497,2135" sap2010:WorkflowViewState.IdRef="Switch`1_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -896,7 +896,7 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </aa:Veterans_Affairs_Benefit_Letter___TX>
               </Sequence>
-              <Sequence x:Key="AZ" DisplayName="AZ" sap:VirtualizedContainerService.HintSize="416,364" sap2010:WorkflowViewState.IdRef="Sequence_4219">
+              <Sequence x:Key="AZ" DisplayName="AZ" sap:VirtualizedContainerService.HintSize="416,837" sap2010:WorkflowViewState.IdRef="Sequence_4219">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -910,11 +910,11 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </aa:Verification_Services>
-                <aa:Self_Employment_Certification_AZ in_dt_IncomeSourceDetails="{x:Null}" DisplayName="Self Employment Certification AZ" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="Self_Employment_Certification_AZ_1" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_arr_ICWMemberNames="[arr_ICWMemberNames]" in_dt_ICWIncomeData="[dt_ICWIncomeData]" in_str_SEOnIAQ="[str_SEOnIAQ]" io_DTAuditFindings="[out_DTAuditFindings]" str_MoveIndate="[str_MoveIndate]" str_PromptsFolder="[str_PromptsFolder]">
+                <aa:Self_Employment_Certification_AZ DisplayName="Self Employment Certification AZ" sap:VirtualizedContainerService.HintSize="354,530" sap2010:WorkflowViewState.IdRef="Self_Employment_Certification_AZ_1" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_arr_ICWMemberNames="[arr_ICWMemberNames]" in_dt_ICWIncomeData="[dt_ICWIncomeData]" in_dt_IncomeSourceDetails="[dt_IncomeSourceDetails]" in_str_SEOnIAQ="[str_SEOnIAQ]" io_DTAuditFindings="[out_DTAuditFindings]" str_MoveIndate="[str_MoveIndate]" str_PromptsFolder="[str_PromptsFolder]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </aa:Self_Employment_Certification_AZ>
@@ -980,14 +980,14 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,473" sap2010:WorkflowViewState.IdRef="Sequence_4206">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,470" sap2010:WorkflowViewState.IdRef="Sequence_4206">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:LogMessage DisplayName="Log Message-Incomplete" sap:VirtualizedContainerService.HintSize="354,173" sap2010:WorkflowViewState.IdRef="LogMessage_79" Message="[&quot;Application do not have required documents to perform Audit findings&quot;]" />
-          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;General&quot;,&quot;PageNum&quot;,in_Config(&quot;ApplicationIncomplete&quot;).ToString,&quot;&quot;}]" DataTable="[out_DTAuditFindings]" DisplayName="Add Data Row-NoRequiredDocsExist" sap:VirtualizedContainerService.HintSize="354,212" sap2010:WorkflowViewState.IdRef="AddDataRow_971" />
+          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;General&quot;,&quot;PageNum&quot;,in_Config(&quot;ApplicationIncomplete&quot;).ToString,&quot;&quot;}]" DataTable="[out_DTAuditFindings]" DisplayName="Add Data Row-NoRequiredDocsExist" sap:VirtualizedContainerService.HintSize="354,209" sap2010:WorkflowViewState.IdRef="AddDataRow_971" />
         </Sequence>
       </If.Else>
     </If>
