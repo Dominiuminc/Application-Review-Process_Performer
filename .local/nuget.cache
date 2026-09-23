@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/HEJiYb+Mn58rCvLg4eQNgtxHHilTdMFoABqzPzVicGM0SW0Pw5kG1fFCO1sPUdD8Fdl51EPV5QvaHARtcjuxw==",
+  "dgSpecHash": "zrv9FVK6Fy2BTxjxVlDMaP0pxzzmLueqUQAOkHsKWngwMOrbzu4HlTTrGdvgylRlKiMW+Fx6tPDfmV1Tw/PqAQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\Documents\\Git\\Application-Review-Process_Performer\\.local\\",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\ashlingpartners.pdf\\1.8.6\\ashlingpartners.pdf.1.8.6.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\ashlingpartners.uipath.pdf.activities\\2.0.0\\ashlingpartners.uipath.pdf.activities.2.0.0.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\ashlingpartners.uipath.stringmatching.activities\\1.9.0\\ashlingpartners.uipath.stringmatching.activities.1.9.0.nupkg.sha512",
-    "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\auditfindings_validation\\1.0.151\\auditfindings_validation.1.0.151.nupkg.sha512",
+    "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\auditfindings_validation\\1.0.154\\auditfindings_validation.1.0.154.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\avalonedit\\6.1.3.50\\avalonedit.6.1.3.50.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",
@@ -334,7 +334,7 @@
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\uipath.webapi.activities.runtime\\2.3.2\\uipath.webapi.activities.runtime.2.3.2.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\uipath.wordstonumbers\\1.0.0\\uipath.wordstonumbers.1.0.0.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\uipathteam.sharepoint.activities\\2.0.3\\uipathteam.sharepoint.activities.2.0.3.nupkg.sha512",
-    "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\yardiactivities\\1.0.62\\yardiactivities.1.0.62.nupkg.sha512"
+    "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\yardiactivities\\1.0.63\\yardiactivities.1.0.63.nupkg.sha512"
   ],
   "logs": []
 }
