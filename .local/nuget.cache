@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Mv7KGOghhm3gXwtQetosnw1pOyvNGma4FggHEhpw5/atkMXypnoY1FCE4/akaY2OapFlvxfT+I7CZN1E1plz5A==",
+  "dgSpecHash": "UkeCD0nU3Lfkt7Gr8gFUpGCBOuhoBePQGLlrpd2Xjma+oK7zMhnhJAWA5Qma4Z3g+J6O8uiUzCMlzua/V8TclA==",
   "success": true,
   "projectFilePath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\Documents\\Git\\Application-Review-Process_Performer\\.local\\",
   "expectedPackageFiles": [
@@ -334,7 +334,7 @@
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\uipath.webapi.activities.runtime\\2.3.2\\uipath.webapi.activities.runtime.2.3.2.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\uipath.wordstonumbers\\1.0.0\\uipath.wordstonumbers.1.0.0.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\uipathteam.sharepoint.activities\\2.0.3\\uipathteam.sharepoint.activities.2.0.3.nupkg.sha512",
-    "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\yardiactivities\\1.0.65\\yardiactivities.1.0.65.nupkg.sha512"
+    "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\yardiactivities\\1.0.67\\yardiactivities.1.0.67.nupkg.sha512"
   ],
   "logs": []
 }
