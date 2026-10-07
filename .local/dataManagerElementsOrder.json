@@ -420,6 +420,7 @@
       "Path": "Utilities/AuditFindings.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "list_dict_IAQIncomeValues&Sequence_4205",
         "arr_MemberNameOfIS&Sequence_1",
         "dt_IncomeSourceDetails&Sequence_1",
         "bool_RCFExists&Sequence_4187",
