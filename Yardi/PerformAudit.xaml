@@ -6,7 +6,7 @@
     <x:Property Name="in_DtAuditFindings" Type="InArgument(sd:DataTable)" />
     <x:Property Name="in_DtSortingData" Type="InArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>912,688</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2031,1022</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -118,13 +118,13 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="416,558" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="416,609" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <y:PerformAudit sap:VirtualizedContainerService.HintSize="354,470" sap2010:WorkflowViewState.IdRef="PerformAudit_1" in_Config="[in_Config]" in_DTFindings="[in_DtAuditFindings]" in_DtClassificationResults="[in_DtSortingData]" in_Finding="[in_Config(&quot;YardiFinding&quot;).ToString]" in_FindingType="[in_Config(&quot;YardiFindingType&quot;).ToString]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" in_YardiDocReviewURL="[in_CaseLink]">
+    <y:PerformAudit sap:VirtualizedContainerService.HintSize="354,521" sap2010:WorkflowViewState.IdRef="PerformAudit_1" in_Config="[in_Config]" in_DTFindings="[in_DtAuditFindings]" in_DtClassificationResults="[in_DtSortingData]" in_ElementTimeout="[Cint(in_Config(&quot;ElementTimeout&quot;).ToString)]" in_Finding="[in_Config(&quot;YardiFinding&quot;).ToString]" in_FindingType="[in_Config(&quot;YardiFindingType&quot;).ToString]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" in_YardiDocReviewURL="[in_CaseLink]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>

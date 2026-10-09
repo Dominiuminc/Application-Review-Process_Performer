@@ -209,62 +209,6 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Yardi/SortPagesIntoBuckets.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "str_UploadNumber&Sequence_2",
-        "str_DocumentInfo&Sequence_2",
-        "str_ParentId&Sequence_2",
-        "bool_SortingComplete&Sequence_2",
-        "str_DocumentPageNum&Sequence_10",
-        "dt_FilteredBucketData&Sequence_10",
-        "str_BucketName&Sequence_10"
-      ],
-      "ArgumentsSectionElementsOrder": [
-        "in_ShortTimeDelay",
-        "in_MediumTimeDelay",
-        "in_LongTimeDelay",
-        "in_Config",
-        "in_DocumentReviewURL",
-        "in_DTSortingDetails",
-        "in_Unit",
-        "in_IsTesting",
-        "in_TransactionItem"
-      ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Yardi/ReassignCerts.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [
-        "in_str_Reviewer",
-        "in_str_PropertyName",
-        "in_str_Unit",
-        "in_str_ManagerName",
-        "in_TransactionItem",
-        "in_CertsURL",
-        "in_Config"
-      ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Yardi/YardiLogout.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "int_DataCount&Sequence_2",
-        "int_Index&Sequence_2",
-        "int_Count&Sequence_2"
-      ],
-      "ArgumentsSectionElementsOrder": [
-        "in_YardiURL"
-      ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
       "Path": "Utilities/CleanTempFolder.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
@@ -272,21 +216,6 @@
       ],
       "ArgumentsSectionElementsOrder": [
         "in_TempFolder",
-        "in_Config"
-      ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Yardi/Yardi_Login.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "str_TermsAndConditions&Sequence_2",
-        "str_Username&Sequence_2",
-        "sstr_Password&Sequence_2",
-        "str&Sequence_2"
-      ],
-      "ArgumentsSectionElementsOrder": [
         "in_Config"
       ],
       "ConstantsSectionElementsOrder": [],

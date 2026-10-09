@@ -7,7 +7,7 @@
     <x:Property Name="in_SortingData" Type="InArgument(sd:DataTable)" />
     <x:Property Name="in_Unit" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>912,688</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2031,1022</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -141,55 +141,19 @@
       <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="416,193" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="416,660" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <y:SortPagesIntoBuckets sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="SortPagesIntoBuckets_2" in_Config="[in_Config]" in_DTSortingDetails="[in_SortingData]" in_DocumentReviewURL="[in_CaseLink]" in_IsTesting="[in_IsTesting]" in_LongTimeDelay="[CInt(in_Config(&quot;LongTimeDelay&quot;).ToString)]" in_MediumTimeDelay="[CInt(in_Config(&quot;MediumTimeDelay&quot;).ToString)]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" in_Unit="[in_Unit]">
+    <y:SortPagesIntoBuckets sap:VirtualizedContainerService.HintSize="354,572" sap2010:WorkflowViewState.IdRef="SortPagesIntoBuckets_2" in_Config="[in_Config]" in_DTSortingDetails="[in_SortingData]" in_DelayAfterTime="[CInt(in_Config(&quot;DelayAfterTime&quot;).ToString)]" in_DocumentReviewURL="[in_CaseLink]" in_IsTesting="[in_IsTesting]" in_LongTimeDelay="[CInt(in_Config(&quot;LongTimeDelay&quot;).ToString)]" in_MediumTimeDelay="[CInt(in_Config(&quot;MediumTimeDelay&quot;).ToString)]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" in_Unit="[in_Unit]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </y:SortPagesIntoBuckets>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_3">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="SortPagesIntoBuckets - Invoke Workflow File (Yardi\SortPagesIntoBuckets.xaml)" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Yardi\SortPagesIntoBuckets.xaml">
-            <ui:InvokeWorkflowFile.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="in_DocumentReviewURL">[in_CaseLink]</InArgument>
-              <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DTSortingDetails">[in_SortingData]</InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="in_Unit">[in_Unit]</InArgument>
-              <InArgument x:TypeArguments="x:Boolean" x:Key="in_IsTesting">[in_IsTesting]</InArgument>
-              <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
-              <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
-              <InArgument x:TypeArguments="x:Int32" x:Key="in_ShortTimeDelay">[CInt(in_Config("ShortTimeDelay").ToString)]</InArgument>
-              <InArgument x:TypeArguments="x:Int32" x:Key="in_MediumTimeDelay">[CInt(in_Config("MediumTimeDelay").ToString)]</InArgument>
-              <InArgument x:TypeArguments="x:Int32" x:Key="in_LongTimeDelay">[CInt(in_Config("LongTimeDelay").ToString)]</InArgument>
-            </ui:InvokeWorkflowFile.Arguments>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </ui:InvokeWorkflowFile>
-        </Sequence>
-      </ui:CommentOut.Body>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:CommentOut>
   </Sequence>
 </Activity>
