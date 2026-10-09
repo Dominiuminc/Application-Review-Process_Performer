@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "J5rZ5lutf2aw9G8ZEVGAdggv3huaZV845+RLNU8cTaGUIkoOnMbynUu4hp7F+itGV47S1+1O0SI2l1umrz9Z0w==",
+  "dgSpecHash": "SgArIFfpHABoD0UCJUCAFHLlyiaT+YzRP0+E+MrXwAAVO3AVWif8zTCcR45sNIeKjkwwZc2Mepb8OJrvrMEqvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\Documents\\Git\\Application-Review-Process_Performer\\.local\\",
+  "projectFilePath": "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\Documents\\Application-Review-Process_Performer\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\apiclient\\1.6.0\\apiclient.1.6.0.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\ashlingpartners.foundry.activities\\1.22.0\\ashlingpartners.foundry.activities.1.22.0.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\ashlingpartners.pdf\\2.20260925.1\\ashlingpartners.pdf.2.20260925.1.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\ashlingpartners.uipath.pdf.activities\\2.20260930.4\\ashlingpartners.uipath.pdf.activities.2.20260930.4.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\ashlingpartners.uipath.stringmatching.activities\\1.9.0\\ashlingpartners.uipath.stringmatching.activities.1.9.0.nupkg.sha512",
-    "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\auditfindings_validation\\1.0.174\\auditfindings_validation.1.0.174.nupkg.sha512",
+    "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\auditfindings_validation\\1.0.175\\auditfindings_validation.1.0.175.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\avalonedit\\6.1.3.50\\avalonedit.6.1.3.50.nupkg.sha512",
     "C:\\Users\\raluca.ilinca.AzureAI-Jump2\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",
