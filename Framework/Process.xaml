@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>2385,5161</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2031,1103</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -215,7 +215,7 @@
                 <av:Size x:Key="ShapeSize">110,70</av:Size>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <y:ReassignCerts sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="ReassignCerts_1" in_CertsURL="[in_Config(&quot;YardiCertsURL&quot;).ToString]" in_Config="[in_Config]" in_LongTimeDelay="30" in_MediumTimeDelay="[CInt(in_Config(&quot;MediumTimeDelay&quot;).ToString)]" in_PersonName="[str_PersonName]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" str_ManagerName="[str_ManagerName]" str_PropertyName="[str_PropertyName]" str_Reviewer="[str_Reviewer]" str_Unit="[str_Unit]">
+            <y:ReassignCerts sap:VirtualizedContainerService.HintSize="334,600" sap2010:WorkflowViewState.IdRef="ReassignCerts_1" in_CertsURL="[in_Config(&quot;YardiCertsURL&quot;).ToString]" in_Config="[in_Config]" in_LongTimeDelay="[Cint(in_Config(&quot;LongTimeDelay&quot;).ToString)]" in_MediumTimeDelay="[CInt(in_Config(&quot;MediumTimeDelay&quot;).ToString)]" in_PersonName="[str_PersonName]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" str_ManagerName="[str_ManagerName]" str_PropertyName="[str_PropertyName]" str_Reviewer="[str_Reviewer]" str_Unit="[str_Unit]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
