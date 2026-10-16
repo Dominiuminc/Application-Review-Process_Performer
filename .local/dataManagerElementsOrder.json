@@ -349,6 +349,9 @@
       "Path": "Utilities/AuditFindings.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "dt_ICWUnsupportedIncomeTypes&Sequence_1",
+        "list_ICWUnsupportedIncomeTypes&Sequence_4001",
+        "int_LastRow&Sequence_4226",
         "list_dict_IAQIncomeValues&Sequence_4205",
         "arr_MemberNameOfIS&Sequence_1",
         "dt_IncomeSourceDetails&Sequence_1",
