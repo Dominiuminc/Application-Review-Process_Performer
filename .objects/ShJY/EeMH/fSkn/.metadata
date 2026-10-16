@@ -1,0 +1,13 @@
+﻿{
+  "Name": "ReassignCertifications",
+  "Type": "Screen",
+  "Id": "fSknMsG7D0yS4_4hY3LiEg",
+  "Reference": "_EVOEAIp2Ui16OrarTbFUw/fSknMsG7D0yS4_4hY3LiEg",
+  "ParentRef": "_EVOEAIp2Ui16OrarTbFUw/EeMHoOHB6kivMkiAEbvFJQ",
+  "Created": "2025-09-04T21:33:42.1427863Z",
+  "Updated": "2025-09-04T21:33:42.1427863Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

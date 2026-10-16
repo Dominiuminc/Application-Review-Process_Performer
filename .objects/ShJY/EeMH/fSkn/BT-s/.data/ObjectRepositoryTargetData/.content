@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YQRNRTYB3E226R5Xuw2oSA" Reference="_EVOEAIp2Ui16OrarTbFUw/cPTAp838iUiWIrM498YPWg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://dominium.certenant.com/#/certifications" DesignTimeRectangle="746, 202, 436, 47" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' parentname='cert_assign_form' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' parentname='cert_assign_form' type='button' class='btn btn-default btn-block border btn-assign dropdown-toggle d-flex justify-content-between align-items-center' aaname='   HM Harika Malyala (6) 1 Portfolio 0 Portfolios' /&gt;" Guid="d64004f2-9c7e-4316-bd8d-d2e9e2380fc0" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Certifications' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4ab5860d53fa3da08ba013c8b1531484.png" xmlns="">0TPaJN-4bO0--X0yRi_YFMQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

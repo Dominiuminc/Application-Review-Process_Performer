@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-Xi6rKliIUqSOZMzHUXqew" Reference="_EVOEAIp2Ui16OrarTbFUw/4BylXEvOXkyXk-7LvFgm7w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://dominium.certenant.com/#/certifications" DesignTimeRectangle="790, 311, 99, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[&quot;&lt;webctrl tag='SPAN' innertext='&quot;+str_ManagerName+&quot;' parentname='cert_assign_form' /&gt;&quot;]" FuzzySelectorArgument="[&quot;&lt;webctrl tag='SPAN' innertext='&quot;+str_ManagerName+&quot;' parentname='cert_assign_form' type='' class='ng-binding' aaname='&quot;+str_ManagerName+&quot;' check:text='&quot;+str_ManagerName+&quot;' /&gt;&quot;]" Guid="7a63b38d-241e-4bda-9beb-59f4597209fb" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Certifications' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="26342cfe1b28cc7d7828cf4f2fbf0597.png" xmlns="">0DOpFn-9hKUaKF5re0woMcQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

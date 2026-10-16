@@ -1,0 +1,310 @@
+{
+  "assemblyStates": {
+    "ExtendedExtractionRe.y0PUo3cnCnF1ArXSB4BauA82": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEAssetSelfCertificationWorksheetV7.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEAssetSelfCertificationWorksheetV7",
+        "hash": "NjM2MTY1MjEy",
+        "assemblyName": "ExtendedExtractionRe.y0PUo3cnCnF1ArXSB4BauA82"
+      }
+    },
+    "ExtendedExtractionRe.Oxx7G4zi3CF1vYIIV3fwhra4": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonDUModelsInitialApplicationSummaryV1.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonDUModelsInitialApplicationSummaryV1",
+        "hash": "MTgyNjQyMjcwNw",
+        "assemblyName": "ExtendedExtractionRe.Oxx7G4zi3CF1vYIIV3fwhra4"
+      }
+    },
+    "ExtendedExtractionRe.dtYTA4OoKcJ1b5UY64TLZVC": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCIncomeChecklistV4.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCIncomeChecklistV4",
+        "hash": "LTEzNTMxNjc4NjU",
+        "assemblyName": "ExtendedExtractionRe.dtYTA4OoKcJ1b5UY64TLZVC"
+      }
+    },
+    "ExtendedExtractionRe.MpHay3chUhQ17BjAC1xIlV3": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10ASFAAffidavitOfStudentFinancialAssistancePart34V9.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10ASFAAffidavitOfStudentFinancialAssistancePart34V9",
+        "hash": "MTU2OTE2MzIxOA",
+        "assemblyName": "ExtendedExtractionRe.MpHay3chUhQ17BjAC1xIlV3"
+      }
+    },
+    "ExtendedExtractionRe.OcrAy2d1eVI1CDAcT2kRaF52": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCAssetSelfCertificationV4.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCAssetSelfCertificationV4",
+        "hash": "LTE4ODE5NzAyNjQ",
+        "assemblyName": "ExtendedExtractionRe.OcrAy2d1eVI1CDAcT2kRaF52"
+      }
+    },
+    "ExtendedExtractionRe.nFMFy14jgrM1MweWk1s6zs1": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEVerificationOfEmploymentV7.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEVerificationOfEmploymentV7",
+        "hash": "MTQzMDM5MDk1Ng",
+        "assemblyName": "ExtendedExtractionRe.nFMFy14jgrM1MweWk1s6zs1"
+      }
+    },
+    "ExtendedExtractionRe.SY5IK4rjT0B1OMEAB3q8r8C1": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCApplicationSummaryV4.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCApplicationSummaryV4",
+        "hash": "MTk5MDQzNzQ3MA",
+        "assemblyName": "ExtendedExtractionRe.SY5IK4rjT0B1OMEAB3q8r8C1"
+      }
+    },
+    "ExtendedExtractionRe.epDEf1CCaEO1iP9SQ4fnZ8a4": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10ASFAAffidavitOfStudentFinancialAssistancePart12V9.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10ASFAAffidavitOfStudentFinancialAssistancePart12V9",
+        "hash": "OTE0NDc1Mzc2",
+        "assemblyName": "ExtendedExtractionRe.epDEf1CCaEO1iP9SQ4fnZ8a4"
+      }
+    },
+    "ExtendedExtractionRe.BpISo3Bc7mL1RlT8DTq3ip3": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEApplicationSummaryV7.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEApplicationSummaryV7",
+        "hash": "MTgyNjQyMjcwNw",
+        "assemblyName": "ExtendedExtractionRe.BpISo3Bc7mL1RlT8DTq3ip3"
+      }
+    },
+    "ExtendedExtractionRe.P4OwH2eLr3D12tYAc3Paokj3": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEStudentCertificationV7.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEStudentCertificationV7",
+        "hash": "LTQxODQ0OTMwOA",
+        "assemblyName": "ExtendedExtractionRe.P4OwH2eLr3D12tYAc3Paokj3"
+      }
+    },
+    "ExtendedExtractionRe.qlOLLCS4rN1nYy4T3lV5jA4": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEHistoryHousingDisclosureV7.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEHistoryHousingDisclosureV7",
+        "hash": "LTEyMzkxMDg1OTE",
+        "assemblyName": "ExtendedExtractionRe.qlOLLCS4rN1nYy4T3lV5jA4"
+      }
+    },
+    "ExtendedExtractionRe.ui6Eo1IIODC1xDCJm2uHJ1a3": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCAssetSelfCertificationWorksheetV4.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCAssetSelfCertificationWorksheetV4",
+        "hash": "NTY1MzE2MDI4",
+        "assemblyName": "ExtendedExtractionRe.ui6Eo1IIODC1xDCJm2uHJ1a3"
+      }
+    },
+    "ExtendedExtractionRe.TfZT34F3RJD1b0iEd2LfU2w": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEIncomeChecklistV7.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEIncomeChecklistV7",
+        "hash": "MzgxNzc3MjMx",
+        "assemblyName": "ExtendedExtractionRe.TfZT34F3RJD1b0iEd2LfU2w"
+      }
+    },
+    "ExtendedExtractionRe.JIgrLEVpiF1WhQO6LYJOI2": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.IAQDU1001IncomeChecklistV1.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.IAQDU1001IncomeChecklistV1",
+        "hash": "LTEzNTMxNjc4NjU",
+        "assemblyName": "ExtendedExtractionRe.JIgrLEVpiF1WhQO6LYJOI2"
+      }
+    },
+    "ExtendedExtractionRe.qR2iV1b39XM1H6YK92xH9m12": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCAssetChecklistV4.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUIAQASASCAssetChecklistV4",
+        "hash": "MTAyOTAzODM1NA",
+        "assemblyName": "ExtendedExtractionRe.qR2iV1b39XM1H6YK92xH9m12"
+      }
+    },
+    "ExtendedExtractionRe.j8Mm126ZmGJ1iLEoF1zdbbf4": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10CZICertificationOfZeroIncomeSectionAV8.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10CZICertificationOfZeroIncomeSectionAV8",
+        "hash": "MTQ5NzM0Mzk0OQ",
+        "assemblyName": "ExtendedExtractionRe.j8Mm126ZmGJ1iLEoF1zdbbf4"
+      }
+    },
+    "ExtendedExtractionRe.eGBKjj6F8C1FvSj02yItBa": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEAssetChecklistV7.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEAssetChecklistV7",
+        "hash": "MTYwMDkxNTgyNw",
+        "assemblyName": "ExtendedExtractionRe.eGBKjj6F8C1FvSj02yItBa"
+      }
+    },
+    "ExtendedExtractionRe.7XrXCPHaxI1BOeI54m3tWK2": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.IAQDU1001AssetChecklistV1.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.IAQDU1001AssetChecklistV1",
+        "hash": "MTAyOTAzODM1NA",
+        "assemblyName": "ExtendedExtractionRe.7XrXCPHaxI1BOeI54m3tWK2"
+      }
+    },
+    "ExtendedExtractionRe.lndbW3jFfuC1Qvg7d191QkS3": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUSCStudentCertificationV5.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUSCStudentCertificationV5",
+        "hash": "LTEyNDkyOTcyMjk",
+        "assemblyName": "ExtendedExtractionRe.lndbW3jFfuC1Qvg7d191QkS3"
+      }
+    },
+    "ExtendedExtractionRe.bIcbHuelcK1Ug3v72EmKwn2": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10CZICertificationOfZeroIncomeSectionBV8.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10CZICertificationOfZeroIncomeSectionBV8",
+        "hash": "LTEzOTUxOTM1NQ",
+        "assemblyName": "ExtendedExtractionRe.bIcbHuelcK1Ug3v72EmKwn2"
+      }
+    },
+    "ExtendedExtractionRe.WFa67YEsC1yxH8R4hvYHo1": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonDUModelsInitialHousingHistoryDisclosureV1.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonDUModelsInitialHousingHistoryDisclosureV1",
+        "hash": "LTEyMzkxMDg1OTE",
+        "assemblyName": "ExtendedExtractionRe.WFa67YEsC1yxH8R4hvYHo1"
+      }
+    },
+    "ExtendedExtractionRe.5R9fnt5JUD1dU57B2Gy1Kv1": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonCSEIandSCCertificationOfSelfEmploymentIncomeV3.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonCSEIandSCCertificationOfSelfEmploymentIncomeV3",
+        "hash": "MjA0Njc0MTk5NQ",
+        "assemblyName": "ExtendedExtractionRe.5R9fnt5JUD1dU57B2Gy1Kv1"
+      }
+    },
+    "ExtendedExtractionRe.EQWc61jxWAP1h29xw0Gtk12": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage2V1.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage2V1",
+        "hash": "MTQ4NDY2MjA1NA",
+        "assemblyName": "ExtendedExtractionRe.EQWc61jxWAP1h29xw0Gtk12"
+      }
+    },
+    "ExtendedExtractionRe.w96ku2SkQqQ1Ks8st32ffXY": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEMemberInformationDocumentV7.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEMemberInformationDocumentV7",
+        "hash": "NDYxMzIwOTg0",
+        "assemblyName": "ExtendedExtractionRe.w96ku2SkQqQ1Ks8st32ffXY"
+      }
+    },
+    "ExtendedExtractionRe.rO5Qc4l572E1Kkf222vo2mj3": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10SECSelfEmploymentCertificationV11.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10SECSelfEmploymentCertificationV11",
+        "hash": "LTU2NzI5MTA0Mg",
+        "assemblyName": "ExtendedExtractionRe.rO5Qc4l572E1Kkf222vo2mj3"
+      }
+    },
+    "ExtendedExtractionRe.H0y7MNCUsL1Fj37jyhCx93": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEAssetSelfCertificationV7.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtraction10ASIAQASCSCHHSMIDVOEAssetSelfCertificationV7",
+        "hash": "LTMxNzQ3Mzc5",
+        "assemblyName": "ExtendedExtractionRe.H0y7MNCUsL1Fj37jyhCx93"
+      }
+    },
+    "ExtendedExtractionRe.oCPNzmNV6H12HhcZ1BpAS83": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10SECSelfEmploymentCertificationV13.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10SECSelfEmploymentCertificationV13",
+        "hash": "LTU2NzI5MTA0Mg",
+        "assemblyName": "ExtendedExtractionRe.oCPNzmNV6H12HhcZ1BpAS83"
+      }
+    },
+    "ExtendedExtractionRe.PdAlz1h2hOH1tAmWx3Li1WX2": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonCSEIandSCStudentCertificationV3.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonCSEIandSCStudentCertificationV3",
+        "hash": "LTQxODQ0OTMwOA",
+        "assemblyName": "ExtendedExtractionRe.PdAlz1h2hOH1tAmWx3Li1WX2"
+      }
+    },
+    "ExtendedExtractionRe.ZXHq83j0qIC1QzhlB2jkyhf4": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificCSSCertificationOfStudentStatusV2.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificCSSCertificationOfStudentStatusV2",
+        "hash": "LTE4NTc4NDU1NA",
+        "assemblyName": "ExtendedExtractionRe.ZXHq83j0qIC1QzhlB2jkyhf4"
+      }
+    },
+    "ExtendedExtractionRe.Lp3rX3ysHJJ1Xj7wU4uGjmX2": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10SCNESelfCertificationOfNonEmploymentV14.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10SCNESelfCertificationOfNonEmploymentV14",
+        "hash": "OTEwNzAxMzUw",
+        "assemblyName": "ExtendedExtractionRe.Lp3rX3ysHJJ1Xj7wU4uGjmX2"
+      }
+    },
+    "ExtendedExtractionRe.6goFp1HGebK1yfzBK39iwIn2": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonRCandCSEICertificationOfSelfEmploymentIncomeV2.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonRCandCSEICertificationOfSelfEmploymentIncomeV2",
+        "hash": "MjA0Njc0MTk5NQ",
+        "assemblyName": "ExtendedExtractionRe.6goFp1HGebK1yfzBK39iwIn2"
+      }
+    },
+    "ExtendedExtractionRe.6C5Eb2DzKpH1bLvzP2cQNl2": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10SCNESelfCertificationOfNonEmploymentV15.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.DUExtractor10SCNESelfCertificationOfNonEmploymentV15",
+        "hash": "OTEwNzAxMzUw",
+        "assemblyName": "ExtendedExtractionRe.6C5Eb2DzKpH1bLvzP2cQNl2"
+      }
+    },
+    "ExtendedExtractionRe.1yhti2NThgQ1YYAuW2YG3J2": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage1V1.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.GASpecificASCAssetSelfCertificationPage1V1",
+        "hash": "MTAxMDg2MTgzOQ",
+        "assemblyName": "ExtendedExtractionRe.1yhti2NThgQ1YYAuW2YG3J2"
+      }
+    },
+    "ExtendedExtractionRe.qaCjE3Z1aUO10jkmuCdyiE3": {
+      "namespace": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonEVEmploymentVerificationV4.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData.CommonEVEmploymentVerificationV4",
+        "hash": "MTk1NTU4Njk4Mw",
+        "assemblyName": "ExtendedExtractionRe.qaCjE3Z1aUO10jkmuCdyiE3"
+      }
+    }
+  }
+}
