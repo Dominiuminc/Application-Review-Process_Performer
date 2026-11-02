@@ -6,7 +6,7 @@
     <x:Property Name="in_DtAuditFindings" Type="InArgument(sd:DataTable)" />
     <x:Property Name="in_DtSortingData" Type="InArgument(sd:DataTable)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>2031,1022</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1745,845</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -37,6 +37,8 @@
       <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -118,13 +120,17 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="416,609" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="416,780" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_FindingsConfig" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <y:PerformAudit sap:VirtualizedContainerService.HintSize="354,521" sap2010:WorkflowViewState.IdRef="PerformAudit_1" in_Config="[in_Config]" in_DTFindings="[in_DtAuditFindings]" in_DtClassificationResults="[in_DtSortingData]" in_ElementTimeout="[Cint(in_Config(&quot;ElementTimeout&quot;).ToString)]" in_Finding="[in_Config(&quot;YardiFinding&quot;).ToString]" in_FindingType="[in_Config(&quot;YardiFindingType&quot;).ToString]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" in_YardiDocReviewURL="[in_CaseLink]">
+    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_FindingsConfig]" DisplayName="Read Excel data from Config.xlsx Findings sheet" sap:VirtualizedContainerService.HintSize="354,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Findings" WorkbookPath="Data\Config.xlsx" />
+    <y:PerformAudit sap:VirtualizedContainerService.HintSize="354,572" sap2010:WorkflowViewState.IdRef="PerformAudit_1" in_Config="[in_Config]" in_DTFindings="[in_DtAuditFindings]" in_DtClassificationResults="[in_DtSortingData]" in_DtFindingsConfig="[dt_FindingsConfig]" in_ElementTimeout="[Cint(in_Config(&quot;ElementTimeout&quot;).ToString)]" in_Finding="[in_Config(&quot;YardiFinding&quot;).ToString]" in_FindingType="[in_Config(&quot;YardiFindingType&quot;).ToString]" in_ShortTimeDelay="[CInt(in_Config(&quot;ShortTimeDelay&quot;).ToString)]" in_TransactionItem="[in_TransactionItem]" in_YardiDocReviewURL="[in_CaseLink]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
