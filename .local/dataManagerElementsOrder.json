@@ -115,7 +115,9 @@
     {
       "Path": "Yardi/PerformAudit.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "dt_FindingsConfig&Sequence_1"
+      ],
       "ArgumentsSectionElementsOrder": [
         "in_CaseLink",
         "in_DtAuditFindings",
