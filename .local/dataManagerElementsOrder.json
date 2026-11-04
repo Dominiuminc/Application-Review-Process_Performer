@@ -351,6 +351,7 @@
       "Path": "Utilities/AuditFindings.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "bool_PensionDoesNotExist&Sequence_4179",
         "dt_ICWUnsupportedIncomeTypes&Sequence_1",
         "list_ICWUnsupportedIncomeTypes&Sequence_4001",
         "int_LastRow&Sequence_4226",
