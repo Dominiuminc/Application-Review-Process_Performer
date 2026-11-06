@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>2385,1103</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1361,1103</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="100">
@@ -189,7 +189,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="600,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <Flowchart sap:VirtualizedContainerService.HintSize="2445,988" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart sap:VirtualizedContainerService.HintSize="600,657" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <Flowchart.Variables>
         <Variable x:TypeArguments="scg:List(x:String)" Name="list_PDFFiles" />
         <Variable x:TypeArguments="sd:DataTable" Name="dt_SortingData" />
@@ -297,7 +297,7 @@
                         <av:PointCollection x:Key="ConnectorLocation">420,575 420,625</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="ConvertPDFsToImages" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <Sequence DisplayName="ConvertPDFsToImages" sap:VirtualizedContainerService.HintSize="450,650" sap2010:WorkflowViewState.IdRef="Sequence_18">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="sd:DataTable" Name="dt_ClassificationMatrixClean" />
                       </Sequence.Variables>
@@ -317,7 +317,7 @@
                           <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DTClassificationMatrix">[in_DTClassificationMatrix]</InArgument>
                         </ui:InvokeCode.Arguments>
                       </ui:InvokeCode>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="ConvertPDFsToImages - Invoke Workflow File (LLM\ConvertPDFsToImages.xaml)" sap:VirtualizedContainerService.HintSize="388,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="LLM\ConvertPDFsToImages.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="ConvertPDFsToImages - Invoke Workflow File (LLM\ConvertPDFsToImages.xaml)" sap:VirtualizedContainerService.HintSize="388,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="LLM\ConvertPDFsToImages.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="scg:List(x:String)" x:Key="in_PDFFiles">[list_PDFFiles]</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_EndPoint">[in_Config("LLM_EndPoint").ToString]</InArgument>
@@ -331,42 +331,6 @@
                           <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DTClassificationMatrix">[dt_ClassificationMatrixClean]</InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                        <ui:CommentOut.Body>
-                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_32">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="ConvertPDFsToImages - Invoke Workflow File (LLM\ConvertPDFsToImages.xaml)" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="True" WorkflowFileName="LLM\ConvertPDFsToImages.xaml">
-                              <ui:InvokeWorkflowFile.Arguments>
-                                <InArgument x:TypeArguments="scg:List(x:String)" x:Key="in_PDFFiles">[list_PDFFiles]</InArgument>
-                                <InArgument x:TypeArguments="x:String" x:Key="in_EndPoint">[in_Config("LLM_EndPoint").ToString]</InArgument>
-                                <InArgument x:TypeArguments="x:String" x:Key="in_APIKey">[in_Config("LLM_APIKey").ToString]</InArgument>
-                                <InArgument x:TypeArguments="x:String" x:Key="in_DeploymentName">[in_Config("LLM_DeploymentName").ToString]</InArgument>
-                                <InArgument x:TypeArguments="x:String" x:Key="in_APIVersion">[in_Config("LLM_APIVersion").ToString]</InArgument>
-                                <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_DtSortingDetails">[dt_SortingData]</OutArgument>
-                                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
-                                <InArgument x:TypeArguments="x:String" x:Key="in_PDFFolder">[str_PDFFolder]</InArgument>
-                                <InArgument x:TypeArguments="x:String" x:Key="in_State">[str_State]</InArgument>
-                                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_DTClassificationMatrix">[dt_ClassificationMatrixClean]</InArgument>
-                              </ui:InvokeWorkflowFile.Arguments>
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </ui:InvokeWorkflowFile>
-                          </Sequence>
-                        </ui:CommentOut.Body>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:CommentOut>
                     </Sequence>
                     <FlowStep.Next>
                       <FlowStep x:Name="__ReferenceID2" sap2010:WorkflowViewState.IdRef="FlowStep_4">
@@ -431,7 +395,7 @@
                                         <av:PointCollection x:Key="ConnectorLocation">625,890 655,890 655,889.5 890,889.5</av:PointCollection>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="PerformAudit" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="True" WorkflowFileName="Yardi\PerformAudit.xaml">
+                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="PerformAudit" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="True" WorkflowFileName="Yardi\PerformAudit.xaml">
                                       <ui:InvokeWorkflowFile.Arguments>
                                         <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
                                         <InArgument x:TypeArguments="ui:QueueItem" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
