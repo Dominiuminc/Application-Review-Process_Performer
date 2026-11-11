@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1361,7861</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1090,8300</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AuditFindings_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -226,7 +226,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="AuditFindings" sap:VirtualizedContainerService.HintSize="766,7756" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AuditFindings" sap:VirtualizedContainerService.HintSize="766,8235" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="arr_AS_MemNames" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_TaxRefund" />
@@ -400,7 +400,7 @@
     </ui:BuildDataTable>
     <ui:BuildDataTable DataTable="[dt_IAQAssetInfo]" DisplayName="Build Data Table-IAQAssetInfo" sap:VirtualizedContainerService.HintSize="704,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_12" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;MemberName&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;AssetType&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;CashValue&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
     <ui:BuildDataTable DataTable="[dt_ICWUnsupportedIncomeTypes]" DisplayName="Build Data Table - dt_ICWUnsupportedIncomeTypes" sap:VirtualizedContainerService.HintSize="704,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_13" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Property&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Unit&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Income_x0020_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;State&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <If Condition="[in_ClassificationResultsData.AsEnumerable().Any(Function(r) r(&quot;RequiredClassificationResult&quot;).ToString.Trim.Equals(in_Config(&quot;AS&quot;).ToString, StringComparison.OrdinalIgnoreCase)) AndAlso&#xA;(&#xA; in_ClassificationResultsData.AsEnumerable().Any(Function(r) r(&quot;RequiredClassificationResult&quot;).ToString.Trim.Equals(in_Config(&quot;IAQ&quot;).ToString, StringComparison.OrdinalIgnoreCase)) Or&#xA; (in_State.Trim.Equals(&quot;AZ&quot;, StringComparison.OrdinalIgnoreCase) AndAlso&#xA;  in_ClassificationResultsData.AsEnumerable().Any(Function(r) r(&quot;RequiredClassificationResult&quot;).ToString.Trim.Equals(in_Config(&quot;CQ&quot;).ToString, StringComparison.OrdinalIgnoreCase)))&#xA;)]" DisplayName="If-RequiredDocsExist" sap:VirtualizedContainerService.HintSize="704,5756" sap2010:WorkflowViewState.IdRef="If_1196">
+    <If Condition="[in_ClassificationResultsData.AsEnumerable().Any(Function(r) r(&quot;RequiredClassificationResult&quot;).ToString.Trim.Equals(in_Config(&quot;AS&quot;).ToString, StringComparison.OrdinalIgnoreCase)) AndAlso&#xA;(&#xA; in_ClassificationResultsData.AsEnumerable().Any(Function(r) r(&quot;RequiredClassificationResult&quot;).ToString.Trim.Equals(in_Config(&quot;IAQ&quot;).ToString, StringComparison.OrdinalIgnoreCase)) Or&#xA; (in_State.Trim.Equals(&quot;AZ&quot;, StringComparison.OrdinalIgnoreCase) AndAlso&#xA;  in_ClassificationResultsData.AsEnumerable().Any(Function(r) r(&quot;RequiredClassificationResult&quot;).ToString.Trim.Equals(in_Config(&quot;CQ&quot;).ToString, StringComparison.OrdinalIgnoreCase)))&#xA;)]" DisplayName="If-RequiredDocsExist" sap:VirtualizedContainerService.HintSize="704,6235" sap2010:WorkflowViewState.IdRef="If_1196">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -408,7 +408,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="670,5116" sap2010:WorkflowViewState.IdRef="Sequence_4205">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="670,5595" sap2010:WorkflowViewState.IdRef="Sequence_4205">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="bool_RCFExists" />
             <Variable x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))" Name="list_dict_IAQIncomeValues" />
@@ -803,7 +803,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </aa:Certification_of_Zero_Income>
           </Sequence>
-          <Sequence DisplayName="IncomeVerification" sap:VirtualizedContainerService.HintSize="608,1333" sap2010:WorkflowViewState.IdRef="Sequence_4179">
+          <Sequence DisplayName="IncomeVerification" sap:VirtualizedContainerService.HintSize="608,1812" sap2010:WorkflowViewState.IdRef="Sequence_4179">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="int_ProfitlossNoOfMonths" />
               <Variable x:TypeArguments="x:Boolean" Name="bool_PerYearEarningsChecked" />
@@ -817,6 +817,7 @@
               <Variable x:TypeArguments="sd:DataTable" Name="dt_IncomeDocDetails" />
               <Variable x:TypeArguments="x:Boolean" Name="bool_EVTXExists" />
               <Variable x:TypeArguments="x:Boolean" Name="bool_PensionDoesNotExist" />
+              <Variable x:TypeArguments="x:Boolean" Name="out_bool_PensionDoesNotExist" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1127,7 +1128,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </aa:Child_Support_Payment_History___Calcs>
-            <aa:SocialSecurityBenefitsLetter___SupplementalSecurityIncome DisplayName="SocialSecurityBenefitsLetter &amp; SupplementalSecurityIncome" sap:VirtualizedContainerService.HintSize="434,674" sap2010:WorkflowViewState.IdRef="SocialSecurityBenefitsLetter___SupplementalSecurityIncome_1" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_State="[in_State]" in_arr_ICWMemberNames="[arr_ICWMemberNames]" in_dt_ICWIncomeData="[dt_ICWIncomeData]" in_dt_IncomeSourceDetails="[dt_IncomeSourceDetails]" in_list_dict_IAQIncomeFields="[list_dict_IAQIncomeValues]" in_str_MoveIndate="[str_MoveIndate]" in_str_PromptsFolder="[str_PromptsFolder]" in_str_SSIOnIAQ="[str_SSIOnIAQ]" in_str_SupSIOnIAQ="[str_SupSIOnIAQ]" io_DTAuditFindings="[out_DTAuditFindings]">
+            <aa:SocialSecurityBenefitsLetter___SupplementalSecurityIncome DisplayName="SocialSecurityBenefitsLetter &amp; SupplementalSecurityIncome" sap:VirtualizedContainerService.HintSize="434,683" sap2010:WorkflowViewState.IdRef="SocialSecurityBenefitsLetter___SupplementalSecurityIncome_1" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_State="[in_State]" in_arr_ICWMemberNames="[arr_ICWMemberNames]" in_dt_ICWIncomeData="[dt_ICWIncomeData]" in_dt_IncomeSourceDetails="[dt_IncomeSourceDetails]" in_list_dict_IAQIncomeFields="[list_dict_IAQIncomeValues]" in_str_MoveIndate="[str_MoveIndate]" in_str_PromptsFolder="[str_PromptsFolder]" in_str_SSIOnIAQ="[str_SSIOnIAQ]" in_str_SupSIOnIAQ="[str_SupSIOnIAQ]" io_DTAuditFindings="[out_DTAuditFindings]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1135,6 +1136,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </aa:SocialSecurityBenefitsLetter___SupplementalSecurityIncome>
+            <aa:Pension sap:VirtualizedContainerService.HintSize="434,470" sap2010:WorkflowViewState.IdRef="Pension_1" in_ClassificationResultsData="[in_ClassificationResultsData]" in_Config="[in_Config]" in_arr_ICWMemberNames="[arr_ICWMemberNames]" in_dt_ICWIncomeData="[dt_ICWIncomeData]" in_str_MoveIndate="[str_MoveIndate]" in_str_PromptsFolder="[str_PromptsFolder]" io_DTAuditFindings="[out_DTAuditFindings]" out_bool_PensionDoesNotExist="[out_bool_PensionDoesNotExist]" />
           </Sequence>
         </Sequence>
       </If.Then>
