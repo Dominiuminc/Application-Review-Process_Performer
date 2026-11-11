@@ -857,6 +857,32 @@
         },
         "SubBindings": [],
         "DefaultValueSource": "Property"
+      },
+      {
+        "Type": "taskCatalog",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "CatalogBindingsKey",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "folderPath": {
+            "Value": "",
+            "ValueSource": "Property"
+          },
+          "name": {
+            "Value": "ActionCatalogue",
+            "ValueSource": "Property"
+          }
+        },
+        "Arguments": {
+          "BindingsVersion": {
+            "Value": "2.2",
+            "ValueSource": "Constant"
+          }
+        },
+        "SubBindings": [],
+        "DefaultValueSource": "Property"
       }
     ],
     "UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation.CreateClassificationValidationActionAndWait": [
@@ -874,6 +900,32 @@
           },
           "name": {
             "Value": "OrchestratorBucketName",
+            "ValueSource": "Property"
+          }
+        },
+        "Arguments": {
+          "BindingsVersion": {
+            "Value": "2.2",
+            "ValueSource": "Constant"
+          }
+        },
+        "SubBindings": [],
+        "DefaultValueSource": "Property"
+      },
+      {
+        "Type": "taskCatalog",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "CatalogBindingsKey",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "folderPath": {
+            "Value": "",
+            "ValueSource": "Property"
+          },
+          "name": {
+            "Value": "ActionCatalogue",
             "ValueSource": "Property"
           }
         },
@@ -913,6 +965,32 @@
         },
         "SubBindings": [],
         "DefaultValueSource": "Property"
+      },
+      {
+        "Type": "taskCatalog",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "CatalogBindingsKey",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "folderPath": {
+            "Value": "",
+            "ValueSource": "Property"
+          },
+          "name": {
+            "Value": "ActionCatalogue",
+            "ValueSource": "Property"
+          }
+        },
+        "Arguments": {
+          "BindingsVersion": {
+            "Value": "2.2",
+            "ValueSource": "Constant"
+          }
+        },
+        "SubBindings": [],
+        "DefaultValueSource": "Property"
       }
     ],
     "UiPath.IntelligentOCR.StudioWeb.Activities.DataValidation.ValidateDocumentDataWithDocumentData\u00601": [
@@ -930,6 +1008,86 @@
           },
           "name": {
             "Value": "OrchestratorBucketName",
+            "ValueSource": "Property"
+          }
+        },
+        "Arguments": {
+          "BindingsVersion": {
+            "Value": "2.2",
+            "ValueSource": "Constant"
+          }
+        },
+        "SubBindings": [],
+        "DefaultValueSource": "Property"
+      },
+      {
+        "Type": "taskCatalog",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "CatalogBindingsKey",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "folderPath": {
+            "Value": "",
+            "ValueSource": "Property"
+          },
+          "name": {
+            "Value": "ActionCatalogue",
+            "ValueSource": "Property"
+          }
+        },
+        "Arguments": {
+          "BindingsVersion": {
+            "Value": "2.2",
+            "ValueSource": "Constant"
+          }
+        },
+        "SubBindings": [],
+        "DefaultValueSource": "Property"
+      }
+    ],
+    "UiPath.IntelligentOCR.StudioWeb.Activities.ExtractDocumentDataWithDocumentData\u00601": [
+      {
+        "Type": "idpProcessor",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "IdpBindingsKey",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "folderPath": {
+            "Value": "IdpModelFolderPath",
+            "ValueSource": "Property"
+          },
+          "name": {
+            "Value": "IdpModel",
+            "ValueSource": "Property"
+          }
+        },
+        "Arguments": {
+          "BindingsVersion": {
+            "Value": "2.2",
+            "ValueSource": "Constant"
+          }
+        },
+        "SubBindings": [],
+        "DefaultValueSource": "Property"
+      },
+      {
+        "Type": "ixpDeployment",
+        "PublishNullValues": false,
+        "Key": {
+          "Value": "BindingsKey",
+          "ValueSource": "Property"
+        },
+        "Values": {
+          "folderPath": {
+            "Value": "FolderPath",
+            "ValueSource": "Property"
+          },
+          "name": {
+            "Value": "ExtractionModel",
             "ValueSource": "Property"
           }
         },
